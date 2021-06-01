@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <!-- Application Payment Report -->
+        <report 
+            id="action_report_napata_assessment"
+            model="report.napata_clinic.report_napata_assessment"
+            string="Print Assessment"
+            report_type="qweb-pdf"
+            name="napata_clinic.report_napata_assessment"
+            file="napata_clinic.report_napata_assessment"
+            print_report_name="'Student Assessment Report'"
+            menu="True"/>
+
+        <!-- print_report_name="'Student Assessment Report'" -->
+        <!-- attachment_use="True"
+            attachment="object._get_report_base_filename()" -->
+        <!-- paperformat="napata_accounting.application_payment_report_paperformat_id" -->
+
+</data>
+</odoo>

@@ -1,0 +1,131 @@
+<odoo>
+
+    <!-- startr tree viwe for pationt -->
+    <record model="ir.ui.view" id="resignation_request_view_id">
+        <field name="name">napata.resignationRequest.form</field>
+        <field name="model">napata.resignation</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="resignation Request">
+                <header>
+                    <button name="action_confirm_registrar" string="Confirm " states="draft" type="object"
+                            confirm="Are you sure you want to do this?"/>
+                    <button name="action_done" string="done " states="confirm" type="object"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <!--       header     -->
+                    <div class="row navbar navbar-expand-sm  navbar-dark" style="border-radius: 10px;
+    background-color: #187ebf;   color: white;">
+                        <div class="col-sm">
+                            <img src="napata_register/static/description/logo.jpeg" class="img-thumbnail"
+                                 style="height:80px;width:120px" alt="Ben &amp; Jerry's"/>
+                        </div>
+
+                        <div class="col-sm   text-center">
+                            <h3>
+                                <p>
+                                    <spane>هيئة التامين الصحي ولاية الخرطوم</spane>
+                                    <br/>
+                                    <spane>ادارة خدمات المشتركين والتغطية الشاملة</spane>
+                                </p>
+                            </h3>
+                        </div>
+                        <div class="col-sm" style="  text-align:right">
+                            <h3>
+                                <p style="color: white; text-align: left;margin-left: 116px;">
+                                    <spane>Alreydh-Khartoum/Sudan</spane>
+                                    <br/>
+                                    <spane>Tel :+249112203333</spane>
+                                    <br/>
+                                    <spane>Email:info@napata.net</spane>
+                                    <br/>
+                                    <spane>www:napata.net</spane>
+                                </p>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                            استمارة استقالة/فصل اكاديمي
+                        </h2>
+                    </div>
+                    <group>
+                        <field name="data"/>
+                    </group>
+                    <group>
+                        <field name="student_ids"/>
+                    </group>
+                    <group col="4">
+                        <field name="college"/>
+                        <field name="program"/>
+                    </group>
+                    <group col="4">
+                        <field name="level"/>
+                        <field name="semester"/>
+                        <field name="academic_position"/>
+                    </group>
+                    <group col="6">
+                        <field name="sitting_number"/>
+                        <field name="location_exam"/>
+                        <field name="date_admission"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="reasons"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="nots"/>
+                    </group>
+                    <separator/>
+                    <group string="Register Assistan">
+                        <group>
+                            <field name="reg_name" readonly="1"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- end  tree viwe for pationt -->
+
+
+    <!-- start form viwe from pation Info -->
+    <record model="ir.ui.view" id="resignation_request_tree_view">
+        <field name="name">resignation.request.tree</field>
+        <field name="model">napata.resignation</field>
+        <field name="arch" type="xml">
+
+            <tree string="resignation request tree">
+                <field name="student_ids"/>
+                <field name="college"/>
+                <field name="program"/>
+                <field name="level"/>
+                <field name="semester"/>
+                <field name="reasons"/>
+                <field name="state"/>
+                <field name="data"/>
+            </tree>
+        </field>
+    </record>
+    <!-- end of form viwe from pation Info -->
+
+    <record model="ir.actions.act_window" id="resignation_request_list_action">
+        <field name="name">resignation request</field>
+        <field name="res_model">napata.resignation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first resignation request
+            </p>
+        </field>
+    </record>
+
+</odoo>

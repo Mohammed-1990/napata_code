@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="create_register_form" model="ir.ui.view">
+        <field name="name">create_register_wizard</field>
+        <field name="model">create.register</field>
+        <field name="arch" type="xml">
+            <form string="Create register">
+                <group>
+                    <field name="student_ids" readonly="1"/>
+                </group>
+                <group class="oe_title" col="4" colspan="2">
+                    <field name="certificate_type" force_save="1" readonly="1"/>
+                    <field name="college" force_save="1" readonly="1"/>
+                </group>
+                <group class="oe_title" col="4" colspan="2">
+                    <field name="main_desires" force_save="1" readonly="1"/>
+                    <field name="level" force_save="1" readonly="1"/>
+                    <field name="semester" force_save="1" readonly="1"/>
+                </group>
+                <notebook>
+                    <page name="regsteration_information" string="Register Fees Information">
+
+
+                        <group class="oe_title" col="4" colspan="2">
+
+                            <field name="register_fees" readonly="1" force_save="1"
+                                   style="background-color: #13397f ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                            <field name="program_fees" readonly="1" force_save="1"
+                                   style="background-color: #13397f ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+
+                        </group>
+
+                        <group class="oe_title" col="4" colspan="2">
+                            <!--                            <field name="discount_fees" readonly="1"/>-->
+                            <field name="total_received" force_save="1" readonly="1"
+                                   style="background-color:#7c1a1a ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                            <field name="firest_installment_fees"/>
+                            <field name="is_first_installment" force_save="1" readonly="1" invisible="1"/>
+                            <field name="is_managemanent" force_save="1" readonly="1" invisible="1"/>
+
+                        </group>
+
+                        <group>
+                            <field name="the_register_amount" force_save="1" readonly="1"
+                                   style="background-color: #14847e  ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                        </group>
+                    </page>
+
+
+                    <group col="4">
+                        <field name="other_ids"/>
+                        <field name="other_fees"/>
+
+                    </group>
+
+
+                    <page name="managemanent_fees_information" string="Other Expenses Information">
+                        <group colspan="2" col="2">
+                            <field name="is_pay_sd" attrs="{'invisible': [('certificate_type', '=','sudanese')]}"/>
+
+                        </group>
+                        <group col="4" colspan="2">
+                            <field name="managemanent_fees" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="student_managemanent_fees" force_save="1" readonly="1"
+                                   style="background-color: #13397f ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                        </group>
+                        <group>
+                            <field name="the_abut" force_save="1" readonly="1"
+                                   style="background-color: #14847e  ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+
+                        </group>
+                    </page>
+
+                </notebook>
+
+
+                <footer>
+                    <button name="create_registration" string="Create" type="object"
+                            class="alert alert-success"/>
+                    <button string="Cancel" class="alert alert-danger" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="create_register_wizard" model="ir.actions.act_window">
+        <field name="name">register wizard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">create.register</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="create_register_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

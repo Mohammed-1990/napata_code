@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+        <menuitem id="menu_na_presentationType_root" name="Presentation Type"
+                  parent="menu_na_sting_root"
+                  sequence="40"/>
+
+        <menuitem id="napata_presentationType_menu" name="presentation Type"
+                  parent="menu_na_presentationType_root" sequence="20"
+                      action="preTyep_list_action" />
+
+        <menuitem id="napata_feesTyep_menu" name="Fees Type" sequence="30"
+          parent="menu_na_presentationType_root"
+            action="feestype_list_action" />
+
+
+
+
+
+
+
+
+    </data>
+</odoo>

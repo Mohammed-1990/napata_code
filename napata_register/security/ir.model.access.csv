@@ -1,0 +1,24 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+chackup_user,chackup user,model_napata_chackup,base.group_user,1,1,1,1
+presentation_user,presentation user,model_napata_presentation,base.group_user,1,1,1,1
+oldpresentation_user,oldpresentation user,model_napata_oldpresentation,base.group_user,1,1,1,1
+presntaionfees_user,presntaionfees user,model_napata_presntaionfees,base.group_user,1,1,1,1
+studyfees_user,studyfees user,model_napata_studyfees,base.group_user,1,1,1,1
+feepaid_user,feepaid user,model_napata_feepaid,base.group_user,1,1,1,1
+register_user,register user,model_napata_register,base.group_user,1,1,1,1
+managemanentfees_user,managemanentfees user,model_napata_managemanentfees,base.group_user,1,1,1,1
+admission_user,admission user,model_napata_admission,base.group_user,1,1,1,1
+activepresentaion_user,activepresentaion user,model_napata_activepresentaion,base.group_user,1,1,1,1
+health_user,health user,model_napata_health,base.group_user,1,1,1,1
+absence_user,absence user,model_napata_absence,base.group_user,1,1,1,1 
+resignation_user,resignation user,model_napata_resignation,base.group_user,1,1,1,1
+clearance_user,clearance user,model_napata_clearance,base.group_user,1,1,1,1 
+freezing_user,freezing user,model_napata_freezing,base.group_user,1,1,1,1
+dismissal_reasons_user,dismissal reasons user,model_napata_dismissalreasons,base.group_user,1,1,1,1
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="create_assessment_wizard_report_form" model="ir.ui.view">
+        <field name="name">assessment.wizardreport.form</field>
+        <field name="model">assessment.wizardreport</field>
+        <field name="arch" type="xml">
+            <form string="Assessment Form">
+
+                <!-- for passed  field -->
+                <group>
+                   <field name="patient_id" readonly="1" />
+                </group>
+                <group>
+                    <field name="name" readonly="1"/>
+                    <field name="gender" readonly="1"/>
+
+                    <field name="dob" readonly="1"/>
+                    <field name="age" readonly="1"/>
+
+                    <field name="phone" readonly="1"/>
+                    <field name="email" readonly="1"/>
+
+                    <field name="date" readonly="1"/>
+                    <field name="program" readonly="1"/>
+
+                    <field name="nationality" readonly="1"/>
+                    <field name="religion" readonly="1"/>
+
+                    <!-- For assessment -->
+                    <field name="diagonis" required="1"/>
+                    <field name="assessment"/>
+                    
+                    <field name="doctor" required="1"/>
+                    <field name="signature" required="1"/>
+
+                </group>
+
+                <footer>
+                    <button name="create_assessment_wizard" string="Create" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="create_assessment_wizard_report_window" model="ir.actions.act_window">
+        <field name="name">Create assessment report</field>
+        <field name="type">ir.actions.act_window</field>       
+        <field name="res_model">assessment.wizardreport</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

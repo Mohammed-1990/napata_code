@@ -1,0 +1,185 @@
+<odoo>
+    <!-- startr tree viwe for pationt -->
+    <record model="ir.ui.view" id="napata_presentation_view_id">
+        <field name="name">na.presentation.form</field>
+        <field name="model">napata.presentation</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Student Information">
+                <header>
+                    <button name="action_confirm" string="Confirm " states="draft" type="object"/>
+                    <button name="action_done" string="done " states="confirm" type="object"/>
+
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <!--       header     -->
+                    <div class="row navbar navbar-expand-sm  navbar-dark" style="border-radius: 10px;
+    background-color: #187ebf;   color: white;">
+                        <div class="col-sm">
+                            <img src="napata_register/static/description/logo.jpeg" class="img-thumbnail"
+                                 alt="Ben &amp; Jerry's"
+
+                                 style="height:80px;width:120px"/>
+                        </div>
+
+                        <div class="col-sm   text-center">
+                            <h1>
+                                <p>
+                                    <spane>كليــــــــــــــــة نبتـــــــــة</spane>
+                                    <br/>
+                                    <spane>NAPATA COLLEGE</spane>
+                                </p>
+                            </h1>
+                        </div>
+                        <div class="col-sm" style="  text-align:right">
+                            <h3>
+                                <p style="color: white; text-align: left;margin-left: 116px;">
+                                    <spane>Alreydh-Khartoum/Sudan</spane>
+                                    <br/>
+                                    <spane>Tel :+249112203333</spane>
+                                    <br/>
+                                    <spane>Email:info@napata.net</spane>
+                                    <br/>
+                                    <spane>www:napata.net</spane>
+                                </p>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                            شاشة التقديم
+                        </h2>
+                    </div>
+
+
+                    <!--            header-->
+
+                    <group col="4" colspan="2" string="Student  Name">
+                        <field name="first_name" placeholder="First Name" readonly="1"/>
+                        <field name="second_name" placeholder="Second Name" readonly="1"/>
+                        <field name="third_name" placeholder="Third Name" readonly="1"/>
+                        <field name="forth_name" placeholder="Forth Name" readonly="1"/>
+                    </group>
+                    <group string="Form Namper:">
+                        <field name="form_number" readonly="1"/>
+                    </group>
+                    <notebook colspan="4">
+
+                        <page name="Personalinformation" string="Personal Information">
+                            <group col="4" colspan="4" name="name" string="Personal Information">
+                                <field name="nationality" attrs="{'required':[('done','=',True)]}"
+                                       options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"/>
+                                <field name="id_type" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="id_number" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="gender" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="social_status" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="religion" attrs="{'required':[('done','=',True)]}"/>
+                            </group>
+                            <group col="6" colspan="4" name="date_and_place" string="Date And Place  Information">
+                                <field name="address" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="brath_day" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="states_id" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="Local_id" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="email"/>
+                                <field name="student_mobile" force_save="1" attrs="{'required':[('done','=',True)]} "/>
+                                <field name="watsapp_phone" force_save="1" attrs="{'required':[('done','=',True)]}"/>
+                            </group>
+                            <group col="4" colspan="4" name="Study_information" string="Study Information">
+                                <!--                                <field name="school"/>-->
+                                <field name="school_name" attrs="{'readonly':[('done','=',True)]}"/>
+                                <field name="course" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="siting_number" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="precentage" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="exm_year" attrs="{'readonly':[('done','=',True)]}"/>
+                            </group>
+                            <group string="Scholastic Desires">
+                                <group col="4" colspan="2">
+                                    <field name="college_id" attrs="{'readonly':[('done','=',True)]}"
+                                           options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"/>
+                                    <field name="main_desire" attrs="{'readonly':[('done','=',True)]}"
+                                           options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"/>
+                                </group>
+                            </group>
+                            <group>
+                                <field name="other_desire" widget="many2many_tags"
+                                       attrs="{'invisible':[('done','=',True)]}"
+                                       options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"/>
+                            </group>
+                            <group string="Attachments" colspan="2" col="4">
+                                <field name="national_card" />
+                                <field name="school_certificate"/>
+                            </group>
+                            <group string=" How did you hear about the college" col="6" colspan="2">
+                                <field name="facebook"/>
+                                <field name="website"/>
+                                <field name="newspaper"/>
+                                <field name="tv"/>
+                                <field name="radio"/>
+                                <field name="admission_book"/>
+                            </group>
+                            <group string="  parent Information">
+
+                                <field name="applicant" placeholder=""/>
+                            </group>
+                            <group col="4">
+                                <field name="job" placeholder=""/>
+                                <field name="relative_relation"
+                                       options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"/>
+
+
+                                <field name="fother_adress" placeholder=""/>
+                                <field name="telephone" placeholder=""/>
+                            </group>
+                            <group string="Financial information">
+                                <group col="4" colspan="2">
+                                    <field name="type_acceptance" readonly="1"/>
+                                    <field name="application_fees" readonly="1"/>
+                                    <field name="receipt_code" readonly="1"/>
+                                    <field name="pay_date" readonly="1"/>
+                                </group>
+                            </group>
+                            <group col="4" colspan="2">
+                                <field name="signup_valid" attrs="{'required':[('done','=',True)]}"/>
+                                <field name="data" readonly="1"/>
+                                <field name="done" invisible="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="frist_presentation_tree_view">
+        <field name="name">presentation.tree</field>
+        <field name="model">napata.presentation</field>
+        <field name="arch" type="xml">
+            <tree string="pationt tree" decoration-danger="state == 'draft'"
+                  decoration-success="state == 'done'">
+                <field name="name"/>
+                <field name="main_desire"/>
+                <field name="school_name"/>
+                <field name="course"/>
+                <field name="form_number"/>
+                <field name="precentage"/>
+                <field name="exm_year"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="fristpresentation_list_action">
+        <field name="name">Presentation</field>
+        <field name="res_model">napata.presentation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first Presentation
+            </p>
+        </field>
+    </record>
+</odoo>

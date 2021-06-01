@@ -1,0 +1,33 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+collage_manager,collage   manager,model_napata_collage,setting_manager_access_group,1,1,1,1
+collage_uper ,collage user ,model_napata_collage,setting_user_access_group,1,0,0,0
+
+program_manager,program   manager,model_napata_program,setting_manager_access_group,1,1,1,1
+program_user,program user,model_napata_program,setting_user_access_group,1,0,0,0
+
+specialization_manager,specialization   manager,model_napata_specialization,setting_manager_access_group,1,1,1,1
+specialization_user,specialization  user,model_napata_specialization,setting_user_access_group,1,0,0,0
+
+batch_manager,batch   manager,model_napata_batch,setting_manager_access_group,1,1,1,1
+batch_user,batch  user,model_napata_batch,setting_user_access_group,1,0,0,0
+
+presentationtype_manager,presentationtype   manager,model_napata_presentationtype,setting_manager_access_group,1,1,1,1
+presentationtype_user,presentationtype user,model_napata_presentationtype,setting_user_access_group,1,0,0,0
+
+feestype_manager,feestype   manager,model_napata_feestype,setting_manager_access_group,1,1,1,1
+feestype_user,feestype  user,model_napata_feestype,setting_user_access_group,1,0,0,0
+
+parent_manager,parent   manager,model_napata_parent,setting_manager_access_group,1,1,1,1
+parent_user,parent  user,model_napata_parent,setting_user_access_group,1,0,0,0
+
+level_manager,level super  manager,model_napata_level,setting_manager_access_group,1,1,1,1
+semester_manager,semester super  manager,model_napata_semester,setting_manager_access_group,1,1,1,0
+result_manager,result super  manager,model_napata_result,setting_manager_access_group,1,1,1,0
+
+
+
+
+
+
+
+

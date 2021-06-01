@@ -1,0 +1,2400 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* napata_register
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-07 05:37+0000\n"
+"PO-Revision-Date: 2021-03-07 05:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__receipt_code
+msgid "\tReceipt Number "
+msgstr "رقم الإيصال"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__second
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__second
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__second
+msgid "\tSecond Name"
+msgstr "الاسم الثاني"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__form_number
+msgid " Form number"
+msgstr "رقم الاستمارة"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__phone1
+msgid " Phone Number"
+msgstr "رقم الهاتف"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__discount_fees
+msgid " The Discount"
+msgstr "الخصم"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__academic_position
+msgid " academic position"
+msgstr "الموقف الاكاديمي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__coordinator_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__coordinator_name
+msgid " coordinator name"
+msgstr "اسم المنسق"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__exm_year
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__exm_year
+msgid " exm_year"
+msgstr "سنة الإمتحان"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__lab_sup_comment
+msgid " lab supervisor commet"
+msgstr "تعليق المعمل"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__program_coor_comment
+msgid " program coordinator commet"
+msgstr "تعليق  القسم"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__lab_sup_sign
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__program_coor_sign
+msgid " program coordinator signature "
+msgstr "التوقيق"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__program_coor_sign_date
+msgid " program coordinator signature date"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__signature
+msgid " signature "
+msgstr "التوقيع"
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__create_register__discount__10
+msgid "10%"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__create_register__firest_installment_fees__1
+msgid "100%"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__create_register__discount__20
+msgid "20%"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__create_register__discount__30
+msgid "30%"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__create_register__discount__40
+msgid "40%"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__create_register__firest_installment_fees__2
+msgid "50%"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+msgid "A clear part of the Lab"
+msgstr "خلو طرف من المعمل"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+msgid "A clear part of the section"
+msgstr "خلو طرف من القسم"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+msgid "Absence permission request"
+msgstr "اطلب اذن تغيب عن(المحاضرة/المعمل) لمادة/مواد :"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__academic_position
+msgid "Academic position of the student"
+msgstr "الموقف الاكاديمي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__accept_type
+msgid "Accept Type"
+msgstr "نوع القبول"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_needaction
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.menu_napata_addmissions_root
+msgid "Addmissions"
+msgstr "القبول"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+msgid "Addmissions information"
+msgstr "معلومات القبول"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__unit
+msgid "Administrative unit"
+msgstr "وحدة الادارية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__admission_book
+msgid "Admission Book"
+msgstr "دليل القبول"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+msgid "Admission Register"
+msgstr "اسم المقدم رباعي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__year
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__year
+msgid "Admission Year"
+msgstr "العام الدراسي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__Agree
+msgid "Agree"
+msgstr "الموافق"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.activepresentaion_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.health_insurance_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.managemanentfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.presntaionfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "Alreydh-Khartoum/Sudan"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__provider
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__provider_name
+msgid "Applicant Name"
+msgstr "اسم ولي امر الطالب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__application_fees
+msgid "Application fees"
+msgstr "رسوم التقديم"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__athoer_desires
+msgid "Athoer Desires"
+msgstr " الرغبات الدراسية الاخر"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_attachment_count
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__attendees_count
+msgid "Attendees count"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.activepresentaion_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.health_insurance_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.managemanentfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.presntaionfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "Ben & Jerry's"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.create_register_form
+msgid "Cancel"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__Certificate
+msgid "Certificate Tyep"
+msgstr "نوع الشهادة"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__financial_officer
+msgid "Chief Financial Officer "
+msgstr "اسم المدير المالي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__financial_off_sign
+msgid "Chief Financial Officer signature "
+msgstr "التوقيع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__financial_off_sign_date
+msgid "Chief Financial Officer signature date"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_clearance
+msgid "Clearance information"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__registrar_name
+msgid "College Registrar name"
+msgstr "اسم المسجل"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+msgid "Confirm"
+msgstr "تاكيد القبول"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Contact Information"
+msgstr "معلومات الإتصال"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__cource
+msgid "Cource"
+msgstr "المساق"
+
+#. module: napata_register
+#: model_terms:ir.actions.act_window,help:napata_register.management_fees_tree_view
+#: model_terms:ir.ui.view,arch_db:napata_register.create_register_form
+msgid "Create"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_create_register
+msgid "Create User for selected Student(s)"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.create_register_form
+msgid "Create register"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.actions.act_window,help:napata_register.registrar_assistant_list_action
+msgid "Create the first"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.actions.act_window,help:napata_register.absence_request_list_action
+msgid "Create the first absence request"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.actions.act_window,help:napata_register.admissions_list_action
+msgid "Create the first admission"
+msgstr "اضافة بيانات القبول"
+
+#. module: napata_register
+#: model_terms:ir.actions.act_window,help:napata_register.clearance_request_list_action
+msgid "Create the first clearance request"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.actions.act_window,help:napata_register.resignation_request_list_action
+msgid "Create the first resignation request"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.actions.act_window,help:napata_register.health_insurance_list_action
+msgid "Create the first study health insurance"
+msgstr "انشاء اول  عملية تامين صحي"
+
+#. module: napata_register
+#: model_terms:ir.actions.act_window,help:napata_register.presntaionfees_list_action
+msgid "Create the first study presntaionfees"
+msgstr "تحديد رسوم التقديم"
+
+#. module: napata_register
+#: model_terms:ir.actions.act_window,help:napata_register.activepresentaion_list_action
+#: model_terms:ir.actions.act_window,help:napata_register.studyfees_list_action
+msgid "Create the first study studyfees"
+msgstr "إضافة رسوم دراسية جديدة"
+
+#. module: napata_register
+#: model_terms:ir.actions.act_window,help:napata_register.registrar_office_list_action
+msgid "Create the firstRegistrar's Office"
+msgstr "انشاء اول عملية تسجيل"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__create_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__create_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__paid_date
+msgid "Date"
+msgstr "التأريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__year
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__data
+msgid "Date "
+msgstr "التأريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__data
+msgid "Date current action"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__birth_date
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__date_admission
+msgid "Date of admission to the college"
+msgstr "تاريخ القبول بالكلية"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+msgid "Dean's decision"
+msgstr "قرار العميد"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__discount
+msgid "Discount"
+msgstr "الخصم"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__discount
+msgid "Discount Percentage"
+msgstr "نسبةالخصم"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__display_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__doctor_date
+msgid "Doctor Date"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Doctor's decision"
+msgstr "قرار الطبيب :-"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__doctor_name
+msgid "Doctor's name"
+msgstr "اسم الطبيب"
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_admission__state__draft
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_chackup__state__draft
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_health__state__draft
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_presentation__state__draft
+msgid "Draft"
+msgstr "القبول"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__e_mail
+msgid "E-mail "
+msgstr "البريد الالكتروني"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Educational Information"
+msgstr "المعلومات الدراسية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__educational_level
+msgid "Educational level"
+msgstr "المستوي التعليمي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__email
+msgid "Email"
+msgstr "البريد الالكتروني"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.activepresentaion_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.health_insurance_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.managemanentfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.presntaionfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "Email:info@napata.net"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Enter Form Numbers"
+msgstr "رقم الاستمارة"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__exa_center
+msgid "Exam center"
+msgstr "مركز الإمتحان"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__exam_year
+msgid "Exam year"
+msgstr "سنة الإمتحان"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__facebook
+msgid "Face Book"
+msgstr "فيسبوك"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__fees
+msgid "Fees"
+msgstr "الرسوم"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Fees Collection Details"
+msgstr "التفاصيل المالية"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Fees Menagement"
+msgstr "الرسوم الإدراية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__name
+msgid "Fees Type "
+msgstr "نوع الرسوم"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__fina_flees
+msgid "Final Fees"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__first
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__first
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__first
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__first_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__first_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__first_name
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "First Name"
+msgstr "الاسم الاول"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__phone_1
+msgid "First Phone Number"
+msgstr "رقم هاتف الطالب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__firest_installment_fees
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__firest_installment_fees
+msgid "First installment"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_follower_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_channel_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_partner_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__reasons
+msgid "For the reasons"
+msgstr "ولك للأسباب التالية:"
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__create_register__certificate_type__foreign
+msgid "Foreign"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_presntaionfees__type_of_fees__foreign
+msgid "Foreign currency"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__foriegn_register_fees
+msgid "Foreigners"
+msgstr "رسوم التسجيل "
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__foreigners_study
+msgid "Foreigners Fees"
+msgstr "الرسوم الدراسية للاجانب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__studentNumber
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__studentNumber
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__form_number
+msgid "Form Number"
+msgstr "رقم الاستمارة"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Forth Name"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__forth_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__forth_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__forth_name
+msgid "Fourth Name"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__name
+msgid "Full Name"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.menu_napata_health_insurance_root
+msgid "Health Insurance"
+msgstr "التامين الصحي "
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__health_center
+msgid "Health center "
+msgstr "مركز صحي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__School_card
+msgid "High School Certificate"
+msgstr "اصل الشهادة الثانوية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__id
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__id
+msgid "ID"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__id_number
+msgid "ID Number"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,help:napata_register.field_napata_absence__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_absence__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_activepresentaion__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_activepresentaion__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_admission__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_admission__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_chackup__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_chackup__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_clearance__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_clearance__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_feepaid__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_feepaid__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_health__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_health__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_managemanentfees__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_managemanentfees__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_presntaionfees__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_presntaionfees__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_register__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_register__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_resignation__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_resignation__message_unread
+#: model:ir.model.fields,help:napata_register.field_napata_studyfees__message_needaction
+#: model:ir.model.fields,help:napata_register.field_napata_studyfees__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,help:napata_register.field_napata_absence__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_activepresentaion__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_admission__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_chackup__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_clearance__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_feepaid__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_health__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_managemanentfees__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_presntaionfees__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_register__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_resignation__message_has_error
+#: model:ir.model.fields,help:napata_register.field_napata_studyfees__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__inser_amount
+msgid "Inser Amount"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_is_follower
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__professor_recommendation
+msgid "Lab professor’s recommendation"
+msgstr "توصية (استاذ المعمل):"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__lab_supervisor
+msgid "Lab supervisor "
+msgstr "اسم مشرف المعمل"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_health____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_register____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation____last_update
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__last
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__last
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__last
+msgid "Last Name"
+msgstr "الاسم الرابع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__write_uid
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__write_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+msgid "Lecturer's recommendation, lab professor"
+msgstr "توصية (المحاضر/أستاذ المعمل)"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__librarian
+msgid "Librarian "
+msgstr "اسم امين المكتبة"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__librarian_commet
+msgid "Librarian commet"
+msgstr "تعليق امين المكتبة"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__librarian_sign
+msgid "Librarian signature "
+msgstr "التوقيع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__librarian_sign_date
+msgid "Librarian signature date"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__local
+msgid "Local"
+msgstr "محلية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__local
+msgid "Local Name"
+msgstr "اسم المحلية"
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_presntaionfees__type_of_fees__local
+msgid "Local currency"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_main_attachment_id
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__main
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__main_desires
+msgid "Main Desire"
+msgstr "الرغبة الرئيسية"
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.management_fees_tree_view
+#: model:ir.model.fields,field_description:napata_register.field_create_register__managemanent_fees
+msgid "Managemanent Fees"
+msgstr "الرسوم الادارية"
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.management_fees_menu
+#: model_terms:ir.ui.view,arch_db:napata_register.managemanentfees_view_id
+msgid "Management Fees"
+msgstr "الرسوم الادارية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__menagement_fees
+msgid "Menagement  Fees"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_has_error
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_ids
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__mother_name
+msgid "Mother's name "
+msgstr "اسم الوالدة"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.activepresentaion_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.managemanentfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.presntaionfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "NAPATA COLLEGE"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__name
+msgid "Name"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__National_card
+msgid "National card"
+msgstr "بطاقة قومية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__nat_number
+msgid "Nationalities"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__certificate_type
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__nationality
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__nationality
+msgid "Nationality"
+msgstr "الجنسية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__neighborhood
+msgid "Neighborhood "
+msgstr "حي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__newspaper
+msgid "Newspaper"
+msgstr "الصحف اليومية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_needaction_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_has_error_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,help:napata_register.field_napata_absence__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_activepresentaion__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_admission__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_chackup__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_clearance__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_feepaid__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_health__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_managemanentfees__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_presntaionfees__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_register__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_resignation__message_needaction_counter
+#: model:ir.model.fields,help:napata_register.field_napata_studyfees__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,help:napata_register.field_napata_absence__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_activepresentaion__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_admission__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_chackup__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_clearance__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_feepaid__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_health__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_managemanentfees__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_presntaionfees__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_register__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_resignation__message_has_error_counter
+#: model:ir.model.fields,help:napata_register.field_napata_studyfees__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,help:napata_register.field_napata_absence__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_activepresentaion__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_admission__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_chackup__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_clearance__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_feepaid__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_health__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_managemanentfees__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_presntaionfees__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_register__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_resignation__message_unread_counter
+#: model:ir.model.fields,help:napata_register.field_napata_studyfees__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__create_register__syllabus__one
+msgid "One"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__other_ids
+msgid "Other Expenses"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.create_register_form
+msgid "Other Expenses Information"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__other_fees
+msgid "Other Fees"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Parent Information"
+msgstr "معلومات ولي امر الطالب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__is_pay_sd
+msgid "Pay in Sudanese"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Personal Information"
+msgstr "المعلومات الشخصية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__phone3
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__phone3
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Place And Date Of Birth"
+msgstr "مكان وتاريخ الميلاد"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__place_of_issue
+msgid "Place Of Issue"
+msgstr "مكان الاصدار"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Presentaion Fees"
+msgstr "رسوم التقديم"
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.menu_napata_presentation_root
+msgid "Presentation"
+msgstr "التقديم"
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.presntaionfees_management_menu
+msgid "Presntaion Fees"
+msgstr " رسوم التقديم"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__presntaion_type
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__presentation_type
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__presntaion_type
+msgid "Presntaion Type"
+msgstr "نوع القبول"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__name
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__preType
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__presntaion_type
+msgid "PresntaionType"
+msgstr "نوع التقديم"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__job
+msgid "Profession"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__professor_name
+msgid "Professor name"
+msgstr "اسم (المحاضر)"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+msgid "Program Coordinator Decision"
+msgstr "قرار منسق البرامج"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__coordinator_name
+msgid "Program Coordinator's name"
+msgstr "اسم منسق البرامج"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Program's  Coordinator"
+msgstr " معلومات تملا بواسطة منسق البرامج:-"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__radio
+msgid "Radio"
+msgstr "الريديو"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__receipt_code
+msgid "Receipt Number "
+msgstr "رقم الايصال"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__pay_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__firest_pay_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__pay_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__secand_pay_date
+msgid "Received  Date"
+msgstr "تاريخ الدفع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__register_fees
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__register_fees
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__register_fees
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "Register Fees"
+msgstr "رسوم التسجيل"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.create_register_form
+msgid "Register Fees Information"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.registrar_assistant_list_action
+#: model:ir.ui.menu,name:napata_register.menu_napata_assistant_root
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+msgid "Registrar Assistant"
+msgstr "مساعد المسجل"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_tree_view
+msgid "Registrar Assistant tree"
+msgstr "مساعد المسجل"
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.registrar_office_list_action
+msgid "Registrar's Office"
+msgstr "مكتب المسجل"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_tree_view
+msgid "Registrar's Office tree"
+msgstr "مكتب المسجل"
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.menu_napata_register_root
+msgid "Registrar's office"
+msgstr " المسجل"
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.menu_na_report_root
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__resigning
+msgid "Resigning"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Scholastic Desires"
+msgstr "الرغبات الدراسية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__school_name
+msgid "School Name"
+msgstr "اسم المدرسة"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__school_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__school_name
+msgid "School Name "
+msgstr "اسم المدرسة"
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_oldpresentation__course__scientific
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_presentation__course__scientific
+msgid "Scientific"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__scientific_affairs_recommendation
+msgid "Scientific affairs recommendation"
+msgstr "توصية امين الشئوون العلمية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__secand_installment_fees
+msgid "Secand installment"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__second_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__second_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__second_name
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Second Name"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__phone_2
+msgid "Second Phone Number"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__semester
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__semester
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__semester
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__semester
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__semester
+msgid "Semester"
+msgstr "الفصل الدراسي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__fee_paid_id
+msgid "Sessions"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__coordinator_Signature
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__coordinator_Signature
+msgid "Signature of the  coordinator"
+msgstr "توقيع المنسق"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__studen_Signature
+msgid "Signature of the  student"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__college_registrar_Signature
+msgid "Signature of the College Registrar"
+msgstr "التوقيع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__dean_Signature
+msgid "Signature of the Dean of the College"
+msgstr "التوقيع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__Secretary_Signature
+msgid "Signature of the Secretary"
+msgstr "التوقيع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__agent_Signature
+msgid "Signature of the agent"
+msgstr "التوقيع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__lecturer_Signature
+msgid "Signature of the lecturer"
+msgstr "توقيع استاذ المعمل"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__professor_Signature
+msgid "Signature of the professor"
+msgstr "توقيع المحاضر"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__sit_number
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__siting_number
+msgid "Sitting Number"
+msgstr "رقم الجلوس"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__social_status
+msgid "Social ٍStatus"
+msgstr "الحالة الاجتماعية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__states
+msgid "State Name"
+msgstr "اسم الولاية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__state
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__state
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__state
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__state
+msgid "Status"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+msgid "Studen name"
+msgstr "اسم الطالب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__student_id
+msgid "Student  ID"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__student_ids
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Student Name"
+msgstr "اسم الطالب رباعي (حسب الشهادة الثانوية)"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__student_signature
+msgid "Student signature"
+msgstr "توقيع الطالب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__student_supervisor
+msgid "Student supervisor "
+msgstr "اسم امين شئون الطلاب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__student_sup_commet
+msgid "Student supervisor  commet"
+msgstr "تعليق امين شئون الطلاب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__student_sup_sign
+msgid "Student supervisor signature "
+msgstr "التوقيع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__student_sup_sign_date
+msgid "Student supervisor signature date"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+msgid "Students Affairs"
+msgstr "شئون الطلاب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__program_fees
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "Study Fees"
+msgstr "الرسوم الدراسية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__day
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__year
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__year
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__year
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__year
+msgid "Study Year"
+msgstr "العام الدراسي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__sub
+msgid "Sub Desire"
+msgstr "الرغبات الدراسية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__signup_valid
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__submet
+msgid "Submet"
+msgstr "موافق"
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__create_register__certificate_type__sudanese
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_oldpresentation__Certificate__sudanese
+msgid "Sudanese"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__syllabus
+msgid "Syllabus"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__user_ids
+msgid "System user "
+msgstr "مستخدم النظام"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__tv
+msgid "TV"
+msgstr "التلفزيون"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.activepresentaion_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.health_insurance_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.managemanentfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.presntaionfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "Tel :+249112203333"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__the_amount
+msgid "The Amount"
+msgstr "الخصم"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__id_document
+msgid "The Identification Document"
+msgstr "الوثيقة الثبوتية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__the_number
+msgid "The Identification Number"
+msgstr "رقمها"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__id_number
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__id_number
+msgid "The National Number"
+msgstr "الرقم الوطني"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__ratio
+msgid "The Precentage"
+msgstr "النسبة المئوية المتحصل عليها في الشهادة"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__presntaion_fees
+msgid "The Presntaion Fees"
+msgstr "رسوم التقديم المقررة"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__reason
+msgid "The Reason For Resigning"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.menu_na_napata_root
+msgid "The Register"
+msgstr "مكتب المسجل"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__sdn_register_fees
+msgid "The Sudanese"
+msgstr "رسوم التسجيل "
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__sudaness_study
+msgid "The Sudanese Fees"
+msgstr "الرسوم الدراسية للسودانين"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+msgid "The agent's office"
+msgstr "الوكيل"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__coordinator_recommendation
+msgid "The coordinator recommendation"
+msgstr "توصية منسق البرامج"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__course
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__course
+msgid "The course"
+msgstr "المساق"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__lecturer_recommendation
+msgid "The lecturers recommendation"
+msgstr "توصية(المحاضر):"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__location_exam
+msgid "The location of the exam"
+msgstr "مكان الامتحان (الولاية):"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__scientific_affairs_name
+msgid "The name of the Secretary of Scientific Affairs"
+msgstr "اسم امين الشئون العلمية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__agent_name
+msgid "The name of the agent"
+msgstr "اسم الوكيل"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__ratio
+msgid "The ratio"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "The student’s academic position"
+msgstr "الموقف الاكاديمي للطالب-الطالبة:-"
+
+#. module: napata_register
+#: code:addons/napata_register/models/admissions.py:0
+#, python-format
+msgid "The value of Form Number must be positive number"
+msgstr ""
+
+#. module: napata_register
+#: code:addons/napata_register/models/admissions.py:0
+#: code:addons/napata_register/models/admissions.py:0
+#, python-format
+msgid "The value of student name must only letters"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__third
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__third
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__third
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__third_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__third_name
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__third_name
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "Third Name"
+msgstr "الاسم الثالث"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__total_fees
+msgid "Total Assessed Fees"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__total_received
+msgid "Total Received Fees"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__create_register__syllabus__two
+msgid "Two"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__type_of_fees
+msgid "Type Of Fees"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__id_type
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__type_id
+msgid "Type of identification"
+msgstr "نوع أثبات الشخصية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__university
+msgid "University"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_unread
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_activepresentaion__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_presntaionfees__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__message_unread_counter
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__phone2
+msgid "WatsApp"
+msgstr "رقم الواتساب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_presentation__website
+msgid "Web Site"
+msgstr "الموقع الالكتروني"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+msgid "absence Request"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.absence_request_list_action
+#: model:ir.ui.menu,name:napata_register.menu_napata_absence_request_root
+msgid "absence request"
+msgstr "طلب تغيب"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_tree_view
+msgid "absence request tree"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "academic_position"
+msgstr " معلومات تملأ بواسطة منسق البرامج:-"
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.activepresentaion_menu
+msgid "active Presentaion"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_activepresentaion
+msgid "active presentaion "
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__address
+msgid "address"
+msgstr "مكان الميلاد"
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.admissions_list_action
+msgid "admission"
+msgstr "القبول"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__agent_officer
+msgid "agent"
+msgstr "اسم الوكيل"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__agent_commet
+msgid "agent officer commet"
+msgstr "تعليق الوكيل"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__agent_sign
+msgid "agent signature "
+msgstr "التوقيع"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "agent_name"
+msgstr "توصية الوكيل:-"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__agent_sign_date
+msgid "agentsignature date"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__application_fees
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__application_fees
+msgid "application  Fees"
+msgstr "رسوم التقديم"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__appointment_date
+msgid "appointment Date"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_chackup
+msgid "chack student information  "
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__chronic_diseases
+msgid "chronic diseases "
+msgstr "اﻷ مراض المزمنة"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+msgid "clearance Request"
+msgstr "استمارة خلو طرف"
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.clearance_request_list_action
+#: model:ir.ui.menu,name:napata_register.menu_napata_clearance_request_root
+msgid "clearance request"
+msgstr "استمارةخلو طرف"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_tree_view
+msgid "clearance request tree"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.menu_na_configuration__root
+msgid "configuration"
+msgstr "الا عدادات"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__coordinator_date
+msgid "coordinator date"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__coordinator_report
+msgid "coordinator report"
+msgstr "تقرير منسق البرامج"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "create register"
+msgstr "اجراء عملية  مالية للطالب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__date
+msgid "date"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__coordinator_Signature_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__coordinator_Signature_date
+msgid "date of Signature of the  coordinator"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__dean_Signature_date
+msgid "date of Signature of the Dean of the College"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__registrar_Signature_date
+msgid "date of Signature of the Registrar"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__Secretary_Signature_date
+msgid "date of Signature of the Secretary"
+msgstr "التاريخ	"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__agent_Signature_date
+msgid "date of Signature of the agent"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__lecturer_Signature_date
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__professor_Signature_date
+msgid "date of Signature of the lecturer"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__student_Signature_date
+msgid "date of Signature of the student"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "dean"
+msgstr ":اعتماد عميد الكلية:-"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__degree
+msgid "degree"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_admission__state__done
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_chackup__state__done
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_health__state__done
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_presentation__state__done
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+msgid "done"
+msgstr "تم القبول"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+msgid "financial management"
+msgstr "الادارة المالية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__financial_commet
+msgid "financial officer commet"
+msgstr "تعليق الادارة المالية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__foreig_managemanentfees
+msgid "foreig Managemanentfees"
+msgstr "الرسوم الادارية للاجانب"
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_oldpresentation__Certificate__foreign
+msgid "foreign"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__fother_adress
+msgid "fother Adress"
+msgstr "عنوان ولي الامر"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__name
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__name
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__name
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__name
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__name
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__name
+msgid "full name"
+msgstr "اسم الطالب /الطالبة(رباعي)"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__gender
+msgid "gender"
+msgstr "الجنس"
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.health_insurance_list_action
+#: model_terms:ir.ui.view,arch_db:napata_register.health_insurance_view_id
+msgid "health insurance"
+msgstr "التامين الصحي"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.health_insurance_tree_view
+msgid "health insurance tree"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__number_ids
+msgid "identification Number"
+msgstr "رقم اثبات الشخصية"
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_admission
+#: model:ir.model,name:napata_register.model_napata_health
+msgid "information admission"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_feepaid
+msgid "information feepaid"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_managemanentfees
+msgid "information managemanentfees"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_oldpresentation
+msgid "information oldpresentation"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_register
+msgid "information register"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_chackup__type_of_presentaion__inside
+msgid "inside"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__name
+msgid "installment"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__job
+msgid "job"
+msgstr "الوظيفة"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__lab_sup_sign_date
+msgid "lab_supervisor signature date"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__lecturerr_name
+msgid "lecturer name"
+msgstr "اسم (استاذ المعمل):"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__level
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__level
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__level
+msgid "level"
+msgstr "المستوي الدراسي"
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_oldpresentation__course__literary
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_presentation__course__literary
+msgid "literary"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__student_managemanent_fees
+msgid "managemanent Fees"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.managemanentfees_view_id
+msgid "managemanent_fees"
+msgstr "الرسوم الادارية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__marital
+msgid "marital"
+msgstr "الحالة الاجتماعية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__medical_report
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "medical report"
+msgstr "التقرير الطبي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__main_desires
+msgid "oprogram"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields.selection,name:napata_register.selection__napata_chackup__type_of_presentaion__outside
+msgid "outside"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_oldpresentation__parent
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__parent
+msgid "parent"
+msgstr "صلة القرابة"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.activepresentaion_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.presntaionfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "pationt"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_tree_view
+msgid "pationt tree"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__pay_date
+msgid "pay Date"
+msgstr "تاريخ الدفع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__place_of_birth
+msgid "place of birth "
+msgstr "مكان الميلاد"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__program_coordinator
+msgid "pogram coordinator "
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_presentation
+msgid "presentation information"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.presntaionfees_list_action
+msgid "presntaionfees"
+msgstr "رسوم التقديم"
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_presntaionfees
+msgid "presntaionfees information"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__program
+#: model:ir.model.fields,field_description:napata_register.field_napata_admission__program
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__program
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__program
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__program
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__program
+#: model:ir.model.fields,field_description:napata_register.field_napata_studyfees__program
+msgid "program"
+msgstr "البرنامج"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "reasons"
+msgstr "أسباب تقديم الاستقالة:-"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__reasons_one
+msgid "reasons_one"
+msgstr "1-"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__reasons_tow
+msgid "reasons_tow "
+msgstr "2-"
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.create_register_wizard
+msgid "register wizard"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "registrar_name"
+msgstr "معلومات تملأ بواسطة مسجل الكلية:-"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__religion
+msgid "religion"
+msgstr "الديانة"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "resignation Request"
+msgstr "استمارة استقالة"
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.resignation_request_list_action
+#: model:ir.ui.menu,name:napata_register.menu_napata_resignation_request_root
+msgid "resignation request"
+msgstr "استمارة استقالة"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_tree_view
+msgid "resignation request tree"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "scientific_affairs_name"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "scientific_affairs_recommendation"
+msgstr "توصية أمين الشئون العلمية:-"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__sitting_number
+msgid "sitting number"
+msgstr "رقم الجلوس"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+msgid "student information"
+msgstr "بيانات الطالب"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__form_number
+msgid "student number"
+msgstr "الرقم الجامعي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__student_sign
+msgid "student signature "
+msgstr "التوقيع"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__student_sign_date
+msgid "student signature date"
+msgstr "التاريخ"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__name
+msgid "student's name"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_feepaid__study_fees
+msgid "study Fees"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.actions.act_window,name:napata_register.activepresentaion_list_action
+#: model:ir.actions.act_window,name:napata_register.studyfees_list_action
+msgid "studyfees"
+msgstr "الرسوم الراسية"
+
+#. module: napata_register
+#: model:ir.model,name:napata_register.model_napata_absence
+#: model:ir.model,name:napata_register.model_napata_resignation
+#: model:ir.model,name:napata_register.model_napata_studyfees
+msgid "studyfees information"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.napata_management_fees_tree_view
+#: model_terms:ir.ui.view,arch_db:napata_register.napata_studyfees_tree_view
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfe_tree_view
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_tree_view
+msgid "studyfees tree"
+msgstr "الرسوم الدراسية"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__subject_four
+msgid "subject four"
+msgstr "4  -"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__subject_one
+msgid "subject one"
+msgstr "1  -"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__subject_three
+msgid "subject three"
+msgstr "3  -"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__subject_tow
+msgid "subject tow"
+msgstr "2  -"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_managemanentfees__sudanes_managemanentfees
+msgid "sudanes Managemanentfees"
+msgstr "الرسوم الادارية للسودانين"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__telephone
+msgid "telephone"
+msgstr " رقم الموبايل"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__telephone_one
+#: model:ir.model.fields,field_description:napata_register.field_napata_resignation__telephone_tow
+msgid "telephone one"
+msgstr "رقم الهاتف الاول"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__the_abut
+msgid "the  Managemanent Amount "
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__the_register_amount
+msgid "the  student Amount "
+msgstr ""
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_absence__decision
+#: model:ir.model.fields,field_description:napata_register.field_napata_clearance__decision
+msgid "the decision"
+msgstr "القرار"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__hospital
+msgid "the hospital "
+msgstr "مستشفي"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_create_register__level
+#: model:ir.model.fields,field_description:napata_register.field_napata_register__level
+msgid "the level"
+msgstr "المسوي الدراسي"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+msgid "the library"
+msgstr "خلو طرف من المكتبة"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_health__the_phone
+msgid "the phone "
+msgstr "التلفون"
+
+#. module: napata_register
+#: model:ir.model.fields,field_description:napata_register.field_napata_chackup__type_of_presentaion
+msgid "type_of_presentaion"
+msgstr "نوع التقديم"
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.activepresentaion_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.health_insurance_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.managemanentfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.presntaionfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "www:napata.net"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.health_insurance_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "ادارة خدمات المشتركين والتغطية الشاملة"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "استمارة استقالة/فصل اكاديمي"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.clearance_request_view_id
+msgid "استمارة خلو طرف"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.managemanentfees_view_id
+msgid "شاشة اضافة الرسوم الادارية"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "شاشة اضافة الرسوم الدراسية"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.presntaionfees_view_id
+msgid "شاشة اضافة رسوم التقديم"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+msgid "شاشة القبول"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.activepresentaion_view_id
+msgid "شاشة تحديد القبول النشط"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.health_insurance_view_id
+msgid "طلب اشتراك"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+msgid "طلب تغيب عن(محاضرة/معمل)"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+msgid "كلية نبتة -مساعد المسجل"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+msgid "كلية نبتة -مكتب المسجل"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.activepresentaion_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.admission_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.managemanentfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.presntaionfees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_assistant_fees_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.registrar_office_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.studyfees_view_id
+msgid "كليــــــــــــــــة نبتـــــــــة"
+msgstr ""
+
+#. module: napata_register
+#: model_terms:ir.ui.view,arch_db:napata_register.absence_request_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.health_insurance_view_id
+#: model_terms:ir.ui.view,arch_db:napata_register.resignation_request_view_id
+msgid "هيئة التامين الصحي ولاية الخرطوم"
+msgstr ""
+
+#. module: napata_register
+#: model:ir.ui.menu,name:napata_register.studyfees_management_menu
+msgid "ٍStudy Fees"
+msgstr "الرسوم الدراسية"

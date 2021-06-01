@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+        <menuitem id="menu_na_nationalities_root" name="nationalities"
+                  parent="menu_na_sting_root"
+                  sequence="30"/>
+
+        <menuitem id="napata_nationalities_menu" name="nationalities"
+                  parent="menu_na_nationalities_root"
+                      action="nationalities_list_action" />
+
+
+
+
+
+
+
+    </data>
+</odoo>

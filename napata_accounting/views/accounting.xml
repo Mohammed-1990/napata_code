@@ -1,0 +1,171 @@
+<odoo>
+
+    <!-- startr tree viwe for pationt -->
+    <record model="ir.ui.view" id="accounting_view_id">
+        <field name="name">napata.accounting.form</field>
+        <field name="model">napata.accounting</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="pationt" create="false" edit="false">
+                <link rel="stylesheet" href="/napata_accounting/static/src/scss/style.css"/>
+                <header>
+                    <button class="oe_highlight" type="action" string="pay Method " states="draft"
+                            name="%(napata_accounting.action_membership_invoice_view)d"
+                            context="{'default_student_ids':active_id}"/>
+
+                    <button name="action_done" string="confirm" type="object" states="confirm"/>
+                    <button name="print_account_report" string="Print Report" type="object" states="done"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <!--       header     -->
+                    <div class="row navbar navbar-expand-sm  navbar-dark hedar nav">
+                        <div class="col-sm">
+                            <img src="napata_register/static/description/logo.jpeg" class="img-thumbnail"
+                                 alt="Ben &amp; Jerry's"/>
+                        </div>
+
+                        <div class="col-sm   text-center">
+                            <h1>
+                                <p>
+                                    <spane>كليــــــــــــــــة نبتـــــــــة</spane>
+                                    <br/>
+                                    <spane>NAPATA COLLEGE</spane>
+                                </p>
+                            </h1>
+                        </div>
+                        <div class="col-sm info">
+                            <h3>
+                                <p>
+                                    <spane>Alreydh-Khartoum/Sudan</spane>
+                                    <br/>
+                                    <spane>Tel :+249112203333</spane>
+                                    <br/>
+                                    <spane>Email:info@napata.net</spane>
+                                    <br/>
+                                    <spane>www:napata.net</spane>
+                                </p>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="text-center office">
+                        <h2>
+                            مكتب الحسابات
+                        </h2>
+                    </div>
+                    <group col="2">
+                        <field name="year" readonly="1"/>
+                    </group>
+                    <div class="container ">
+                        <h3>Mr. / Respected Financial Manager</h3>
+                    </div>
+                    <!--                    -->
+                      <group col="4" string=" Student Full Name " >
+                        <field name="first" required="True"/>
+                        <field name="second" required="True"/>
+                        <field name="third" required="True"/>
+                        <field name="last" required="True"/>
+                    </group>
+                    <group col="4" colspan='2' string="Academic Information ">
+                        <field name="college" readonly="1"/>
+                        <field name="program" readonly="1"/>
+                        <field name="level" readonly="1"/>
+                        <field name="semester" readonly="1"/>
+                    </group>
+                    <!--                    -->
+
+                    <group attrs="{'invisible': [('presentation', '=', True)]}">
+                        <field name="presentation_type" attrs="{'required': [('presentation', '!=', True)]}"
+
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True}"/>
+
+
+                    </group>
+
+                    <group col="4" colspan="2" string="Financial Details">
+                        <field name="the_fees" force_save="1" readonly="1" class="the_fees"/>
+                        <field name="money_type" force_save="1" readonly="1"/>
+                    </group>
+                    <group colspan="4" col="4">
+                        <field name="the_amount" readonly="True" force_save="1" class="fees"/>
+                        <field name="about" readonly="True" force_save="1" class="about"/>
+                    </group>
+                    <group col="4" colspan="2">
+
+                        <group>
+                            <field name="receipt_code" readonly="1"/>
+                        </group>
+                    </group>
+                    <hr/>
+                    <group>
+                        <field name="admission_ids" readonly="1"/>
+                        <field name="register_office" invisible="1"/>
+                        <field name="presentation" invisible="1"/>
+                        <field name="type_of_fees" invisible="1"/>
+                        <field name="is_managemanent" force_save="1" invisible="1"/>
+                    </group>
+                </sheet>
+
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+
+
+            </form>
+        </field>
+    </record>
+
+
+    <!-- end  tree viwe for pationt -->
+
+
+    <!-- start form viwe from pation Info -->
+    <record model="ir.ui.view" id="accounting_tree_view">
+        <field name="name">accounting.tree</field>
+        <field name="model">napata.accounting</field>
+        <field name="arch" type="xml">
+            <tree string="pationt tree" decoration-danger="state == 'draft'" decoration-primary="state == 'confirm'"
+                  decoration-success="state == 'done'">
+                <field name="name"/>
+                <field name="presentation_type"/>
+                <field name="the_fees"/>
+                <field name="money_type"/>
+                <field name="receipt_code"/>
+                <field name="year"/>
+                <field name="state"/>
+
+
+            </tree>
+        </field>
+    </record>
+    <!--    search viwe-->
+    <record model="ir.ui.view" id="account_search_view">
+        <field name="name">accounting.search</field>
+        <field name="model">napata.accounting</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="receipt_code"/>
+
+            </search>
+        </field>
+    </record>
+    <!--    -->
+    <!-- end of form viwe from pation Info -->
+
+    <record model="ir.actions.act_window" id="collage_list_action">
+        <field name="name">accounting</field>
+        <field name="res_model">napata.accounting</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="context">{'delete': False,'create': False}</field> -->
+
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first admission
+            </p>
+        </field>
+    </record>
+
+</odoo>

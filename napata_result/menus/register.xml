@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="menu_napata_register_root" name="Registrar's office"
+                  parent="menu_na_napata_root"
+                  sequence="30"/>
+        <!--registr-->
+        <menuitem id="menu_napata_register" name="Student Register"
+                  parent="menu_napata_register_root"
+                  sequence="10" action="registrar_office_list_action" groups="register_super_manager_access_group"/>
+
+        <!--        freezing-->
+        <menuitem id="menu_napata_freezing" name="Freezing Request"
+                  parent="menu_napata_register_root"
+                  sequence="20" action="registrar_office_list_action" groups="register_super_manager_access_group"/>
+        <!--        resignation request-->
+        <menuitem id="menu_napata_resignation" name="Resignation Request"
+                  parent="menu_napata_register_root"
+                  sequence="25" action="registrar_office_list_action" groups="register_super_manager_access_group"/>
+
+        <!--        Transfer from another program-->
+        <menuitem id="menu_napata_transfer_program" name="Transfer From Program"
+                  parent="menu_napata_register_root"
+                  sequence="30" action="registrar_office_list_action" groups="register_super_manager_access_group"/>
+        <!--        Transfer from another university-->
+        <menuitem id="menu_napata_transfer_university" name="Transfer From university"
+                  parent="menu_napata_register_root"
+                  sequence="40" action="registrar_office_list_action" groups="register_super_manager_access_group"/>
+        <!--Model of degree holders-->
+        <menuitem id="menu_napata_degree_holders" name="Model of degree holders"
+                  parent="menu_napata_register_root"
+                  sequence="50" action="registrar_office_list_action" groups="register_super_manager_access_group"/>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="custom_napata_clinic_external_layout_header">
+   <t t-call="web.html_container">
+
+    <!-- Start header     -->
+    <div class="header">
+
+      <div class="row">
+
+        <div class="col-4 text-center">
+          <img class="img" src="napata_clinic/static/img/logo.jpeg"  style="height:100px;width:220px" /> 
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+                <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+            </div>
+       </div>
+
+       <div class="col-4 text-center">
+            <div class="col-sm   text-center">
+              <div>Alreydh-Khartoum/Sudan</div>
+              <div>Tel :+249112203333</div>
+              <div>Email:info@napata.net</div>
+              <div>www:napata.net</div>
+          </div>
+       </div>
+     </div>
+     
+    </div>
+    <!-- End HEADER -->
+
+    <div class="row zero_min_height">
+          <div class="col-xs-12">
+              <div style="border-bottom: 1px solid black;"/>
+          </div>
+      </div>
+
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+
+                      .column {
+                        float: left;
+                        width: 50%;
+                      }
+
+                      /* Clear floats after the columns */
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+
+                    <center>
+                      <div class="col-4">
+                        <div class="panel-body" style="border: 1px solid black">
+                           <h1 class="test-results-header">
+       
+                            <span>تقرير طبي</span>
+                            
+                           </h1>
+                         </div>
+                      </div> 
+                    </center>
+                     <p style="text-align:left;">
+                          <span t-esc="doc.patient_id"/>
+                          <span> : </span>
+                          <span>رقم المتابعة </span>
+                            
+                      <span style="float:right;">
+                           <span>التاريخ </span>
+                           <span t-esc="time.strftime('%Y/%m/%d')"/>
+                      </span>
+                    </p>
+
+                    <!-- Student info -->
+                    <div id="textbox">
+                    <p class="alignleft"> <span>Student Name:</span></p>
+                    <p class="aligncenter"> <span t-esc="doc.name"/> </p>
+                    <p class="alignright"><span>اسم الطالب / الطالبة</span></p>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <!-- End Student info -->
+
+                    <br></br>
+                    <br></br>
+                    <!-- ALL THE Assaments  -->
+                    <br></br>
+                    <br></br>
+
+                     <center>
+                      <div class="col-4">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Nursing Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+
+                     <!-- Nursing Data -->
+                     <div class="row">
+                        <div class="column"><strong>Diagnosis:</strong></div>
+                        <div class="column"><strong>Assessment:</strong></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column"><span t-esc="doc.nursing_diagonis"/></div>
+                        <div class="column"><span t-esc="doc.nursing_assessment"/></div>
+                      </div>
+
+                    <br></br>
+                    <br></br>
+
+                      <center>
+                      <div class="col-4">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Eye Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+                    
+                     <!-- Eye Data -->
+                     <div class="row">
+                        <div class="column"><strong>Diagnosis:</strong></div>
+                        <div class="column"><strong>Assessment:</strong></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column"><span t-esc="doc.eye_diagonis"/></div>
+                        <div class="column"><span t-esc="doc.eye_assessment"/></div>
+                      </div>
+
+                    <br></br>
+                    <br></br>
+
+
+                      <center>
+                      <div class="col-4">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Mouth Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+                    
+                     <!-- Mouth Data -->
+                     <div class="row">
+                        <div class="column"><strong>Diagnosis:</strong></div>
+                        <div class="column"><strong>Assessment:</strong></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column"><span t-esc="doc.mouth_diagonis"/></div>
+                        <div class="column"><span t-esc="doc.mouth_assessment"/></div>
+                      </div>
+
+                      <br></br>
+                      <br></br>
+
+                      <center>
+                      <div class="col-4">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Physical Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+                    
+                     <!-- Physical Data -->
+                     <div class="row">
+                        <div class="column"><strong>Diagnosis:</strong></div>
+                        <div class="column"><strong>Assessment:</strong></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column"><span t-esc="doc.physical_diagonis"/></div>
+                        <div class="column"><span t-esc="doc.physical_assessment"/></div>
+                      </div>
+
+                      <br></br>
+                      <br></br>
+
+                      <center>
+                      <div class="col-4">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Laboratory Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+                    
+                     <!-- Laboratory Data -->
+                     <div class="row">
+                        <div class="column"><strong>Diagnosis:</strong></div>
+                        <div class="column"><strong>Assessment:</strong></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column"><span t-esc="doc.laboratory_diagonis"/></div>
+                        <div class="column"><span t-esc="doc.laboratory_assessment"/></div>
+                      </div>
+
+                    <br></br>
+                    <br></br>
+
+                      <center>
+                      <div class="col-4">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Assessment Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+                    
+                     <!-- Assessment Data -->
+                     <div class="row">
+                        <div class="column"><strong>Assessment:</strong></div>
+                        <div class="column"><strong>Result:</strong></div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column"><span t-esc="doc.assess"/></div>
+                        <div class="column"><span t-esc="doc.result"/></div>
+                      </div>
+
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <span>اسم الطبيب </span>
+                    <span>:</span>
+                      <span t-esc="doc.doctor"/>
+                      <br></br>
+                    <span>
+                      Signature .......................
+                      <span class="pull-right">التوقيع</span>
+                    </span>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div class="row zero_min_height">
+                        <div class="col-xs-12">
+                            <div style="border-bottom: 1px solid black;"/>
+                        </div>
+                    </div>
+
+                    <div>
+                      <span>Print By:</span>
+                      <span t-esc="user.name"/>
+                      <br></br>
+                      <span>Print On: </span>
+                      <span t-esc="time.strftime('%d/%b/%Y %I:%M:%S %p')"/>
+                      <br></br>
+                    </div>   
+
+                  </div>
+                  <!-- End Page -->
+
+
+            </t>
+  </t>
+
+</template>
+
+
+<!-- Another Layout report -->
+<template id="report_napata_assessment_bak">
+      <t t-call="napata_clinic.custom_napata_clinic_external_layout_header"/>
+</template>
+
+
+<!-- My New Template -->
+<template id="report_napata_assessment">
+    <t t-call="web.html_container">
+        <div class="header" style="font-family: 'Al-Jazeera-Arabic Regular';">
+
+          <div class="row">
+
+            <div class="col-4 text-center">
+              <img class="img" src="napata_clinic/static/img/logo.jpeg"  style="height:100px;width:220px" /> 
+           </div>
+
+           <div class="col-4 text-center">
+                <div class="col-sm   text-center">
+                    <div><strong><h4>كليــــــــــــــــة نبتـــــــــة</h4></strong></div>
+                    <div><strong><h4>NAPATA COLLEGE</h4></strong></div>
+                </div>
+           </div>
+
+           <div class="col-4 text-center">
+                <div class="col-sm   text-center">
+                  <div>Alreydh-Khartoum/Sudan</div>
+                  <div>Tel :+249112203333</div>
+                  <div>Email:info@napata.net</div>
+                  <div>www:napata.net</div>
+              </div>
+           </div>
+         </div>
+
+         <br></br>
+         <div>
+          <!-- Solid Line -->
+            <div  class="col-12" style="border-bottom: 1px solid black;"/>
+         </div>
+     
+        </div>
+       <!-- End HEADER -->
+
+        <div class="article">
+            <!-- My Data -->
+    <t t-foreach="docs" t-as="doc">
+            <!-- <t t-call="web.external_layout"> -->
+            <div class="page">
+                    <style type="text/css">
+                      @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+
+                      @font-face {
+                        font-family: 'Al-Jazeera-Arabic Regular';
+                        src: url('napata_clinic/static/fonts/Al-Jazeera-ArabicRegular.ttf') format('ttf');
+                      }
+
+                      body{
+                        font-family: 'Al-Jazeera-Arabic Regular', sans-serif !important;
+                        font-size: 20px;
+                      }
+
+
+                      .dotted-line{
+                        border: 1px dotted black;
+                      }
+
+                      .alignleft {
+                        float: left;
+                        width:33.33333%;
+                        text-align:left;
+                      }
+                      .aligncenter {
+                        float: left;
+                        width:33.33333%;
+                        text-align:center;
+                      }
+                      .alignright {
+                       float: left;
+                       width:33.33333%;
+                       text-align:right;
+                      }​
+                    </style>
+
+                    <center>
+                      <div class="col-12">
+                        <div class="panel-body" style="border: 1px solid black">
+                           <h1 class="test-results-header">
+       
+                            <span>تقرير طبي</span>
+                            
+                           </h1>
+                         </div>
+                      </div> 
+                    </center>
+
+                    <br></br>
+                  
+                    <style type="text-align:left"/>
+                          <span t-esc="doc.patient_id"/>
+                          <span> : </span>
+                          <span>رقم المتابعة </span>
+                            
+                      <span style="float:right;">
+                           <span>التاريخ </span>
+                           <span t-esc="time.strftime('%Y/%m/%d')"/>
+                      </span>
+
+                      <br></br>
+                      <br></br>
+
+                    <!-- Student info -->
+                    <div id="textbox">
+                    <p class="alignleft"> <span>Student Name:</span></p>
+                    <p class="aligncenter"> <span t-esc="doc.name"/> </p>
+                    <p class="alignright"><span>اسم الطالب / الطالبة</span></p>
+                    </div>
+                    <div style="clear: both;"></div>
+
+                    <div id="textbox">
+                    <p class="alignleft"> <span>Age:</span></p>
+                    <p class="aligncenter"> <span t-esc="get_age(doc.dob)"/> </p>
+                    <p class="alignright"><span>العمر</span></p>
+                    </div>
+                    <div style="clear: both;"></div>
+
+                    <div id="textbox">
+                    <p class="alignleft"> <span>Gender:</span></p>
+                    <p class="aligncenter"> <span t-esc="doc.gender"/> </p>
+                    <p class="alignright"><span>النوع</span></p>
+                    </div>
+                    <div style="clear: both;"></div>
+
+                    <div id="textbox">
+                    <p class="alignleft"> <span>Program:</span></p>
+                    <p class="aligncenter"> <span t-esc="doc.program"/> </p>
+                    <p class="alignright"><span>البرنامج</span></p>
+                    </div>
+                    <div style="clear: both;"></div>
+
+
+                    <!-- End Student info -->
+
+                    <br></br>
+                    <br></br>
+                    <!-- ALL THE Assaments  -->
+                     <center>
+                      <div class="col-12">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Nursing Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+
+                     <!-- Nursing Data -->
+                     <div class="container  px-2 py-2"> 
+                          <div class="row"> 
+                              <div class="col-6 text-center"><strong>Diagnosis:</strong></div> 
+                              <div class="col-6 text-center"><strong>Assessment:</strong></div> 
+                          </div> 
+                      </div>
+
+                      <div class="container px-2 py-2"> 
+                          <div class="row">
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.nursing_diagonis"/></p></div>
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.nursing_assessment"/></p></div>
+
+                          </div> 
+                      </div>
+
+                    <br></br>
+
+                      <center>
+                      <div class="col-12">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Eye Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+                    
+                     <!-- Eye Data -->
+                    <div class="container  px-2 py-2"> 
+                          <div class="row"> 
+                              <div class="col-6 text-center"><strong>Diagnosis:</strong></div> 
+                              <div class="col-6 text-center"><strong>Assessment:</strong></div> 
+                          </div> 
+                      </div>
+
+                      <div class="container px-2 py-2"> 
+                          <div class="row">
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.eye_diagonis"/></p></div>
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.eye_assessment"/></p></div>
+
+                          </div> 
+                      </div>
+
+                      <br></br>
+                      <center>
+                      <div class="col-12">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Mouth Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+                    
+                     <!-- Mouth Data -->
+                     <div class="container  px-2 py-2"> 
+                          <div class="row"> 
+                              <div class="col-6 text-center"><strong>Diagnosis:</strong></div> 
+                              <div class="col-6 text-center"><strong>Assessment:</strong></div> 
+                          </div> 
+                      </div>
+
+                      <div class="container px-2 py-2"> 
+                          <div class="row">
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.mouth_diagonis"/></p></div>
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.mouth_assessment"/></p></div>
+
+                          </div> 
+                      </div>
+
+                      <br></br>
+
+                      <center>
+                      <div class="col-12">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Physical Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+                    
+                     <!-- Physical Data -->
+                     <div class="container  px-2 py-2"> 
+                          <div class="row"> 
+                              <div class="col-6 text-center"><strong>Diagnosis:</strong></div> 
+                              <div class="col-6 text-center"><strong>Assessment:</strong></div> 
+                          </div> 
+                      </div>
+
+                      <div class="container px-2 py-2"> 
+                          <div class="row">
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.physical_diagonis"/></p></div>
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.physical_assessment"/></p></div>
+
+                          </div> 
+                      </div>
+
+                      <br></br>
+
+                      <center>
+                      <div class="col-12">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Laboratory Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+                    
+                     <!-- Laboratory Data -->
+                     <div class="container  px-2 py-2"> 
+                          <div class="row"> 
+                              <div class="col-6 text-center"><strong>Diagnosis:</strong></div> 
+                              <div class="col-6 text-center"><strong>Assessment:</strong></div> 
+                          </div> 
+                      </div>
+
+                      <div class="container px-2 py-2"> 
+                          <div class="row">
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.laboratory_diagonis"/></p></div>
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.laboratory_assessment"/></p></div>
+
+                          </div> 
+                      </div>
+
+                    <br></br>
+
+                      <center>
+                      <div class="col-12">
+                        <div class="panel-body" style="border: 1px dotted black">
+                           <h4 class="test-results-header">
+                            <span>Assessment Results</span>
+                           </h4>
+                         </div>
+                      </div> 
+                    </center>
+                    
+                     <!-- Assessment Data -->
+                     <div class="container  px-2 py-2"> 
+                          <div class="row"> 
+                              <div class="col-6 text-center"><strong>Assessment:</strong></div> 
+                              <div class="col-6 text-center"><strong>Result:</strong></div> 
+                          </div> 
+                      </div>
+
+                      <div class="container px-2 py-2"> 
+                          <div class="row">
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.assess"/></p></div>
+
+                              <div class="col-6 text-center"><p><span t-esc="doc.result"/></p></div>
+
+                          </div> 
+                      </div>
+
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <span>اسم الطبيب </span>
+                    <span>:</span>
+                      <span t-esc="doc.doctor"/>
+                      <br></br>
+                    <span>
+                      Signature .......................
+                      <span>التوقيع</span>
+                    </span>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+
+                    <!-- Solid Line -->
+                    <div  class="col-12" style="border-bottom: 1px solid black;"/>
+
+                    <div>
+                      <span>Print By:</span>
+                      <span t-esc="user.name"/>
+                      <br></br>
+                      <span>Print On: </span>
+                      <span t-esc="time.strftime('%d/%b/%Y %I:%M:%S %p')"/>
+                      <br></br>
+                    </div>   
+
+                  </div>
+                  <!-- End My Data -->
+                </t>
+        </div>
+
+        <div class="footer">
+          <div class="row text-center" style="border-top: 1px solid black;"/>
+          <br></br>
+          <br></br>
+          <center>
+            <div class="text-center">
+             صفحة <span class="page"/> من <span
+              class="topage"/>
+            </div>
+          </center>
+        </div>
+
+        
+    </t>
+</template>
+
+</odoo>
+
+<!-- 
+<div class="footer">
+            <div class="row text-center" style="border-top: 1px solid black;">
+                <div class="col col-3 offset-9 text-right">
+                    <ul class="list-inline mt-2">
+                        <li class="list-inline-item">Page:</li>
+                        <li class="list-inline-item">
+                            <span class="page"/>
+                        </li>
+                        <li class="list-inline-item">/</li>
+                        <li class="list-inline-item">
+                            <span class="topage"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ -->

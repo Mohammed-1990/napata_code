@@ -1,0 +1,408 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* napata_accounting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-02 09:06+0000\n"
+"PO-Revision-Date: 2021-03-02 09:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__second
+msgid "\tSecond Name"
+msgstr "الاسم الثاني"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__the_fees
+msgid " The Fees"
+msgstr " مبلغ "
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__type_of_fees
+msgid " Type Of Fees"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.ui.menu,name:napata_accounting.menu_na_accounting_root
+#: model:ir.ui.menu,name:napata_accounting.menu_na_accounting_sting_root
+msgid "Accounting "
+msgstr " الحسابات"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "Alreydh-Khartoum/Sudan"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields.selection,name:napata_accounting.selection__napata_accounting__money_type__bank
+msgid "Bank"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields.selection,name:napata_accounting.selection__payment_method__money_type__bank
+msgid "Bank check"
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "Ben & Jerry's"
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.view_membership_invoice_view
+msgid "Cancel"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields.selection,name:napata_accounting.selection__napata_accounting__money_type__cash
+#: model:ir.model.fields.selection,name:napata_accounting.selection__payment_method__money_type__cash
+msgid "Cash"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields.selection,name:napata_accounting.selection__napata_accounting__state__confirm
+#: model_terms:ir.ui.view,arch_db:napata_accounting.view_membership_invoice_view
+msgid "Confirm"
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.actions.act_window,help:napata_accounting.collage_list_action
+msgid "Create the first admission"
+msgstr "قم باستلام اول مبلغ  مالي "
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__create_uid
+#: model:ir.model.fields,field_description:napata_accounting.field_payment_method__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__create_date
+#: model:ir.model.fields,field_description:napata_accounting.field_payment_method__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__year
+msgid "Date "
+msgstr "التاريخ"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__display_name
+#: model:ir.model.fields,field_description:napata_accounting.field_payment_method__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields.selection,name:napata_accounting.selection__napata_accounting__state__draft
+msgid "Draft"
+msgstr "الحسابات"
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "Email:info@napata.net"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__first
+msgid "First Name"
+msgstr "الاسم الاول"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__id
+#: model:ir.model.fields,field_description:napata_accounting.field_payment_method__id
+msgid "ID"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,help:napata_accounting.field_napata_accounting__message_needaction
+#: model:ir.model.fields,help:napata_accounting.field_napata_accounting__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,help:napata_accounting.field_napata_accounting__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.actions.act_window,name:napata_accounting.action_membership_invoice_view
+msgid "Join Membership"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting____last_update
+#: model:ir.model.fields,field_description:napata_accounting.field_payment_method____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__last
+msgid "Last Name"
+msgstr "الاسم الاخير"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__write_uid
+#: model:ir.model.fields,field_description:napata_accounting.field_payment_method__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__write_date
+#: model:ir.model.fields,field_description:napata_accounting.field_payment_method__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model,name:napata_accounting.model_payment_method
+#: model_terms:ir.ui.view,arch_db:napata_accounting.view_membership_invoice_view
+msgid "Membership Invoice"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__money_type
+#: model:ir.model.fields,field_description:napata_accounting.field_payment_method__money_type
+msgid "Method Of Payment"
+msgstr "طريقة الدفع"
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "NAPATA COLLEGE"
+msgstr ""
+
+#. module: napata_accounting
+#: code:addons/napata_accounting/models/accounting.py:0
+#: code:addons/napata_accounting/models/accounting.py:0
+#: code:addons/napata_accounting/models/accounting.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,help:napata_accounting.field_napata_accounting__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,help:napata_accounting.field_napata_accounting__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,help:napata_accounting.field_napata_accounting__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__presentation_type
+msgid "Presntaion Type"
+msgstr "نوع التقديم"
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "Print Report"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__receipt_code
+msgid "Receipt Number"
+msgstr "رقم  الايصال"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__semester
+msgid "Semester"
+msgstr "الفصل الدراسي :"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_payment_method__student_ids
+msgid "Student Name"
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "Tel :+249112203333"
+msgstr ""
+
+#. module: napata_accounting
+#: code:addons/napata_accounting/models/accounting.py:0
+#, python-format
+msgid "The value of student name must only letters"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__third
+msgid "Third Name"
+msgstr "الاسم الثالث"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__about
+msgid "about"
+msgstr "وذلك عبارة عن :"
+
+#. module: napata_accounting
+#: model:ir.actions.act_window,name:napata_accounting.collage_list_action
+msgid "accounting"
+msgstr "الحسابات"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__admission_ids
+msgid "admission Name"
+msgstr "اسم المتحصل"
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "confirm"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields.selection,name:napata_accounting.selection__napata_accounting__state__done
+msgid "done"
+msgstr "تم عملية الدفع"
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__name
+msgid "full name"
+msgstr "اسم الطالب رباعي"
+
+#. module: napata_accounting
+#: model:ir.model,name:napata_accounting.model_napata_accounting
+msgid "information accounting"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__program
+msgid "oprogram"
+msgstr "البرنامج :"
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "pationt"
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_tree_view
+msgid "pationt tree"
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "pay Method"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__the_amount
+msgid "the Amount"
+msgstr "مبلغا قدره "
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__level
+msgid "the level"
+msgstr " السنة الدراسية\t :"
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "www:napata.net"
+msgstr ""
+
+#. module: napata_accounting
+#: model:ir.model.fields,field_description:napata_accounting.field_napata_accounting__presentation
+msgid "yes "
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "السلام عليكم ورحمة الله وبركاتة"
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "السيد / المدير المالي...........................المحترم"
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "كليــــــــــــــــة نبتـــــــــة"
+msgstr ""
+
+#. module: napata_accounting
+#: model_terms:ir.ui.view,arch_db:napata_accounting.accounting_view_id
+msgid "مكتب الحسابات"
+msgstr ""

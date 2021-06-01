@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_account_report_view" model="ir.ui.view">
+            <field name="name">account.report.view.form</field>
+            <field name="model">account.report</field>
+            <field name="arch" type="xml">
+                <form string="Account Report">
+                    <group>
+                    <field name="student_ids" />
+                    <field name="program" />
+                    <field name="presntaion_type" />
+                    <field name="date" />
+                    <field name="money_type" />
+                    </group>
+                    <footer>
+                        <button name="print_account_report" 
+                          string="Confirm" type="object" class="alert alert-success"/>
+                        <button string="Cancel" class="alert alert-danger" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="account_report_view" model="ir.actions.act_window">
+            <field name="name">Report</field>
+            <field name="res_model">account.report</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_account_report_view"/>
+            <field name="target">new</field>
+        </record>
+
+</odoo>

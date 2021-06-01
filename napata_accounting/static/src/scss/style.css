@@ -1,0 +1,32 @@
+.nav{border-radius: 10px;
+    background-color: #187ebf;   color: white;
+}
+.img-thumbnail{
+   height:80px;width:120px
+}
+.info{
+text-align:right
+}
+ .info p {
+    color: white; text-align: left;margin-left: 116px;
+ }
+ .office{
+    padding-bottom: 35px; padding-top: 40px;     color: black;
+ }
+ .container p{
+    padding-top:10px;padding-bottom:10px;
+ }
+ .fees,.the_fees,.about{
+padding: 5px;
+color:white ;
+font-size:large;
+ border-radius:2px ;
+ }
+  .about{
+  background-color:#7c1a1a  ;
+   }
+
+.fees,.the_fees{
+background-color: #13397f ;
+   }
+

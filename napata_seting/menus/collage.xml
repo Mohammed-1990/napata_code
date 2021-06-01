@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_na_sting_root" name="Seting" groups="setting_manager_access_group,setting_user_access_group"
+                  sequence="10"
+                  web_icon="openeducat_admission,static/description/icon.png"/>
+
+        <menuitem id="menu_na_collage_root" name="College"
+                  parent="menu_na_sting_root"
+                  sequence="10"/>
+
+        <menuitem id="napata_collage_menu" name="College"
+                  parent="menu_na_collage_root"
+                  action="collage_list_action"/>
+
+        <menuitem id="napata_program_menu" name="Program"
+                  parent="menu_na_collage_root"
+                  action="program_list_action"/>
+
+        <menuitem id="napata_specialization_menu" name="Specialization"
+                  parent="menu_na_collage_root"
+                  action="specialization_list_action"/>
+
+
+
+
+    </data>
+</odoo>

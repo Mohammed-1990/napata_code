@@ -1,0 +1,238 @@
+<odoo>
+
+    <!-- startr tree viwe for pationt -->
+    <record model="ir.ui.view" id="registrar_office_view_id">
+        <field name="name">napata.Registrar'sOffice.form</field>
+        <field name="model">napata.register</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="pationt">
+                <header>
+                    <!--                    -->
+                    <div class="oe_button_box" name="button_box">
+                        <button type="object" name="open_studant_resulit
+"
+                                class="oe_stat_button" icon="fa-book">
+                        </button>
+                    </div>
+                    <!--                    -->
+                    <button class="oe_highlight" type="action" name="%(napata_register.create_register_wizard)d"
+                            context="{'default_student_ids':active_id}" string="create register"/>
+
+                    <!--                    clinic-->
+                    <button name="send_student_clinic" string="Send To Clinic" type="object" class="bg-danger"
+                            attrs="{'invisible': [('is_clinic', '=',True)]}"     confirm="Are you sure you want to do this?"/>
+                    <!-- Clinic -->
+
+                </header>
+                <sheet>
+                    <!--       header     -->
+                    <div class="row navbar navbar-expand-sm  navbar-dark" style="border-radius: 10px;
+    background-color: #187ebf;   color: white;">
+                        <div class="col-sm">
+                            <img src="napata_register/static/description/logo.jpeg" class="img-thumbnail"
+                                 style="height:80px;width:120px" alt="Ben &amp; Jerry's"/>
+                        </div>
+
+                        <div class="col-sm   text-center">
+                            <h1>
+                                <p>
+                                    <spane>كليــــــــــــــــة نبتـــــــــة</spane>
+                                    <br/>
+                                    <spane>NAPATA COLLEGE</spane>
+                                </p>
+                            </h1>
+                        </div>
+                        <div class="col-sm" style="  text-align:right">
+                            <h3>
+                                <p style="color: white; text-align: left;margin-left: 116px;">
+                                    <spane>Alreydh-Khartoum/Sudan</spane>
+                                    <br/>
+                                    <spane>Tel :+249112203333</spane>
+                                    <br/>
+                                    <spane>Email:info@napata.net</spane>
+                                    <br/>
+                                    <spane>www:napata.net</spane>
+                                </p>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>كلية نبتة -مكتب المسجل</h2>
+
+                    </div>
+
+
+                    <group>
+                        <field name="year" readonly="1"/>
+
+                    </group>
+
+                    <!--             besic student informatton -->
+                    <group col="4" colspan="2" string="Student  Name">
+                        <field name="first_name" placeholder="First " readonly="1"/>
+                        <field name="second_name" placeholder="Second " readonly="1"/>
+                        <field name="third_name" placeholder="Third " readonly="1"/>
+                        <field name="forth_name" placeholder="Forth " readonly="1"/>
+                    </group>
+                    <group colspan="2" col="4" string="Study Information">
+                        <field name="accept_year"/>
+                        <field name="college_id"/>
+                        <field name="program"/>
+                        <field name="level"/>
+                        <field name="semester"/>
+                        <field name="batch"/>
+                        <field name="academic_position"/>
+                    </group>
+
+                    <group colspan="2" col="6" string="Financial information">
+                        <field name="certificate_type"/>
+                        <field name="total_fees"
+                               style="background-color: #13397f  ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                        <field name="register_fees"
+                               style="background-color: #13397f ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+
+                    </group>
+                    <group colspan="2" col="4">
+
+                        <field name="discount"/>
+                        <field name="discount_fees"/>
+                    </group>
+                    <group colspan="2" col="4">
+
+                        <field name="total_received"
+                               style="background-color:#14847e ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                        <field name="Remaining_amount"
+                               style="background-color:#7c1a1a ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                        <field name="is_first_installment" style="background-color:red; " invisible="1"/>
+
+                    </group>
+
+                    <notebook colspan="4">
+                        <page name="Fees_information" string="Fees Collection Details">
+                            <field name="fee_paid_id">
+                                <tree>
+                                    <field name="level"/>
+                                    <field name="semester"/>
+                                    <field name="type"/>
+                                    <field name="amount"/>
+                                    <field name="the_amount"/>
+                                    <field name="receipt_number"/>
+                                    <field name="paid_date"/>
+                                </tree>
+
+                            </field>
+                        </page>
+
+                        <page name="personal_information" string="Personal Information">
+
+                            <group col="4" colspan="2">
+                                <field name="address" readonly="1"/>
+                                <field name="nationality" readonly="1"/>
+                                <field name="type_id" readonly="1"/>
+                                <field name="number_ids" readonly="1"/>
+                                <field name="gender" readonly="1"/>
+                                <field name="religion" readonly="1"/>
+                                <field name="marital" readonly="1"/>
+                            </group>
+                            <!--            Contact Information -->
+                            <separator string="Contact Information"/>
+                            <group col="4" colspan="2">
+                                <field name="states" readonly="1"/>
+                                <field name="local" readonly="1"/>
+                                <field name="phone1" readonly="1"/>
+                                <field name="phone2" readonly="1"/>
+                                <field name="email" readonly="1"/>
+                            </group>
+                            <separator string=" Parent Information "/>
+                            <group>
+                                <field name="provider_name" readonly="1"/>
+                            </group>
+                            <group col="4" colspan="2">
+                                <field name="parent" readonly="1"/>
+                                <field name="fother_adress" readonly="1"/>
+                                <field name="phone3" readonly="1"/>
+                                <field name="job" readonly="1"/>
+                            </group>
+                        </page>
+                        <page name="educational" string="Educational Information">
+                            <group col="4" colspan="2">
+                                <field name="school_name" readonly="1"/>
+                                <field name="cource" readonly="1"/>
+                                <field name="accept_type"/>
+                                <field name="siting_number" readonly="1"/>
+                                <field name="ratio" readonly="1"/>
+                                <field name="form_number"/>
+                            </group>
+                            <separator string="Scholastic Desires "/>
+                            <group>
+                                <field name="program" readonly="1"/>
+                            </group>
+                            <group>
+                                <field name="athoer_desires" readonly="1"/>
+                            </group>
+                        </page>
+                        <page string=" medical report">
+                            <group colspan="2" col="4" string="Doctor's decision">
+                                <field name="is_clinic"/>
+                                <field name="medical_report"/>
+                                <field name="result"/>
+                            </group>
+                            <group colspan="2" col="4">
+                                <field name="doctor_name"/>
+                                <field name="doctor_date"/>
+                            </group>
+                            <group string="Program's  Coordinator">
+                                <field name="coordinator_report"/>
+                            </group>
+                            <group colspan="2" col="4">
+                                <field name="coordinator_name"/>
+                                <field name="coordinator_date"/>
+                            </group>
+                        </page>
+
+
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <!--  end  tree viwe for pationt  -->
+
+    <!-- end  tree viwe for pationt -->
+
+
+    <!-- start form viwe from pation Info -->
+    <record model="ir.ui.view" id="registrar_office_tree_view">
+        <field name="name">Registrar'sOffice.tree</field>
+        <field name="model">napata.register</field>
+        <field name="arch" type="xml">
+            <tree string="Registrar's Office tree">
+                <field name="name"/>
+                <field name="program"/>
+                <field name="level"/>
+                <field name="semester"/>
+                <field name="batch"/>
+                <field name="academic_position"/>
+                <field name="year"/>
+            </tree>
+        </field>
+    </record>
+    <!-- end of form viwe from pation Info -->
+
+    <record model="ir.actions.act_window" id="registrar_office_list_action">
+        <field name="name">Registrar's Office</field>
+        <field name="res_model">napata.register</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the firstRegistrar's Office
+            </p>
+        </field>
+    </record>
+
+</odoo>

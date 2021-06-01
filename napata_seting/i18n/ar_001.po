@@ -1,0 +1,497 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* napata_seting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-02 11:25+0000\n"
+"PO-Revision-Date: 2021-03-02 11:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_program
+msgid " department name "
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_job
+msgid " the table containt job name "
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_acdemic__name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_semester__academic_id
+msgid "Academic level"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.feestype_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.napata_collage_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.parent_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.preTyep_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.program_view_id
+msgid "Alreydh-Khartoum/Sudan"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.feestype_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.napata_collage_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.parent_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.preTyep_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.program_view_id
+msgid "Ben & Jerry's"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_program__code
+msgid "Code"
+msgstr "الرمز"
+
+#. module: napata_seting
+#: model:ir.actions.act_window,name:napata_seting.collage_list_action
+msgid "Collage"
+msgstr "الكليات"
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_collage__name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_program__collage_id
+msgid "Collage Name"
+msgstr "اسم الكلية"
+
+#. module: napata_seting
+#: model_terms:ir.actions.act_window,help:napata_seting.collage_list_action
+msgid "Create the first Collage"
+msgstr "انشاء اول كلية"
+
+#. module: napata_seting
+#: model_terms:ir.actions.act_window,help:napata_seting.parent_list_action
+msgid "Create the first Parent"
+msgstr "انشاء اول  ولي"
+
+#. module: napata_seting
+#: model_terms:ir.actions.act_window,help:napata_seting.preTyep_list_action
+msgid "Create the first PresntaionType"
+msgstr "قم باضافة انواع التقديم"
+
+#. module: napata_seting
+#: model_terms:ir.actions.act_window,help:napata_seting.feestype_list_action
+msgid "Create the first fees type"
+msgstr "نوع الرسوم"
+
+#. module: napata_seting
+#: model_terms:ir.actions.act_window,help:napata_seting.program_list_action
+msgid "Create the first programs"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_acdemic__create_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_collage__create_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_feestype__create_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_job__create_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_locals__create_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_nationalities__create_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_parent__create_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_presentationtype__create_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_program__create_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_semester__create_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_state__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_acdemic__create_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_collage__create_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_feestype__create_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_job__create_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_locals__create_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_nationalities__create_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_parent__create_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_presentationtype__create_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_program__create_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_semester__create_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_state__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_acdemic__display_name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_collage__display_name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_feestype__display_name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_job__display_name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_locals__display_name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_nationalities__display_name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_parent__display_name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_presentationtype__display_name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_program__display_name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_semester__display_name
+#: model:ir.model.fields,field_description:napata_seting.field_napata_state__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.feestype_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.napata_collage_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.parent_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.preTyep_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.program_view_id
+msgid "Email:info@napata.net"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.ui.menu,name:napata_seting.napata_feesTyep_menu
+msgid "Fees Tyep"
+msgstr " المصروفات الادارية"
+
+#. module: napata_seting
+#: model:ir.actions.act_window,name:napata_seting.feestype_list_action
+#: model:ir.model.fields,field_description:napata_seting.field_napata_feestype__name
+msgid "Fees Type"
+msgstr "نوع الرسوم"
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_acdemic__id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_collage__id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_feestype__id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_job__id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_locals__id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_nationalities__id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_parent__id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_presentationtype__id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_program__id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_semester__id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_state__id
+msgid "ID"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_acdemic____last_update
+#: model:ir.model.fields,field_description:napata_seting.field_napata_collage____last_update
+#: model:ir.model.fields,field_description:napata_seting.field_napata_feestype____last_update
+#: model:ir.model.fields,field_description:napata_seting.field_napata_job____last_update
+#: model:ir.model.fields,field_description:napata_seting.field_napata_locals____last_update
+#: model:ir.model.fields,field_description:napata_seting.field_napata_nationalities____last_update
+#: model:ir.model.fields,field_description:napata_seting.field_napata_parent____last_update
+#: model:ir.model.fields,field_description:napata_seting.field_napata_presentationtype____last_update
+#: model:ir.model.fields,field_description:napata_seting.field_napata_program____last_update
+#: model:ir.model.fields,field_description:napata_seting.field_napata_semester____last_update
+#: model:ir.model.fields,field_description:napata_seting.field_napata_state____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_acdemic__write_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_collage__write_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_feestype__write_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_job__write_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_locals__write_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_nationalities__write_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_parent__write_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_presentationtype__write_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_program__write_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_semester__write_uid
+#: model:ir.model.fields,field_description:napata_seting.field_napata_state__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_acdemic__write_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_collage__write_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_feestype__write_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_job__write_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_locals__write_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_nationalities__write_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_parent__write_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_presentationtype__write_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_program__write_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_semester__write_date
+#: model:ir.model.fields,field_description:napata_seting.field_napata_state__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_locals__name
+msgid "Local"
+msgstr "المحلية"
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.feestype_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.napata_collage_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.parent_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.preTyep_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.program_view_id
+msgid "NAPATA COLLEGE"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_nationalities__name
+#: model:ir.model.fields,help:napata_seting.field_napata_nationalities__name
+msgid "Nationalities"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.actions.act_window,name:napata_seting.parent_list_action
+msgid "Parent"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.ui.menu,name:napata_seting.menu_na_presentationTyep_root
+msgid "Presentation Tyep"
+msgstr "نوع التقديم"
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_presentationtype__name
+msgid "PresntaionType"
+msgstr "نوع التقديم"
+
+#. module: napata_seting
+#: model:ir.ui.menu,name:napata_seting.napata_program_menu
+msgid "Program"
+msgstr "البرامج"
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_program__name
+msgid "Programs"
+msgstr "البرنامج"
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_semester__name
+msgid "Semester"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_semester
+msgid "Semester name "
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.ui.menu,name:napata_seting.menu_na_sting_root
+msgid "Seting"
+msgstr "الاعدادات"
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_locals__state_id
+#: model:ir.model.fields,field_description:napata_seting.field_napata_state__name
+msgid "State"
+msgstr "الولايات"
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.feestype_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.napata_collage_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.parent_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.preTyep_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.program_view_id
+msgid "Tel :+249112203333"
+msgstr ""
+
+#. module: napata_seting
+#: code:addons/napata_seting/models/fees_type.py:0
+#, python-format
+msgid "The value of  fees Type  must only letters"
+msgstr ""
+
+#. module: napata_seting
+#: code:addons/napata_seting/models/presentationTyep.py:0
+#, python-format
+msgid "The value of Presntaion Type  must only letters"
+msgstr ""
+
+#. module: napata_seting
+#: code:addons/napata_seting/models/program.py:0
+#, python-format
+msgid "The value of college code must be positive number"
+msgstr ""
+
+#. module: napata_seting
+#: code:addons/napata_seting/models/collage.py:0
+#: code:addons/napata_seting/models/program.py:0
+#, python-format
+msgid "The value of college name must only letters"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.ui.menu,name:napata_seting.menu_na_collage_root
+#: model:ir.ui.menu,name:napata_seting.napata_collage_menu
+msgid "collage"
+msgstr "الكليات"
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_collage
+msgid "collage name "
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.collage_tree_view
+msgid "collage tree"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,help:napata_seting.field_napata_collage__name
+msgid "enter Name of Collage"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,help:napata_seting.field_napata_program__name
+msgid "enter Name of Department"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_feestype
+msgid "fees Type"
+msgstr "نوع الرسوم"
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.feestype_view_id
+msgid "fees type"
+msgstr "نوع الرسوم"
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.feestype_tree_view
+msgid "feestype tree"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_job__name
+#: model:ir.ui.menu,name:napata_seting.napata_job_menu
+msgid "job"
+msgstr "الوظائف"
+
+#. module: napata_seting
+#: model:ir.ui.menu,name:napata_seting.menu_na_job_root
+msgid "job Management"
+msgstr " صلة القرابة"
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_locals
+msgid "local "
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.napata_collage_view_id
+msgid "napata Collage"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_nationalities
+msgid "nationalities name "
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model.fields,field_description:napata_seting.field_napata_parent__name
+#: model_terms:ir.ui.view,arch_db:napata_seting.parent_view_id
+msgid "parent"
+msgstr "صلة القرابة"
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.parent_tree_view
+msgid "parent tree"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.actions.act_window,name:napata_seting.preTyep_list_action
+msgid "preTyep"
+msgstr "نوع التقديم"
+
+#. module: napata_seting
+#: model:ir.ui.menu,name:napata_seting.napata_presentationTyep_menu
+msgid "presentationTyep"
+msgstr "نوع التقديم"
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.preTyep_view_id
+msgid "presentationtype"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_presentationtype
+msgid "presentationtype "
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.preTyep_tree_view
+msgid "presentationtype tree"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.program_view_id
+msgid "program"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.program_tree_view
+msgid "program tree"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.actions.act_window,name:napata_seting.program_list_action
+msgid "programs"
+msgstr "البرامج"
+
+#. module: napata_seting
+#: model:ir.ui.menu,name:napata_seting.napata_relative_menu
+msgid "relative"
+msgstr "صلة القرابة"
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_parent
+msgid "relative relation"
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_state
+msgid "state "
+msgstr ""
+
+#. module: napata_seting
+#: model:ir.model,name:napata_seting.model_napata_acdemic
+msgid "university name "
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.feestype_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.napata_collage_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.parent_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.preTyep_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.program_view_id
+msgid "www:napata.net"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.program_view_id
+msgid "شاشة اضافة البرامج الدراسية"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.napata_collage_view_id
+msgid "شاشة اضافة الكليات"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.parent_view_id
+msgid "شاشة اضافة صلة القرابة"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.preTyep_view_id
+msgid "شاشة اضافة نوع التقديم"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.feestype_view_id
+msgid "شاشة اضافة نوع الرسوم"
+msgstr ""
+
+#. module: napata_seting
+#: model_terms:ir.ui.view,arch_db:napata_seting.feestype_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.napata_collage_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.parent_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.preTyep_view_id
+#: model_terms:ir.ui.view,arch_db:napata_seting.program_view_id
+msgid "كليــــــــــــــــة نبتـــــــــة"
+msgstr ""

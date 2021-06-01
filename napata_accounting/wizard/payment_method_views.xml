@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="view_membership_invoice_view" model="ir.ui.view">
+            <field name="name">membership.invoice.view.form</field>
+            <field name="model">payment.method</field>
+            <field name="arch" type="xml">
+                <form string="Membership Invoice">
+                    <group>
+                    <field name="student_ids" readonly="1"/>
+                    </group>
+                    <group>
+                        <field name="money_type" required="1"/>
+                    </group>
+                    <footer>
+                       <button name="create_accounting_wizard_report"
+                               string="Confirm" type="object" class="alert alert-success"/>
+                        <button string="Cancel" class="alert alert-danger" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_membership_invoice_view" model="ir.actions.act_window">
+            <field name="name">Join Membership</field>
+            <field name="res_model">payment.method</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_membership_invoice_view"/>
+            <field name="target">new</field>
+        </record>
+
+</odoo>

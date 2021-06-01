@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!--        registration -->
+        <menuitem id="menu_na_subject_root" name="Exams"/>
+        <menuitem id="menu_na_configuration_root" name="Configuration"
+                  parent="menu_na_subject_root"
+                  sequence="100"/>
+        <!--result -->
+        <menuitem id="result_main_menu" name="Result"
+                  parent="menu_na_subject_root" sequence="10"/>
+         <menuitem id="result_menu" name="Result"
+                  parent="result_main_menu" sequence="10"
+                  action="result_list_action"/>
+
+        <!--subject -->
+        <menuitem id="subject_menu" name="Subject"
+                  parent="menu_na_configuration_root" sequence="20"
+                  action="subject_list_action"/>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+   <menuitem id="menu_na_accounting_sting_root" name="Accounting  "
+             groups="account_manager_group,account_users_group"
+              sequence="10"/>
+
+    <menuitem id="menu_na_accounting_root" name="Accounting "
+              parent="menu_na_accounting_sting_root"
+              sequence="10" action="collage_list_action"/>
+
+
+
+    </data>
+</odoo>

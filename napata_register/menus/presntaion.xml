@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_na_napata_root" name="Register"
+                  sequence="1"
+                  web_icon="openeducat_admission,static/description/icon.png"/>
+
+        <menuitem id="menu_na_Presntaion_root" name="Presntaion"
+                  parent="menu_na_napata_root"
+                  sequence="10"/>
+
+        <menuitem id="napata_presntaion_menu" name="In The First Year" parent="menu_na_Presntaion_root"
+                  sequence="10"/>
+
+        <menuitem id="new_Presntaion_menu" name="new " parent="napata_presntaion_menu"  sequence="1"
+                      action="fristpresentation_list_action" />
+
+
+          <menuitem id="old_Presntaion_menu" name="old " parent="napata_presntaion_menu"
+                      action="fristpresentation_list_action" />
+<!--        Submission after the first year-->
+
+          <menuitem id="after_Presntaion_menu" name="after the first year " parent="menu_na_Presntaion_root"
+           sequence="20"/>
+
+   <menuitem id="degreeholders_Presntaion_menu" name="Degree holders "
+             parent="after_Presntaion_menu"  sequence="1"
+                      action="fristpresentation_list_action" />
+
+
+
+
+
+
+
+
+
+
+
+    </data>
+</odoo>

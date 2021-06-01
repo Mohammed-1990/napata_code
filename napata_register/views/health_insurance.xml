@@ -1,0 +1,131 @@
+<odoo>
+
+    <!-- startr tree viwe for pationt -->
+    <record model="ir.ui.view" id="health_insurance_view_id">
+        <field name="name">napata.health.form</field>
+        <field name="model">napata.health</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="health insurance">
+                <sheet>
+                    <!--       header     -->
+                    <div class="row navbar navbar-expand-sm  navbar-dark" style="border-radius: 10px;
+    background-color: #187ebf;   color: white;">
+                        <div class="col-sm">
+                            <img src="napata_register/static/description/logo.jpeg" class="img-thumbnail"
+                                 style="height:80px;width:120px" alt="Ben &amp; Jerry's"/>
+                        </div>
+
+                        <div class="col-sm   text-center">
+                            <h3>
+                                <p>
+                                    <spane>هيئة التامين الصحي ولاية الخرطوم</spane>
+                                    <br/>
+                                    <spane>ادارة خدمات المشتركين والتغطية الشاملة</spane>
+                                </p>
+                            </h3>
+                        </div>
+                        <div class="col-sm" style="  text-align:right">
+                            <h3>
+                                <p style="color: white; text-align: left;margin-left: 116px;">
+                                    <spane>Alreydh-Khartoum/Sudan</spane>
+                                    <br/>
+                                    <spane>Tel :+249112203333</spane>
+                                    <br/>
+                                    <spane>Email:info@napata.net</spane>
+                                    <br/>
+                                    <spane>www:napata.net</spane>
+                                </p>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                            طلب اشتراك
+                        </h2>
+                    </div>
+                    <group>
+                        <field name="first"/>
+                    </group>
+                    <group colspan="2" col="6">
+                        <field name="second"/>
+                        <field name="third"/>
+                        <field name="last"/>
+                    </group>
+                    <group>
+                    <group>
+                        <field name="birth_date"/>
+                    </group>
+                    </group>
+                    <group col="6" colspan="6">
+                        <field name="id_document"/>
+                        <field name="the_number"/>
+                        <field name="place_of_issue"/>
+                    </group>
+                    <group col="4" colspan="4">
+                        <field name="social_status"/>
+                        <field name="educational_level"/>
+                    </group>
+                    <group col="6" colspan="2">
+                        <field name="local"/>
+                        <field name="unit"/>
+                        <field name="neighborhood"/>
+                    </group>
+
+                    <group col="4" colspan="2">
+                        <field name="the_phone"/>
+                        <field name="e_mail"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <field name="mother_name"/>
+                        <field name="place_of_birth"/>
+                    </group>
+                    <group >
+                        <field name="chronic_diseases"/>
+                    </group>
+
+
+                    <group col="4" colspan="2">
+                        <field name="health_center"/>
+                        <field name="hospital"/>
+                    </group>
+
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- end  tree viwe for pationt -->
+
+
+    <!-- start form viwe from pation Info -->
+    <record model="ir.ui.view" id="health_insurance_tree_view">
+        <field name="name">health.insurance.tree</field>
+        <field name="model">napata.health</field>
+        <field name="arch" type="xml">
+
+            <tree string="health insurance tree">
+                <field name="name"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- end of form viwe from pation Info -->
+
+    <record model="ir.actions.act_window" id="health_insurance_list_action">
+        <field name="name">health insurance</field>
+        <field name="res_model">napata.health</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first study health insurance
+            </p>
+        </field>
+    </record>
+
+</odoo>

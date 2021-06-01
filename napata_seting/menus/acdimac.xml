@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+        <menuitem id="menu_na_academic_root" name=" ٍAcademic Seting"
+                  parent="menu_na_sting_root"
+                  sequence="40"/>
+
+         <menuitem id="napata_academic_position_menu" name="Academic Position"
+                  parent="menu_na_academic_root"  sequence="10"
+                      action="acdemic_position_list_action" />
+
+        <menuitem id="napata_academic_menu" name="Academic level"
+                  parent="menu_na_academic_root"  sequence="20"
+                      action="acdemic_level_list_action" />
+
+
+
+        <menuitem id="napata_semester_menu" name="Semester "
+                  parent="menu_na_academic_root"  sequence="30"
+                      action="semester_list_action" />
+
+
+          <menuitem id="napata_batch_menu" name="Batch "
+                  parent="menu_na_academic_root"  sequence="40"
+                      action="batch_list_action" />
+
+    </data>
+</odoo>

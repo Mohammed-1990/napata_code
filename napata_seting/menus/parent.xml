@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+        <menuitem id="napata_relative_root" name="Relative"
+                  parent="menu_na_sting_root"
+                  sequence="30"/>
+
+        <menuitem id="napata_relative_menu" name="Relative"
+                  parent="napata_relative_root"   sequence="10"
+                      action="parent_list_action" />
+
+<!--        relative-->
+
+
+
+
+
+
+
+
+
+    </data>
+</odoo>

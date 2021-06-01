@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+lap_user,lap user,model_napata_nursing,base.group_user,1,1,1,1
+eye_user,eye user,model_napata_eye,base.group_user,1,1,1,1
+mouth_user,mouth user,model_napata_mouth,base.group_user,1,1,1,1
+physical_user,physical user,model_napata_physical,base.group_user,1,1,1,1
+laboratory_user,laboratory user,model_napata_laboratory,base.group_user,1,1,1,
+assessment_user,assessment user,model_napata_assessment,base.group_user,1,1,1,1
+

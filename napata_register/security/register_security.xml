@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Access Group Category-->
+        <record id="register_management_access_cat" model="ir.module.category">
+            <field name="name"> Register Management</field>
+        </record>
+
+        <!--Group of Users-->
+        <record id="register_user_access_group" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="register_management_access_cat"/>
+        </record>
+
+        <!--Group of Managers-->
+        <record id="register_manager_access_group" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="register_management_access_cat"/>
+            <field name="implied_ids" eval="[(4, ref('register_user_access_group'))]"/>
+        </record>
+
+
+        <!--Group of super manager-->
+        <record id="register_super_manager_access_group" model="res.groups">
+            <field name="name">Super Manager</field>
+            <field name="category_id" ref="register_management_access_cat"/>
+            <field name="implied_ids" eval="[(4, ref('register_manager_access_group'))]"/>
+        </record>
+
+<!--        Record Rule-->
+<!--        <record model="ir.rule" id=" ">-->
+<!--            <field name="name">Account  Request Record Rule</field>-->
+<!--            <field name="model_id" ref="model_napata_accounting"/>-->
+<!--            <field name="groups" eval="[(4, ref('account_user_access_group'))]"/>-->
+<!--            <field name="domain_force">[('company_id', '=', user.company_id.id)]</field>-->
+<!--        </record>-->
+
+    </data>
+</odoo>

@@ -1,0 +1,13 @@
+<odoo>
+
+    <report
+        id="report_session"
+        model="napata.accounting"
+        string="Session Report"
+        name="napata_accounting.new_presentation_report_view"
+        file="openacademy.report_session"
+        report_type="qweb-pdf" />
+
+
+
+</odoo>

@@ -1,0 +1,198 @@
+<odoo>
+    <template id="new_presentation_report_view">
+        <t t-call="web.html_container">
+            <!--  Start header      -->
+            <div class="header">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <img class="img" src="napata_register/static/description/logo.jpeg"
+                             style="height:100px;width:220px"/>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div class="col-sm text-center">
+                            <div>
+                                <strong>
+                                    <h4>كليــــــــــــــــة نبتـــــــــة</h4>
+                                </strong>
+                            </div>
+                            <div>
+                                <strong>
+                                    <h4>NAPATA COLLEGE</h4>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div class="col-sm text-center">
+                            <div>Alreydh-Khartoum/Sudan</div>
+                            <div>Tel :+249112203333</div>
+                            <div>Email:info@napata.net</div>
+                            <div>www:napata.net</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  End HEADER  -->
+            <div class="row zero_min_height">
+                <div class="col-xs-12">
+                    <div style="border-bottom: 1px solid black;"/>
+                </div>
+            </div>
+            <t t-foreach="docs" t-as="doc">
+                <!--  <t t-call="web.external_layout">  -->
+                <div class="page">
+                    <style type="text/css">
+                        .dotted-line{ border: 1px dotted black; }
+                        .alignleft { float: left;
+                        width:33.33333%; text-align:left;
+                        }
+                        .aligncenter {
+                        float: left; width:33.33333%;
+                        text-align:center;
+                        }
+                        .alignright {
+                        float: left; width:33.33333%; text-align:right; }
+                    </style>
+                    <center>
+                        <div class="col-4">
+                            <div class="panel-body" style="border: 1px solid black">
+                                <h1 class="test-results-header">
+                                    <span>إيصال إستلام نقدية</span>
+                                    <span>-</span>
+                                    <span>
+                                        <t t-if="doc.money_type == 'sd'">
+                                            <span>جنيه نقدا</span>
+                                        </t>
+                                        <t t-if="doc.money_type == 'udbank'">
+                                            <span>جنيه شيك</span>
+                                        </t>
+                                        <t t-if="doc.money_type == 'us'">
+                                            <span>دولار نقدا</span>
+                                        </t>
+                                        <t t-if="doc.money_type == 'usbank'">
+                                            <span>دولار شيك</span>
+                                        </t>
+                                    </span>
+                                </h1>
+                            </div>
+                        </div>
+                    </center>
+                    <p style="text-align:left;">
+                        <span style="text-align:left;" t-esc="doc.receipt_code"/>
+                        <span>:</span>
+                        <span>إيصال رقم</span>
+                        <span style="float:right;">
+                            <span>التاريخ</span>
+                            <span t-esc="time.strftime('%Y/%m/%d')"/>
+                        </span>
+                    </p>
+                    <!--  for invoice serial  -->
+                    <!--  Student info  -->
+                    <div id="textbox">
+                        <p class="alignleft">
+                            <span>Received From Student Mr:</span>
+                        </p>
+                        <p class="aligncenter">
+                            <span t-esc="doc.name"/>
+                        </p>
+                        <p class="alignright">
+                            <span>اسم الطالب / الطالبة</span>
+                        </p>
+                    </div>
+                    <!--  End Student info  -->
+                    <div id="textbox">
+                        <p class="alignleft">
+                            <span>The Sum of:</span>
+                        </p>
+                        <p class="aligncenter">
+                            <t t-if="doc.presentation_type.name == 'عام'">
+                                <span t-esc="doc.presentation_fees"/>
+                            </t>
+<!--                            <t t-if="doc.fees_type == 'register'">-->
+<!--                                <span t-esc="doc.total_tution_fees"/>-->
+<!--                            </t>-->
+<!--                            <t t-if="doc.fees_type == 'managemanent'">-->
+<!--                                <span t-esc="doc.the_amount"/>-->
+<!--                            </t>-->
+                        </p>
+                        <p class="alignright">
+                            <span>مبلغ وقدره</span>
+                        </p>
+                    </div>
+                    <!--  End Fees  -->
+                    <div id="textbox">
+                        <p class="alignleft">
+                            <span style="display:block; border: 1px solid black; width:250px; height: 50px;">
+                                <span>Cash</span>
+                            </span>
+                        </p>
+                        <p class="aligncenter"/>
+                        <p class="alignright">
+                            <span style="display:block; border: 1px solid black; width:250px; height: 50px; margin-right: 5px;">
+                                <span>نقدا</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div style="clear: both;"/>
+                    <br/>
+                    <div id="textbox">
+                        <p class="alignleft">Drawn On</p>
+                        <p class="aligncenter">
+                            <span>
+<!--                                <t t-if="doc.fees_type == 'application'">-->
+<!--                                    <span>تقديم</span>-->
+<!--                                </t>-->
+<!--                                <t t-if="doc.fees_type == 'register'">-->
+<!--                                    <span>تسجيل</span>-->
+<!--                                </t>-->
+<!--                                <t t-if="doc.fees_type == 'managemanent'">-->
+<!--                                    <span t-esc="doc.managemanent_fees.xfees_name"/>-->
+<!--                                </t>-->
+                            </span>
+                        </p>
+                        <p class="alignright">عبارة عن رسوم</p>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <!--  Dot Seprstor  -->
+                    <div class="row zero_min_height">
+                        <div class="col-xs-12">
+                            <div class="dotted-line" style="width:100%;"/>
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <span>
+                        Signature .......................
+                        <span class="pull-right">التوقيع</span>
+                    </span>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div class="row zero_min_height">
+                        <div class="col-xs-12">
+                            <div style="border-bottom: 1px solid black;"/>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Print By:</span>
+                        <span t-esc="admission_ids"/>
+                        <br/>
+                        <span>Print On:</span>
+                        <span t-esc="time.strftime('%m/%d/%Y %I:%M:%S %p')"/>
+                        <br/>
+                    </div>
+                </div>
+                <!--  End Page  -->
+            </t>
+        </t>
+    </template>
+    <!--  Another Layout report  -->
+    <template id="report_application_payment">
+        <t t-call="napata_accounting.custom_external_layout_header"/>
+    </template>
+</odoo>

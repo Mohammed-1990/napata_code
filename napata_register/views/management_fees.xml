@@ -1,0 +1,93 @@
+<odoo>
+
+    <!-- startr tree viwe for pationt -->
+    <record model="ir.ui.view" id="managemanentfees_view_id">
+        <field name="name">napata.managemanentfees.form</field>
+        <field name="model">napata.managemanentfees</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="Management Fees">
+                <sheet>
+                    <!--       header     -->
+                    <div class="row navbar navbar-expand-sm  navbar-dark" style="border-radius: 10px;
+                                            background-color: #187ebf;   color: white;">
+                        <div class="col-sm">
+                            <img src="napata_register/static/description/logo.jpeg" class="img-thumbnail"
+                                 style="height:80px;width:120px" alt="Ben &amp; Jerry's"/>
+                        </div>
+
+                        <div class="col-sm   text-center">
+                            <h1>
+                                <p>
+                                    <spane>كليــــــــــــــــة نبتـــــــــة</spane>
+                                    <br/>
+                                    <spane>NAPATA COLLEGE</spane>
+                                </p>
+                            </h1>
+                        </div>
+                        <div class="col-sm" style="  text-align:right">
+                            <h3>
+                                <p style="color: white; text-align: left;margin-left: 116px;">
+                                    <spane>Alreydh-Khartoum/Sudan</spane>
+                                    <br/>
+                                    <spane>Tel :+249112203333</spane>
+                                    <br/>
+                                    <spane>Email:info@napata.net</spane>
+                                    <br/>
+                                    <spane>www:napata.net</spane>
+                                </p>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                            شاشة اضافة الرسوم الادارية
+                        </h2>
+                    </div>
+                    <group>
+                        <field name="year" readonly="1"/>
+                    </group>
+                    <group>
+                        <field name="name" required="1"
+                               options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"/>
+
+                    </group>
+                    <group string="Managemanent Fees" col="4" colspan="2">
+                        <field name="sudanes_managemanentfees"/>
+                        <field name="foreig_managemanentfees"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <!-- end  tree viwe for pationt -->
+    <!-- start form viwe from pation Info -->
+    <record model="ir.ui.view" id="napata_management_fees_tree_view">
+        <field name="name">managemanentfees.tree</field>
+        <field name="model">napata.managemanentfees</field>
+        <field name="arch" type="xml">
+            <tree string="Managemanent Fees tree">
+                <field name="name"/>
+                <field name="sudanes_managemanentfees"/>
+                <field name="foreig_managemanentfees"/>
+                <field name="year"/>
+            </tree>
+        </field>
+    </record>
+    <!-- end of form viwe from pation Info -->
+    <record model="ir.actions.act_window" id="management_fees_list_action">
+        <field name="name">Managemanent Fees</field>
+        <field name="res_model">napata.managemanentfees</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create
+            </p>
+        </field>
+    </record>
+
+</odoo>

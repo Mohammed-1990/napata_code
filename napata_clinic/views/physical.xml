@@ -1,0 +1,240 @@
+<odoo>
+
+  <!-- startr tree viwe for lap -->
+<record model="ir.ui.view" id="physical_view_id">
+    <field name="name">napata.physical.form</field>
+    <field name="model">napata.physical</field>
+    <field name="priority" eval="16"/>
+    <field name="arch" type="xml">
+    <form string="Student Health Service" create="false">
+
+         <header>
+
+         <button name="send_student_assessment" string="Confirm Assessment" type="object" class="oe_highlight" attrs="{'invisible': [('is_assessment', '=',True)]}"/>
+
+        </header>
+      
+        <sheet>
+
+          <!--       header     -->
+                    <div class="row navbar navbar-expand-sm  navbar-dark" style="border-radius: 10px;
+    background-color: #187ebf;   color: white;">
+                        <div class="col-sm">
+                            <img src="napata_register/static/description/logo.jpeg" class="img-thumbnail"
+                                 style="height:80px;width:120px"/>
+                        </div>
+
+                        <div class="col-sm   text-center">
+                            <h1>
+                                <p>
+                                    <spane>كليــــــــــــــــة نبتـــــــــة</spane>
+                                    <br/>
+                                    <spane>NAPATA COLLEGE</spane>
+                                </p>
+                            </h1>
+                        </div>
+                        <div class="col-sm" style="  text-align:right">
+                            <h3>
+                                <p style="color: white; text-align: left;margin-left: 116px;">
+                                    <spane>Alreydh-Khartoum/Sudan</spane>
+                                    <br/>
+                                    <spane>Tel :+249112203333</spane>
+                                    <br/>
+                                    <spane>Email:info@napata.net</spane>
+                                    <br/>
+                                    <spane>www:napata.net</spane>
+                                </p>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                          <span>Medical Examination</span>   
+                                                       
+                        </h2>
+                      </div>
+                  
+
+
+                    <!--            header-->
+
+     <group string="Basic Student Information">
+     </group>
+
+     <group>
+        <field name="patient_id"/>
+      </group>
+      
+<!-- <div class="alert alert-success text-center" style="padding-buttum:50px">
+    <h3>Basic Student Information</h3>
+</div> -->
+            <group string="Studen Full Name">
+                        <table style="margin-left:160px;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <field name="first" required="1" placeholder="First Name"/>
+                                        </td>
+
+                                        <td style="padding-right:10px;">
+                                            <field name="second" placeholder="Second Name"/>
+                                        </td>
+
+
+                                        <td style="padding-right:10px;">
+                                            <field name="third" placeholder="Third Name"/>
+                                        </td>
+
+                                        <td style="padding-right:10px;">
+                                            <field name="last" placeholder="Last Name" required="1"/>
+                                        </td>
+                                    </tr>
+                        </table>
+                  </group>
+                  
+                  <group col="2">
+                                <field name="is_assessment"/>
+                            </group>
+
+                        <group colspan="8" col="6" name="main">
+                            <field name="email"/>
+                            <field name="gender"/>
+                            <field name="phone" />
+                            <field name="nationality"/>
+                            <field name="religion"/>
+                            <field name="program"/>
+                            <field name="dob"/>
+                            <field name="date"/>
+                         </group>
+                         
+                         <group string="Physical Clinic">
+                        </group>
+                        
+                        <group colspan="3" col="6"  string="PHYSICAL EXAMINATION">
+                         <field name="general" readonly="1"/>
+                         <field name="appearance"/>
+                          <field name="constitution"/>
+                         
+                 </group>
+                        
+                   <group colspan="2" col="4" string="Sclap">
+                            <field name="normal" readonly="1"/>
+                            <field name="abnormal"/>
+                        </group>
+
+                        <group colspan="2" col="4" string="Cervical lymph">
+                            <field name="normal_one"/>
+                            <field name="enlarge"/>
+                        </group>
+
+                         <group colspan="5" col="2" string="Ears">
+                            <field name="normal_two"/>
+                            <field name="external"/>
+                            <field name="media"/>
+                        </group>
+
+                        <group >
+                            <field name="hearing"/>
+                            <field name="nose"/>
+                        </group>
+                        <group string="Chest" >
+                            <field name="general_one"/>
+                        </group>
+                        <group string="Lungs" >
+                            <field name="clear"/>
+                            <field name="abnormality"/>
+                        </group>
+                        <group string="Heart" >
+                            <field name="normal_th"/>
+                            <field name="abnormal_th"/>
+                        </group>
+                        <group string="Abdomen" >
+                            <field name="general_fo"/>
+                        </group>
+                        <group string="Liver" >
+                            <field name="normal_fo"/>
+                            <field name="paipable"/>
+                        </group>
+                        <group string="B.C.M">
+                        </group>
+                        <group string="Spleen" >
+                            <field name="normal_no"/>
+                            <field name="paip"/>
+                        </group>
+                        <group>
+                         <field name="other"/>
+                         <field name="fluid"/>
+                         <field name="hernia"/>
+                         <field name="genitalia"/>
+                         <field name="lower"/>     
+                        </group>
+
+                        <group string="G.N.S">
+                         <field name="intell"/>
+                         <field name="speech"/>
+                         <field name="fungi"/>
+                         <field name="cranial"/>
+                         <field name="motor"/>
+                         <field name="sensory"/>
+                         <field name="reflexes"/>        
+                        </group>
+                        <group>
+                         <field name="skin"/>
+                         <field name="comment"/>
+                         <field name="upper"/>
+                         <field name="thyroid"/>    
+                        </group>
+                         <group string="Trachea">
+                         <field name="central"/>
+                         <field name="deviated"/>
+                     </group>
+                     
+                     <group col="2" string="The End Results">
+                         <field name="assessment"/>
+                         <field name="diagonis"/>
+                     </group>
+
+                     <group>
+                      
+                         <field name="doctor_name"/>
+                      
+                     </group>
+                        
+
+
+               </sheet>
+
+
+    </form>
+    </field>
+</record>
+     <!-- start form viwe from lap Info -->
+  <record model="ir.ui.view" id="physical_tree_view">
+            <field name="name">physical.tree</field>
+            <field name="model">napata.physical</field>
+            <field name="arch" type="xml">
+                <tree string="physical tree">
+                            <field name="email"/>
+                            <field name="gender"/>
+                            <field name="name"/>
+                            <field name="dob"/>
+                            <field name="phone"/>
+                          
+ </tree>
+            </field>
+    </record>
+<!-- end of form viwe from lab Info -->
+
+      <record model="ir.actions.act_window" id="physical_list_action">
+            <field name="name">Physical</field>
+            <field name="res_model">napata.physical</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first patient
+                </p>
+            </field>
+        </record>
+    <menuitem id="physical  menu" name="Physical Clinic" parent="clinic_root" sequence="30"
+                          action="physical_list_action"/>
+</odoo>
+ 

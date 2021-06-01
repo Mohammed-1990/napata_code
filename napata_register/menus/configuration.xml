@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!--        registration -->
+        <menuitem id="menu_na_configuration__root" name="Configuration"
+                  parent="menu_na_napata_root"
+                  sequence="50"/>
+
+        <menuitem id="presntaionfees_management_menu" name="Presntaion Fees"
+                  parent="menu_na_configuration__root" sequence="10"
+                  action="presntaionfees_list_action"/>
+        <menuitem id="studyfees_management_menu" name="ٍStudy Fees"
+                  parent="menu_na_configuration__root" sequence="20"
+                  action="studyfees_list_action"/>
+
+        <menuitem id="management_fees_menu" name="Management Fees"
+                  parent="menu_na_configuration__root" sequence="30"
+                  action="management_fees_list_action"/>
+
+        <menuitem id="dismissalreasons_menu" name="Dismissal Reason "
+                  parent="menu_na_configuration__root" sequence="40"
+                  action="dismissalreasons_list_action"/>
+
+<!--        <menuitem id="activepresentaion_menu" name="Active  Presentaion "-->
+<!--                  parent="menu_na_configuration__root" sequence="40"-->
+<!--                  action="activepresentaion_list_action"/>-->
+
+    </data>
+</odoo>

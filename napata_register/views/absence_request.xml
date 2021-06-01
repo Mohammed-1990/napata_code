@@ -1,0 +1,135 @@
+<odoo>
+
+    <!-- startr tree viwe for pationt -->
+    <record model="ir.ui.view" id="absence_request_view_id">
+        <field name="name">napata.absenceRequest.form</field>
+        <field name="model">napata.absence</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <form string="absence Request">
+                <sheet>
+                    <!--       header     -->
+                    <div class="row navbar navbar-expand-sm  navbar-dark" style="border-radius: 10px;
+    background-color: #187ebf;   color: white;">
+                        <div class="col-sm">
+                            <img src="napata_register/static/description/logo.jpeg" class="img-thumbnail"
+                                 style="height:80px;width:120px" alt="Ben &amp; Jerry's"/>
+                        </div>
+
+                        <div class="col-sm   text-center">
+                            <h3>
+                                <p>
+                                    <spane>هيئة التامين الصحي ولاية الخرطوم</spane>
+                                    <br/>
+                                    <spane>ادارة خدمات المشتركين والتغطية الشاملة</spane>
+                                </p>
+                            </h3>
+                        </div>
+                        <div class="col-sm" style="  text-align:right">
+                            <h3>
+                                <p style="color: white; text-align: left;margin-left: 116px;">
+                                    <spane>Alreydh-Khartoum/Sudan</spane>
+                                    <br/>
+                                    <spane>Tel :+249112203333</spane>
+                                    <br/>
+                                    <spane>Email:info@napata.net</spane>
+                                    <br/>
+                                    <spane>www:napata.net</spane>
+                                </p>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                            طلب تغيب عن(محاضرة/معمل)
+                        </h2>
+                    </div>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <field name="program"/>
+                        <field name="level"/>
+                    </group>
+                    <group col="4" colspan="2" string="Absence permission request">
+                        <field name="subject_one"/>
+                        <field name="subject_tow"/>
+                        <field name="subject_three"/>
+                        <field name="subject_four"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <field name="day"/>
+                        <field name="Agree"/>
+                    </group>
+                    <group>
+                        <field name="reasons"/>
+                    </group>
+                    <group col="4" colspan="2">
+                        <field name="telephone"/>
+                        <field name="student_signature"/>
+                    </group>
+                    <group  string="Lecturer's recommendation, lab professor">
+                        <field name="lecturer_recommendation"/>
+                        <field name="professor_recommendation"/>
+                    </group>
+                      <group col="6" colspan="2">
+                        <field name="professor_name"/>
+                        <field name="professor_Signature"/>
+                        <field name="professor_Signature_date"/>
+                    </group>
+                       <group col="6" colspan="2">
+                        <field name="lecturerr_name"/>
+                        <field name="lecturer_Signature"/>
+                        <field name="lecturer_Signature_date"/>
+                    </group>
+
+                     <group string="Program Coordinator Decision">
+                        <field name="decision"/>
+                    </group>
+                    <group col="6" colspan="2">
+                        <field name="coordinator_name"/>
+                        <field name="coordinator_Signature"/>
+                        <field name="coordinator_Signature_date"/>
+                    </group>
+                    
+                    
+
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- end  tree viwe for pationt -->
+
+
+    <!-- start form viwe from pation Info -->
+    <record model="ir.ui.view" id="absence_request_tree_view">
+        <field name="name">absence.request.tree</field>
+        <field name="model">napata.absence</field>
+        <field name="arch" type="xml">
+
+            <tree string="absence request tree">
+                <field name="name"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- end of form viwe from pation Info -->
+
+    <record model="ir.actions.act_window" id="absence_request_list_action">
+        <field name="name">absence request</field>
+        <field name="res_model">napata.absence</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first absence request
+            </p>
+        </field>
+    </record>
+
+</odoo>

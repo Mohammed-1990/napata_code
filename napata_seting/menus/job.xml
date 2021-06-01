@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+        <menuitem id="menu_na_job_root" name="job Management"
+                  parent="menu_na_sting_root"
+                  sequence="60"/>
+
+        <menuitem id="napata_job_menu" name="job"
+                  parent="menu_na_job_root" sequence="5"
+                      action="job_list_action" />
+
+
+
+         <menuitem id="napata_relative_menu" name="relative"
+                  parent="menu_na_job_root"   sequence="10"
+                      action="parent_list_action" />
+
+
+    </data>
+</odoo>

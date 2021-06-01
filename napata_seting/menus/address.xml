@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+        <menuitem id="menu_na_address_root" name="Address"
+                  parent="menu_na_sting_root"
+                  sequence="20"/>
+
+        <menuitem id="napata_state_menu" name="state"
+                  parent="menu_na_address_root"
+                    action="state_list_action"/>
+
+        <menuitem id="napata_local_menu" name="local"
+                  parent="menu_na_address_root"
+                    action="locals_list_action"/>
+
+
+
+    </data>
+</odoo>

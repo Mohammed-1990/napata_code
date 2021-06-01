@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+   <menuitem id="menu_na_report_root" name="Reports "
+                  parent="menu_na_accounting_sting_root"/>
+
+
+
+
+  <menuitem id="menu_na_Report" name="Report  "
+                  parent="menu_na_report_root"
+                  sequence="10"   action="account_report_view" />
+
+
+
+    </data>
+</odoo>

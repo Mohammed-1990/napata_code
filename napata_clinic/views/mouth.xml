@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+
+  <!-- startr tree viwe for lap -->
+<record model="ir.ui.view" id="mouth_view_id">
+    <field name="name">napata.mouth.form</field>
+    <field name="model">napata.mouth</field>
+    <field name="priority" eval="16"/>
+    <field name="arch" type="xml">
+
+
+
+    <form string="Student Health Service" create="false">
+
+        <header>
+
+         <button name="send_student_assessment" string="Confirm Assessment" type="object" class="oe_highlight" attrs="{'invisible': [('is_assessment', '=',True)]}"/>
+
+        </header>
+      
+        <sheet>
+
+<!--       header     -->
+                    <div class="row navbar navbar-expand-sm  navbar-dark" style="border-radius: 10px;
+    background-color: #187ebf;   color: white;">
+                        <div class="col-sm">
+                            <img src="napata_register/static/description/logo.jpeg" class="img-thumbnail"
+                                 style="height:80px;width:120px"/>
+                        </div>
+
+                        <div class="col-sm   text-center">
+                            <h1>
+                                <p>
+                                    <spane>كليــــــــــــــــة نبتـــــــــة</spane>
+                                    <br/>
+                                    <spane>NAPATA COLLEGE</spane>
+                                </p>
+                            </h1>
+                        </div>
+                        <div class="col-sm" style="  text-align:right">
+                            <h3>
+                                <p style="color: white; text-align: left;margin-left: 116px;">
+                                    <spane>Alreydh-Khartoum/Sudan</spane>
+                                    <br/>
+                                    <spane>Tel :+249112203333</spane>
+                                    <br/>
+                                    <spane>Email:info@napata.net</spane>
+                                    <br/>
+                                    <spane>www:napata.net</spane>
+                                </p>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                          <span>Medical Examination</span>   
+                                                       
+                        </h2>
+                      </div>
+                  
+
+
+                    <!--            header-->
+
+     <group string="Basic Student Information">
+     </group>
+
+     <group>
+        <field name="patient_id"/>
+      </group>
+            
+<!-- <div class="alert alert-success text-center" style="padding-buttum:50px">
+    <h3> Student Information</h3>
+</div>
+        -->     <!-- <field name="Photo" widget="image" height="90px "  width="80px"/> -->
+
+            <group string="Studend Full Name">
+                        <table style="margin-left:160px;">
+                                    <tr>
+                                        <td style="padding-right:10px;">
+                                            <field name="first" required="1" placeholder="First Name"/>
+                                        </td>
+
+                                        <td style="padding-right:10px;">
+                                            <field name="second" placeholder="Second Name"/>
+                                        </td>
+
+
+                                        <td style="padding-right:10px;">
+                                            <field name="third" placeholder="Third Name"/>
+                                        </td>
+
+                                        <td style="padding-right:10px;">
+                                            <field name="last" placeholder="Last Name" required="1"/>
+                                        </td>
+                                    </tr>
+                        </table>
+                  </group>
+
+                  <group col="2">
+                                <field name="is_assessment"/>
+                            </group>
+
+
+                        <group colspan="8" col="6" name="main">
+                            <field name="email"/>
+                            <field name="gender"/>
+                            <field name="phone" />
+                            <field name="nationality"/>
+                            <field name="religion"/>
+                            <field name="program"/>
+                            <field name="dob"/>
+                            <field name="date"/>
+                         </group>
+                       
+                        <group string="Mouth Clinic">
+                        </group>
+                        <group string="Teeth">
+                        </group>
+             <group colspan="4" col="4" name="main">
+                            <field name="normal" attrs="{'invisible': [('decayed','=',True)]}"/>
+                            <field name="decayed" attrs="{'invisible': [('normal','=',True)]}"/>
+                 </group>
+
+
+                        <group colspan="6" col="4" name="main">
+                         <field name="missing"/>
+                         <field name="filled"/>
+                          <field name="othera"/>
+                         <field name="tongue"/>
+
+                 </group>
+                        <group string="DOCTOR">
+                        </group>
+
+
+                         <group col="2" string="The End Results">
+                         <field name="assessment"/>
+                         <field name="diagonis"/>
+                     </group>
+
+            <group  name="main">
+                            <field name="dentist"/>
+                            
+
+
+                        </group>
+
+               </sheet>
+
+
+    </form>
+    </field>
+</record>
+    <!-- start form viwe from lap Info -->
+  <record model="ir.ui.view" id="mouth_tree_view">
+            <field name="name">mouth.tree</field>
+            <field name="model">napata.mouth</field>
+            <field name="arch" type="xml">
+                <tree string="mouth tree">
+                            <field name="Photo"/>
+
+                            <field name="email"/>
+                            <field name="gender"/>
+                            <field name="name"/>
+                            <field name="dob"/>
+                            <field name="phone"/>
+                            
+
+ </tree>
+            </field>
+    </record>
+<!-- end of form viwe from lab Info -->
+
+      <record model="ir.actions.act_window" id="mouth_list_action">
+            <field name="name">Mouth</field>
+            <field name="res_model">napata.mouth</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create the first patient
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="mouth  menu" name="Mouth Clinic" parent="clinic_root" sequence="30"
+                          action="mouth_list_action"/>
+   
+        </data>
+
+</odoo>
+
