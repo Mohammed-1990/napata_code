@@ -49,7 +49,6 @@
         'data/register_sequence.xml',
 
         # menus
-        # 'menus/presntaion.xml',
         'menus/assistant.xml',
         'menus/register.xml',
         # 'menus/report.xml',

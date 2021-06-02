@@ -1,0 +1,82 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+
+        <record model="ir.ui.view" id="patient_tree_view">
+            <field name="name">patient.tree</field>
+            <field name="model">hospital.patient</field>
+            <field name="arch" type="xml">
+                <tree string="patient Tree">
+                    <field name="name"/>
+                    <field name="sequns_name"/>
+                    <field name="patient_age"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="patient_form_view">
+            <field name="name">patient.form</field>
+            <field name="model">hospital.patient</field>
+            <field name="arch" type="xml">
+                <form string="patient Form">
+                    <sheet>
+
+                          <div class="oe_button_box" name="button_box">
+                            <button type="object" name="open_patient_appointment"
+                              class="oe_stat_button" icon="fa-book">
+                                <field name="count"/>
+                            </button>
+                        </div>
+
+
+                        <div class="oe_title">
+                            <h1>
+                                <field name="sequns_name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="patient_age"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="description"/>
+                            <field name="image"/>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="patient_list_action">
+            <field name="name">patient</field>
+            <field name="res_model">hospital.patient</field>
+            <field name="view_mode">tree,form</field>
+                 <field name="context">{'search_default_patient_age': 1}</field>
+        </record>
+
+        <!---->
+        <record id="view_res_partner_search" model="ir.ui.view">
+            <field name="name">res.partner.search</field>
+            <field name="model">hospital.patient</field>
+            <field name="arch" type="xml">
+                <search string="Search contacts">
+                    <field name="name"></field>
+                    <field name="sequns_name"></field>
+                </search>
+            </field>
+        </record>
+        <!--        -->
+        <menuitem id="hospital_menu" name="Hospital" sequence="0"/>
+        <menuitem id="patient_menu" name="Patient"
+                  parent="hospital_menu" sequence="10"
+                  action="patient_list_action"/>
+
+    </data>
+</odoo>

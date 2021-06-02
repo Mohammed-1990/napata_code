@@ -1,4 +1,8 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+
+
+
 chackup_user,chackup user,model_napata_chackup,base.group_user,1,1,1,1
 presentation_user,presentation user,model_napata_presentation,base.group_user,1,1,1,1
 oldpresentation_user,oldpresentation user,model_napata_oldpresentation,base.group_user,1,1,1,1

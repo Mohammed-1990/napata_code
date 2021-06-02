@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-           <!--Access Group Category-->
-        <record id="setting_management_account" model="ir.module.category">
-            <field name="name"> Account Management</field>
+        <!--Access Group Category-->
+        <record id="category_account" model="ir.module.category">
+            <field name="name">Account Management</field>
         </record>
         <!--Group of Users-->
         <record id="account_users_group" model="res.groups">
             <field name="name">User</field>
-            <field name="category_id" ref="setting_management_account"/>
+            <field name="category_id" ref="category_account"/>
         </record>
         <!--Group of Managers-->
         <record id="account_manager_group" model="res.groups">
             <field name="name">Manager</field>
-            <field name="category_id" ref="setting_management_account"/>
+            <field name="category_id" ref="category_account"/>
+            <field name="implied_ids" eval="[(4, ref('account_users_group'))]"/>
         </record>
-
-
         <!--Group of super manager-->
         <record id="account_super_manager_group" model="res.groups">
-            <field name="name">Super Manager</field>
-            <field name="category_id" ref="setting_management_account"/>
+            <field name="name">System Admin</field>
+            <field name="category_id" ref="category_account"/>
             <field name="implied_ids" eval="[(4, ref('account_manager_group'))]"/>
         </record>
 
-<!--        Record Rule-->
-<!--        <record model="ir.rule" id=" ">-->
-<!--            <field name="name">Account  Request Record Rule</field>-->
-<!--            <field name="model_id" ref="model_napata_accounting"/>-->
-<!--            <field name="groups" eval="[(4, ref('account_user_access_group'))]"/>-->
-<!--            <field name="domain_force">[('company_id', '=', user.company_id.id)]</field>-->
-<!--        </record>-->
+        <!--        Record Rule-->
+        <!--        <record model="ir.rule" id=" ">-->
+        <!--            <field name="name">Account  Request Record Rule</field>-->
+        <!--            <field name="model_id" ref="model_napata_accounting"/>-->
+        <!--            <field name="groups" eval="[(4, ref('account_user_access_group'))]"/>-->
+        <!--            <field name="domain_force">[('company_id', '=', user.company_id.id)]</field>-->
+        <!--        </record>-->
 
     </data>
 </odoo>

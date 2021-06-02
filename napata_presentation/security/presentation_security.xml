@@ -3,29 +3,29 @@
     <data>
 
         <!--Access Group Category-->
-        <record id="presentation_management_access_cat" model="ir.module.category">
+        <record id="category_presentation" model="ir.module.category">
             <field name="name"> Presentaion Management</field>
         </record>
 
         <!--Group of Users-->
-        <record id="presentation_user_access_group" model="res.groups">
+        <record id="presentation_user_group" model="res.groups">
             <field name="name">User</field>
-            <field name="category_id" ref="presentation_management_access_cat"/>
+            <field name="category_id" ref="category_presentation"/>
         </record>
 
         <!--Group of Managers-->
-        <record id="presentation_manager_access_group" model="res.groups">
+        <record id="presentation_manager_group" model="res.groups">
             <field name="name">Manager</field>
-            <field name="category_id" ref="presentation_management_access_cat"/>
-            <field name="implied_ids" eval="[(4, ref('presentation_user_access_group'))]"/>
+            <field name="category_id" ref="category_presentation"/>
+            <field name="implied_ids" eval="[(4, ref('presentation_user_group'))]"/>
         </record>
 
 
         <!--Group of super manager-->
-        <record id="presentation_super_manager_access_group" model="res.groups">
-            <field name="name">Super Manager</field>
-            <field name="category_id" ref="presentation_management_access_cat"/>
-            <field name="implied_ids" eval="[(4, ref('presentation_manager_access_group'))]"/>
+        <record id="presentation_super_manager" model="res.groups">
+            <field name="name">System Admin</field>
+            <field name="category_id" ref="category_presentation"/>
+            <field name="implied_ids" eval="[(4, ref('presentation_manager_group'))]"/>
         </record>
 
 <!--        Record Rule-->

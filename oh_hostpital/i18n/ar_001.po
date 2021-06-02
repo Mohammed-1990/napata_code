@@ -1,0 +1,535 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* napata_presentation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-25 11:33+0000\n"
+"PO-Revision-Date: 2021-02-25 11:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__brath_day
+msgid " Barth Day"
+msgstr "تاريخ الميلاد"
+
+#. module: napata_presentation
+#: model:ir.ui.menu,name:napata_presentation.menu_first_fear_new_presntaion
+msgid " New Year"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__exm_year
+msgid " exm_year"
+msgstr "سنة الإمتحان"
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__id_type__جواز_سفر
+msgid " جواز سفر"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__admission_book
+msgid "Admission Book"
+msgstr "دليل القبول"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Alreydh-Khartoum/Sudan"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__application_fees
+msgid "Application Fees"
+msgstr " المبلغ المدفوع"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Attachments"
+msgstr "المرفقات"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Confirm"
+msgstr "تاكيد"
+
+#. module: napata_presentation
+#: model_terms:ir.actions.act_window,help:napata_presentation.fristpresentation_list_action
+msgid "Create the first Presentation"
+msgstr "قم باجراء اول عملية تقديم"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__data
+msgid "Date "
+msgstr "تاريخ التقديم"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Date And Place  Information"
+msgstr "معلومات مكان وتاريخ الميلاد"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__state__draft
+msgid "Draft"
+msgstr "القبول"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__email
+msgid "Email"
+msgstr "البريد الالكتروني"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Email:info@napata.net"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__facebook
+msgid "Face Book"
+msgstr "فيسبوك"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Financial information"
+msgstr "المعلومات المالية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__first_name
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "First Name"
+msgstr "الاسم الاول"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Form Namper:"
+msgstr "رقم الاستمارة"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__form_number
+msgid "Form Number"
+msgstr ""
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Forth Name"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__fother_adress
+msgid "Fother Adress"
+msgstr "عنوان ولي امر الطالب"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__forth_name
+msgid "Fourth Name"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.ui.menu,name:napata_presentation.menu_first_fear_presntaion
+msgid "From The First Year"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__name
+msgid "Full Name"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__gender
+msgid "Gender"
+msgstr "الجنس"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__school_certificate
+msgid "High School Certificate"
+msgstr "اصل الشهادة الثانوية"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "How did you hear about the college"
+msgstr "كيف سمعت عن الكلية..؟"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__id
+msgid "ID"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__id_type
+msgid "ID Tyep"
+msgstr "نوع اثبات الشخصية"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Iagree"
+msgstr "تنبية هام"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__Local_id
+msgid "Local"
+msgstr "المحلية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__main_desire
+msgid "Main Desire"
+msgstr "الرغبة الرئيسية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__student_mobile
+msgid "Mobile Number"
+msgstr "رقم الموبايل"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "NAPATA COLLEGE"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__national_card
+msgid "National card"
+msgstr "الرقم الوطني -جواز السفر"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__nationality
+msgid "Nationality"
+msgstr "الجنسية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__newspaper
+msgid "Newspaper"
+msgstr "الصحف اليومية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__other_desire
+msgid "Other Desire"
+msgstr "الرغبات الدراسية الاخري"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Personal Information"
+msgstr "المعلومات الشخصية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__address
+msgid "Place of birth"
+msgstr "مكان الميلاد"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__precentage
+msgid "Precentage"
+msgstr "النسبة المتحصلة"
+
+#. module: napata_presentation
+#: model:ir.actions.act_window,name:napata_presentation.fristpresentation_list_action
+msgid "Presentation"
+msgstr "التقديم"
+
+#. module: napata_presentation
+#: model:ir.ui.menu,name:napata_presentation.Presentation_root
+#: model:ir.ui.menu,name:napata_presentation.menu_Presntaion
+msgid "Presntaion"
+msgstr "التقديم"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__job
+msgid "Profession"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__radio
+msgid "Radio"
+msgstr "الريديو"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__pay_date
+msgid "Received  Date"
+msgstr "تاريخ الدفع"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__relative_relation
+msgid "Relative Relation"
+msgstr "صلة الغرابة"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__religion
+msgid "Religion"
+msgstr "الديانة"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Scholastic Desires"
+msgstr "الرغبات الدراسية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__school_name
+msgid "School Name "
+msgstr "اسم المدرسة الثانوية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__second_name
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Second Name"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__Sitting_number
+msgid "Sitting Number"
+msgstr "رقم الجلوس"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__social_status
+msgid "Social Status"
+msgstr " الحالة الاجتماعية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__states_id
+msgid "State"
+msgstr "الولاية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__state
+msgid "Status"
+msgstr ""
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Student  Name"
+msgstr "اسم الطالب رباعي"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Student Information"
+msgstr ""
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Study Information"
+msgstr "المعلومات الدراسية"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__signup_valid
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__submet
+msgid "Submet"
+msgstr "موافق"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__tv
+msgid "TV"
+msgstr "التلفزيون"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Tel :+249112203333"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__telephone
+msgid "Telphone"
+msgstr "رقم التلفون"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__id_number
+msgid "The National Number"
+msgstr "الرقم الوطني"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__course
+msgid "The course"
+msgstr "المساق"
+
+#. module: napata_presentation
+#: code:addons/napata_presentation/models/presentation.py:0
+#, python-format
+msgid "The value of Form  ID Number must be positive number"
+msgstr ""
+
+#. module: napata_presentation
+#: code:addons/napata_presentation/models/presentation.py:0
+#, python-format
+msgid "The value of applicant name must only letters"
+msgstr ""
+
+#. module: napata_presentation
+#: code:addons/napata_presentation/models/presentation.py:0
+#, python-format
+msgid "The value of fother_adressmust only letters"
+msgstr ""
+
+#. module: napata_presentation
+#: code:addons/napata_presentation/models/presentation.py:0
+#, python-format
+msgid "The value of job  name must only letters"
+msgstr ""
+
+#. module: napata_presentation
+#: code:addons/napata_presentation/models/presentation.py:0
+#, python-format
+msgid "The value of school Name must only letters"
+msgstr ""
+
+#. module: napata_presentation
+#: code:addons/napata_presentation/models/presentation.py:0
+#, python-format
+msgid "The value of student Place of birth name must only letters"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__third_name
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "Third Name"
+msgstr "الاسم الثالث"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__type_acceptance
+msgid "Type Acceptance"
+msgstr "نوع التقديم"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__website
+msgid "Web Site"
+msgstr "الموقع الالكتروني"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__applicant
+msgid "applicant  Name"
+msgstr "اسم  ولي ار الطالب"
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__done
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__state__done
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "done"
+msgstr "تم القبول"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "parent Information"
+msgstr "معلومات ولي الامر"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.frist_presentation_tree_view
+msgid "pationt tree"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__receipt_code
+msgid "prenent code"
+msgstr "رقم الايصال"
+
+#. module: napata_presentation
+#: model:ir.model,name:napata_presentation.model_napata_presentation
+msgid "presentation information"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields,field_description:napata_presentation.field_napata_presentation__watsapp_phone
+msgid "watsapp"
+msgstr "رقم الواتساب"
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "www:napata.net"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__religion__اخري
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__social_status__اخري
+msgid "اخري"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__course__ادبي
+msgid "ادبي"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__gender__انثي
+msgid "انثي "
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__id_type__بطاقة_قومية
+msgid "بطاقة قومية"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__gender__ذكر
+msgid "ذكر"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__id_type__رقم_وطني
+msgid "رقم وطني"
+msgstr ""
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "شاشة التقديم"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__social_status__عازب
+msgid "عازب"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__course__علمي
+msgid "علمي"
+msgstr ""
+
+#. module: napata_presentation
+#: model_terms:ir.ui.view,arch_db:napata_presentation.napata_presentation_view_id
+msgid "كليــــــــــــــــة نبتـــــــــة"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__social_status__متزوج
+msgid "متزوج "
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__religion__مسلم
+msgid "مسلم"
+msgstr ""
+
+#. module: napata_presentation
+#: model:ir.model.fields.selection,name:napata_presentation.selection__napata_presentation__religion__مسيحي
+msgid "مسيحي "
+msgstr ""

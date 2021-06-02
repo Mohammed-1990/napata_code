@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "napata_clinic",
+    'name': "Hospital Management System",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -10,7 +10,7 @@
         Long description of module's purpose
     """,
 
-    'author': "My Company",
+    'author': "mohamed Ibarhim",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -20,29 +20,18 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': [
-       # 'napata_register',
-       'napata_seting',
+    'depends': ['base',
+              
+                ],
 
-          ],
     # always loaded
     'data': [
-        'security/clinic_security.xml',
-        'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
-        'views/nursing.xml',
-        'views/eye.xml',
-        'views/mouth.xml',
-        'views/physical.xml',
-        'views/laboratory.xml',
-        'views/assessment.xml',
-        'wizards/assessment_report_wizard.xml',
-       
-        'report/report_medical_assessment.xml',
-        'report/report_medical_assessment_template.xml',
-
-
+        # 'security/presentation_security.xml',
+      'security/ir.model.access.csv',
+       'data/ir_sequence_data.xml',
+       'data/ir_appointments_data.xml',
+       'views/patient.xml',
+       'views/appointments.xml',
 
     ],
     # only loaded in demonstration mode

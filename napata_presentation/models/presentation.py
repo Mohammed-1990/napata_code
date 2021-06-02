@@ -2,8 +2,6 @@ import datetime
 from odoo import models, fields, api, _, exceptions
 from odoo.exceptions import UserError
 import re
-
-
 class napataUniversity(models.Model):
     _name = 'napata.presentation'
     _description = 'presentation information'
@@ -76,22 +74,7 @@ class napataUniversity(models.Model):
     # addeess
     states_id = fields.Char( string="State")
     Local_id = fields.Char( straing='local')
-    # states_id = fields.Many2one('napata.state',
-    #                             ondelete='cascade', string="State")
-    # Local_id = fields.Many2one('napata.locals', straing='local')
 
-    # @api.onchange('states_id')
-    # def get_local(self):
-    #     get_local_list = []
-    #     Locals = self.env['napata.locals'].search(
-    #         [('state_id', '=', self.states_id.id)])
-    #
-    #     if Locals:
-    #         for rec in Locals:
-    #              get_local_list.append(rec.id)
-    #     return {'domain': {'Local_id': [('id', 'in', get_local_list)]}}
-
-    # ), compute='get_local',ondelete='cascade', readonly=False, store=True)
 
     # abut Us
     facebook = fields.Boolean(string="Face Book")
@@ -143,13 +126,6 @@ class napataUniversity(models.Model):
                     "This desire has been chosen as the main desire that cannot be chosen within the sub-desire")
 
     # Validate address
-    # @api.constrains('school_name')
-    # def validate_school_name(self):
-    #     if self.school_name:
-    #         if not re.search(r'^(?:[^\W\d_]| )+$', self.school_name) != None:
-    #             raise UserError(_('The value of school Name must only letters'))
-
-    # Validate address
     @api.constrains('address')
     def validate_address(self):
         if self.address:
@@ -184,12 +160,11 @@ class napataUniversity(models.Model):
 
     def action_confirm(self):
         pass
-        # self.state = "done"
+        self.state = "done"
         val = " "
         for rec in self.other_desire:
             val += str(rec.name) + " \t - \t "
         self.env['napata.register'].create({
-
             'name': self.name,
             'first_name': self.first_name,
             'second_name': self.second_name,

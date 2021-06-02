@@ -2,8 +2,7 @@
 <odoo>
     <data>
  <menuitem id="menu_na_napata_root" name="The Register"
-                  sequence="1" groups="register_super_manager_access_group"
-                  web_icon="openeducat_admission,static/description/icon.png"/>
+                  sequence="1" groups="groups_register_user"/>
 <!--        registration -->
          <menuitem id="menu_napata_assistant_root" name="Registrar Assistant"
                   parent="menu_na_napata_root"

@@ -3,29 +3,27 @@
     <data>
 
         <!--Access Group Category-->
-        <record id="register_management_access_cat" model="ir.module.category">
+        <record id="category_register" model="ir.module.category">
             <field name="name"> Register Management</field>
         </record>
 
         <!--Group of Users-->
-        <record id="register_user_access_group" model="res.groups">
-            <field name="name">User</field>
-            <field name="category_id" ref="register_management_access_cat"/>
+        <record id="groups_register_user" model="res.groups">
+            <field name="name">Registered Assistant</field>
+            <field name="category_id" ref="category_register"/>
         </record>
 
-        <!--Group of Managers-->
-        <record id="register_manager_access_group" model="res.groups">
-            <field name="name">Manager</field>
-            <field name="category_id" ref="register_management_access_cat"/>
-            <field name="implied_ids" eval="[(4, ref('register_user_access_group'))]"/>
+<!--        Group of Managers-->
+        <record id="groups_register_manager" model="res.groups">
+            <field name="name">Registered</field>
+            <field name="category_id" ref="category_register"/>
+            <field name="implied_ids" eval="[(4, ref('groups_register_user'))]"/>
         </record>
-
-
         <!--Group of super manager-->
-        <record id="register_super_manager_access_group" model="res.groups">
-            <field name="name">Super Manager</field>
-            <field name="category_id" ref="register_management_access_cat"/>
-            <field name="implied_ids" eval="[(4, ref('register_manager_access_group'))]"/>
+        <record id="groups_register_admin" model="res.groups">
+            <field name="name">System Admin</field>
+            <field name="category_id" ref="category_register"/>
+            <field name="implied_ids" eval="[(4, ref('groups_register_manager'))]"/>
         </record>
 
 <!--        Record Rule-->

@@ -26,7 +26,7 @@
 
     # always loaded
     'data': [
-        # 'security/presentation_security.xml',
+     'security/presentation_security.xml',
     'security/ir.model.access.csv',
         'views/new_presentation.xml',
         # menus

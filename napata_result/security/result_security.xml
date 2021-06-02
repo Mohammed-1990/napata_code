@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--Access Group Category-->
+        <record id="category_result" model="ir.module.category">
+            <field name="name">Result  Management</field>
+        </record>
+        <!--Group of Users-->
+        <record id="groups_result_user" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="category_result"/>
+        </record>
+        <!-- Group of Managers-->
+        <record id="groups_result_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="category_result"/>
+            <field name="implied_ids" eval="[(4, ref('groups_result_user'))]"/>
+        </record>
+        <!-- Group of super manager-->
+        <record id="groups_result_admin" model="res.groups">
+            <field name="name">System Admin</field>
+            <field name="category_id" ref="category_result"/>
+            <field name="implied_ids" eval="[(4, ref('groups_result_manager'))]"/>
+        </record>
+    </data>
+</odoo>

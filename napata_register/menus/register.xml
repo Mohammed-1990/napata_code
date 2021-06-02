@@ -3,15 +3,15 @@
     <data>
 
         <menuitem id="menu_napata_register_root" name="Registrar's office"
-                  parent="menu_na_napata_root" sequence="30"/>
+                  parent="menu_na_napata_root" sequence="30" groups="groups_register_manager"/>
 
         <menuitem id="menu_napata_register" name="Registrar's"
                   parent="menu_napata_register_root" sequence="10"
-                  action="registrar_office_list_action" groups="register_super_manager_access_group"/>
+                  action="registrar_office_list_action"/>
 
 
         <menuitem id="menu_napata_measures_root" name="Freezing Request "
                   parent="menu_napata_register_root"
-                  sequence="20" action="freezing_request_list_action" groups="register_super_manager_access_group"/>
+                  sequence="20" action="freezing_request_list_action" />
     </data>
 </odoo>
