@@ -1,4 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-users_accounting_user,accounting user,model_napata_accounting,account_users_group,1,0,0,0
-manager_accounting_user,accounting manager,model_napata_accounting,account_manager_group,1,1,1,0
-super_manager_accounting_user,accounting uer manager,model_napata_accounting,account_super_manager_group,1,1,1,1
+system_admin_accounting,accounting admin,model_napata_accounting,base.group_user,1,1,1,1

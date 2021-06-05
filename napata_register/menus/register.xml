@@ -3,7 +3,8 @@
     <data>
 
         <menuitem id="menu_napata_register_root" name="Registrar's office"
-                  parent="menu_na_napata_root" sequence="30" groups="groups_register_manager"/>
+                  parent="menu_na_napata_root" sequence="30"/>
+<!--                  groups="groups_register_manager"/>-->
 
         <menuitem id="menu_napata_register" name="Registrar's"
                   parent="menu_napata_register_root" sequence="10"

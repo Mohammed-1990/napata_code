@@ -26,7 +26,7 @@
 
     # always loaded
     'data': [
-        'security/register_security.xml',
+        # 'security/register_security.xml',
         'security/ir.model.access.csv',
         'wizard/register_wizard.xml',
 

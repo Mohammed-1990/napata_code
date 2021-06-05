@@ -1,11 +1,13 @@
 <odoo>
-<data>
-<!--  Report Definition, registration  -->
-<report id="accounting_report" 
-string="condition details" 
-model="napata.accounting"
-report_type="qweb-pdf"
-name="napata_accounting.accounting_template"/>
 
-</data>
+    <report
+        id="report_session"
+        model="napata.accounting"
+        string="Session Report"
+        name="napata_accounting.mis"
+        file="openacademy.report_session"
+        report_type="qweb-pdf" />
+
+
+
 </odoo>

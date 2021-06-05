@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <menuitem id="menu_na_sting_root" name="Seting" groups="setting_user_group"
-                  sequence="10"/>
+        <menuitem id="menu_na_sting_root" name="Seting"   sequence="10"/>
+
+<!--                  groups="setting_user_group"-->
         <menuitem id="menu_na_collage_root" name="College"
                   parent="menu_na_sting_root"
                   sequence="10"/>

@@ -2,7 +2,8 @@
 <odoo>
     <data>
         <menuitem id="Presentation_root" name="Presntaion"
-                  sequence="1"  groups="presentation_user_group"/>
+                  sequence="1" />
+<!--        groups="presentation_user_group"/>-->
 
         <menuitem id="menu_Presntaion" name="Presntaion"
                   parent="Presentation_root"

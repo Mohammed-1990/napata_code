@@ -31,10 +31,9 @@
 
     # always loaded
     'data': [
-        'security/account_security.xml',
+        # 'security/account_security.xml',
         'security/ir.model.access.csv',
         'data/sequence.xml',
-
         'wizard/payment_method_views.xml',
         'wizard/account_repot_wizard.xml',
         'views/accounting.xml',
@@ -43,8 +42,8 @@
         'menus/account.xml',
         # 'menus/report.xml',
        #report
-        #  'report/presentation_report.xml',
-        # 'report/presentation_templet_report.xml',
+          'report/account_report.xml',
+          'report/account_templet_report.xml',
         #
 
 

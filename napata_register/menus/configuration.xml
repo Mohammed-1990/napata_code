@@ -2,10 +2,10 @@
 <odoo>
     <data>
 
-        <!--        registration -->
+        <!--    groups="groups_register_manager"    registration -->
         <menuitem id="menu_na_configuration__root" name="Configuration"
                   parent="menu_na_napata_root"
-                  sequence="50" groups="groups_register_manager"/>
+                  sequence="50" />
 
         <menuitem id="presntaionfees_management_menu" name="Presntaion Fees"
                   parent="menu_na_configuration__root" sequence="10"

@@ -2,7 +2,7 @@
 <odoo>
     <data>
    <menuitem id="menu_na_accounting_sting_root" name="Accounting  "
-             groups="account_users_group"
+
               sequence="10"/>
     <menuitem id="menu_na_accounting_root" name="Accounting "
               parent="menu_na_accounting_sting_root"

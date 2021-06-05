@@ -1,18 +1,153 @@
-    <template id="accounting_template">
+<odoo>
+    <template id="mis">
         <t t-call="web.html_container">
-            <!-- <t t-foreach="docs" t-as="doc">
-                <t t-call="web.external_layout">
-                    <div class="page">
-                        <h2 t-field="doc.name"/>
-                        <p>From <span t-field="doc.start_date"/> to <span t-field="doc.end_date"/></p>
-                        <h3>Attendees:</h3>
-                        <ul>
-                            <t t-foreach="doc.attendee_ids" t-as="attendee">
-                                <li><span t-field="attendee.name"/></li>
-                            </t>
-                        </ul>
+            <!--  Start header      -->
+            <div class="header">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <img class="img" src="napata_register/static/description/logo.jpeg"
+                             style="height:100px;width:220px"/>
                     </div>
-                </t>
-            </t> -->
+                    <div class="col-4 text-center">
+                        <div class="col-sm text-center">
+                            <div>
+                                <strong>
+                                    <h4>كليــــــــــــــــة نبتـــــــــة</h4>
+                                </strong>
+                            </div>
+                            <div>
+                                <strong>
+                                    <h4>NAPATA COLLEGE</h4>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div class="col-sm text-center">
+                            <div>Alreydh-Khartoum/Sudan</div>
+                            <div>Tel :+249112203333</div>
+                            <div>Email:info@napata.net</div>
+                            <div>www:napata.net</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  End HEADER  -->
+            <div class="row zero_min_height">
+                <div class="col-xs-12">
+                    <div style="border-bottom: 1px solid black;"/>
+                </div>
+            </div>
+            <t t-foreach="docs" t-as="doc">
+                <div class="page">
+                    <center>
+                        <div class="col-4" style="background-color:#808080">
+                            <div class="panel-body" style="border: 1px solid black">
+                                <h1>
+                                    <span>إيصال إستلام نقدية</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </center>
+                    <table style="width:100% ;border :2px solde black" cellpadding="12">
+                        <tr>
+                            <td style="padding-top:20px">
+                                <span style="text-align:left;" t-esc="doc.receipt_code"/>
+                                <span>إيصال رقم</span>
+                            </td>
+                            <td></td>
+                            <td style="text-align:right;">
+                                <span t-esc="time.strftime('%Y/%m/%d')"/>
+                                <span>التاريخ</span>
+                            </td>
+                        </tr>
+                        <!--                        student name-->
+                        <tr>
+                            <td>
+                                <span>Received From Student Mr:</span>
+
+                            </td>
+                            <td style="text-center">
+                                <span t-esc="doc.name"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>اسم الطالب / الطالبة</span>
+
+                            </td>
+                        </tr>
+                        <!--                        sum of  -->
+                        <tr>
+                            <td>
+                                <span>Sum Of:</span>
+
+                            </td>
+                            <td style="text-align:right">
+                                <span t-esc="doc.the_fees"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>مبلغ</span>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" style="text-align:right">
+                                <span t-esc="doc.the_amount"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>مبلغ وقدره</span>
+                            </td>
+
+                        </tr>
+                        <!--                        about  -->
+                        <tr>
+                            <td colspan="2" style="text-align:right">
+                                <span t-esc="doc.money_type"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>تم الاستلام</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align:right">
+                                <span t-esc="doc.about"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>عبارة عن رسوم</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align:right">
+                                <span t-esc="doc.admission_ids"/>
+                            </td>
+                            <td style="text-align:right;">
+                                <span>توقيع المتحصل</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="row zero_min_height">
+                        <div class="col-xs-12">
+                            <div style="border-bottom: 1px solid black;"/>
+                        </div>
+                    </div>
+
+
+                    <div  style="float:left;padding-top:10px;">
+                        <span>Print On:</span>
+                        <span t-esc="time.strftime('%m/%d/%Y %I:%M')"/>
+
+                    </div>
+
+
+                    <!--  End Page  -->
+                </div>
+            </t>
         </t>
     </template>
+    <!--  Another Layout report  -->
+    <template id="report_application_payment">
+        <t t-call="napata_accounting.custom_external_layout_header"/>
+    </template>
+</odoo>
