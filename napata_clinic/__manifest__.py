@@ -27,7 +27,7 @@
           ],
     # always loaded
     'data': [
-        # 'security/clinic_security.xml',
+        'security/clinic_security.xml',
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
@@ -38,9 +38,10 @@
         'views/laboratory.xml',
         'views/assessment.xml',
         'wizards/assessment_report_wizard.xml',
-       
         'report/report_medical_assessment.xml',
         'report/report_medical_assessment_template.xml',
+        # menus
+        'menus/clinic.xml',
 
 
 

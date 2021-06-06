@@ -1,5 +1,10 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-subject, subject manager,model_napata_subject,base.group_user,1,1,1,1
-degree, degree manager,model_napata_degree,base.group_user,1,1,1,1
+access_subject_user, subject.user,model_napata_subject,groups_result_user,1,0,0,0
+access_subject_manager, subject.manager ,model_napata_subject,groups_result_manager,1,1,1,0
+access_subject_system_admin, subject.system.admin ,model_napata_subject,groups_result_system_admin,1,1,1,1
+
+access_degree_user, degree.user,model_napata_degree,groups_result_user,1,0,0,0
+access_degree_manager, degree.manager ,model_napata_degree,groups_result_manager,1,1,1,0
+access_degree_system_admin, degree.system.admin ,model_napata_degree,groups_result_system_admin,1,1,1,1
 
 

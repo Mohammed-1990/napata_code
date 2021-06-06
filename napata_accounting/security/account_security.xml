@@ -3,7 +3,7 @@
     <data>
         <!--Access Group Category-->
         <record id="category_account" model="ir.module.category">
-            <field name="name">Account Management</field>
+            <field name="name">Account </field>
         </record>
         <!--Group of Users-->
         <record id="account_users_group" model="res.groups">
@@ -17,7 +17,7 @@
             <field name="implied_ids" eval="[(4, ref('account_users_group'))]"/>
         </record>
         <!--Group of super manager-->
-        <record id="account_super_manager_group" model="res.groups">
+        <record id="account_system_admin_group" model="res.groups">
             <field name="name">System Admin</field>
             <field name="category_id" ref="category_account"/>
             <field name="implied_ids" eval="[(4, ref('account_manager_group'))]"/>

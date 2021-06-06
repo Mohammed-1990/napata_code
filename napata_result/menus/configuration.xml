@@ -3,7 +3,7 @@
     <data>
 
         <!--   groups="groups_result_user"     registration -->
-        <menuitem id="menu_na_subject_root" name="Exams" />
+        <menuitem id="menu_na_subject_root" name="Exams" groups="groups_result_manager" />
         <menuitem id="menu_na_configuration_root" name="Configuration"
                   parent="menu_na_subject_root"
                   sequence="100"/>

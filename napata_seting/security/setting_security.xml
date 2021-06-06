@@ -4,20 +4,20 @@
 
         <!--Access Group Category-->
         <record id="setting_management_category" model="ir.module.category">
-            <field name="name">Setting Management</field>
+            <field name="name">Setting</field>
         </record>
 
         <!--Group of Users-->
-        <record id="setting_user_group" model="res.groups">
-            <field name="name">User</field>
+        <record id="group_setting_user" model="res.groups">
+            <field name="name">user</field>
             <field name="category_id" ref="setting_management_category"/>
         </record>
 
         <!--Group of super manager-->
-        <record id="setting_manager_group" model="res.groups">
-            <field name="name">System Admin</field>
+        <record id="group_setting_system_admin" model="res.groups">
+            <field name="name">System admin</field>
             <field name="category_id" ref="setting_management_category"/>
-            <field name="implied_ids" eval="[(4, ref('setting_user_group'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_setting_user'))]"/>
 
         </record>
 

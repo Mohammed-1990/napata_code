@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="clinic_root" name="The Clinic"
+                  groups="groups_clinic_manager"/>
+
+        <menuitem id="Patient  menu" name="Nursing Office" parent="clinic_root" sequence="20"
+                  action="nursing_list_action"/>
+
+
+    </data>
+</odoo>

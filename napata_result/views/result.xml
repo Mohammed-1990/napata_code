@@ -57,7 +57,7 @@
                         <field name="level_id"/>
                         <field name="semester_id"/>
                         <field name="batch_id"/>
-                        <field name="name"/>
+                        <field name="Subject_id"/>
                      </group>
                 </sheet>
                 <div class="oe_chatter">
@@ -83,7 +83,7 @@
                 <field name="level_id"/>
                 <field name="semester_id"/>
                 <field name="batch_id"/>
-                <field name="name"/>
+                <field name="Subject_id"/>
             </tree>
         </field>
     </record>

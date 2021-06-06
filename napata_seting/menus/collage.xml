@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <menuitem id="menu_na_sting_root" name="Seting"   sequence="10"/>
+        <menuitem id="menu_na_sting_root" name="Seting"   sequence="10" groups="group_setting_system_admin"/>
 
 <!--                  groups="setting_user_group"-->
         <menuitem id="menu_na_collage_root" name="College"

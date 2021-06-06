@@ -3,7 +3,7 @@
     <data>
         <!--Access Group Category-->
         <record id="category_clinic" model="ir.module.category">
-            <field name="name">clinic  Management</field>
+            <field name="name">clinic </field>
         </record>
         <!--Group of Users-->
         <record id="groups_clinic_user" model="res.groups">

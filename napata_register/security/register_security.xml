@@ -4,11 +4,11 @@
 
         <!--Access Group Category-->
         <record id="category_register" model="ir.module.category">
-            <field name="name"> Register Management</field>
+            <field name="name"> Register </field>
         </record>
 
         <!--Group of Users-->
-        <record id="groups_register_user" model="res.groups">
+        <record id="groups_register_assistant" model="res.groups">
             <field name="name">Registered Assistant</field>
             <field name="category_id" ref="category_register"/>
         </record>
@@ -17,10 +17,10 @@
         <record id="groups_register_manager" model="res.groups">
             <field name="name">Registered</field>
             <field name="category_id" ref="category_register"/>
-            <field name="implied_ids" eval="[(4, ref('groups_register_user'))]"/>
+            <field name="implied_ids" eval="[(4, ref('groups_register_assistant'))]"/>
         </record>
         <!--Group of super manager-->
-        <record id="groups_register_admin" model="res.groups">
+        <record id="groups_system_admin" model="res.groups">
             <field name="name">System Admin</field>
             <field name="category_id" ref="category_register"/>
             <field name="implied_ids" eval="[(4, ref('groups_register_manager'))]"/>

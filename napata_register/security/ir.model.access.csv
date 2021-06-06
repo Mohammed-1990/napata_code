@@ -1,24 +1,64 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_chackup_assistant,chakup.assistant,model_napata_chackup,groups_register_assistant,1,1,0,0
+access_chackup_register,chakup.register,model_napata_chackup,groups_register_manager,1,1,1,0
+access_chackup_system_admin,chakup.system.admin,model_napata_chackup,groups_system_admin,1,1,1,1
+
+access_presentation_assistant,presentation.assistant,model_napata_presentation,groups_register_assistant,1,1,0,0
+access_presentation_register,presentation.register,model_napata_presentation,groups_register_manager,1,1,1,0
+access_presentation_system_admin,presentation.system.admin,model_napata_presentation,groups_system_admin,1,1,1,1
+
+access_presntaionfees_assistant,presntaionfees.assistant,model_napata_presntaionfees,groups_register_assistant,1,1,0,0
+access_presntaionfees_register,presntaionfees.register,model_napata_presntaionfees,groups_register_manager,1,1,1,0
+access_presntaionfees_system_admin,presntaionfees.system.admin,model_napata_presntaionfees,groups_system_admin,1,1,1,1
+
+access_studyfees_assistant,studyfees.assistant,model_napata_studyfees,groups_register_assistant,1,1,0,0
+access_studyfees_register,studyfees.register,model_napata_studyfees,groups_register_manager,1,1,1,0
+access_studyfees_system_admin,studyfees.system.admin,model_napata_studyfees,groups_system_admin,1,1,1,1
+
+access_register_assistant,register.assistant,model_napata_register,groups_register_assistant,1,1,0,0
+access_register_register,register.register,model_napata_register,groups_register_manager,1,1,1,0
+access_register_system_admin,register.system.admin,model_napata_register,groups_system_admin,1,1,1,1
+
+access_managemanentfees_assistant,managemanentfees.assistant,model_napata_managemanentfees,groups_register_assistant,1,1,0,0
+access_managemanentfees_register,managemanentfees.register,model_napata_managemanentfees,groups_register_manager,1,1,1,0
+access_managemanentfees_system_admin,managemanentfees.system.admin,model_napata_managemanentfees,groups_system_admin,1,1,1,1
+
+access_admission_assistant,admission.assistant,model_napata_admission,groups_register_assistant,1,1,0,0
+access_admission_register,admission.register,model_napata_admission,groups_register_manager,1,1,1,0
+access_admission_system_admin,admission.system.admin,model_napata_admission,groups_system_admin,1,1,1,1
+
+access_health_assistant,health.assistant,model_napata_health,groups_register_assistant,1,1,0,0
+access_health_register,health.register,model_napata_health,groups_register_manager,1,1,1,0
+access_health_system_admin,health.system.admin,model_napata_health,groups_system_admin,1,1,1,1
+
+access_absence_assistant,absence.assistant,model_napata_absence,groups_register_assistant,1,1,0,0
+access_absence_register,absence.register,model_napata_absence,groups_register_manager,1,1,1,0
+access_absence_system_admin,absence.system.admin,model_napata_absence,groups_system_admin,1,1,1,1
+
+access_freezing_assistant,freezing.assistant,model_napata_freezing,groups_register_assistant,1,1,0,0
+access_freezing_register,freezing.register,model_napata_freezing,groups_register_manager,1,1,1,0
+access_freezing_system_admin,freezing.system.admin,model_napata_freezing,groups_system_admin,1,1,1,1
+
+access_clearance_assistant,clearance.assistant,model_napata_clearance,groups_register_assistant,1,1,0,0
+access_clearance_register,clearance.register,model_napata_clearance,groups_register_manager,1,1,1,0
+access_clearance_system_admin,clearance.system.admin,model_napata_clearance,groups_system_admin,1,1,1,1
+
+access_dismissal_assistant,dismissal.assistant,model_napata_clearance,groups_register_assistant,1,1,0,0
+access_dismissal_register,dismissal.register,model_napata_dismissalreasons,groups_register_manager,1,1,1,0
+access_dismissal_system_admin,dismissal.system.admin,model_napata_dismissalreasons,groups_system_admin,1,1,1,1
+
+access_resignation_assistant,resignation.assistant,model_napata_resignation,groups_register_assistant,1,1,0,0
+access_resignation_register,resignation.register,model_napata_resignation,groups_register_manager,1,1,1,0
+access_resignation_system_admin,resignation.system.admin,model_napata_resignation,groups_system_admin,1,1,1,1
+
+access_feepaid_assistant,resignation.assistant,model_napata_feepaid,groups_register_assistant,1,0,0,0
+access_feepaid_register,resignation.register,model_napata_feepaid,groups_register_manager,1,0,0,0
+access_feepaid_system_admin,resignation.system.admin,model_napata_feepaid,groups_system_admin,1,1,1,1
 
 
 
 
-chackup_user,chackup user,model_napata_chackup,base.group_user,1,1,1,1
-presentation_user,presentation user,model_napata_presentation,base.group_user,1,1,1,1
-oldpresentation_user,oldpresentation user,model_napata_oldpresentation,base.group_user,1,1,1,1
-presntaionfees_user,presntaionfees user,model_napata_presntaionfees,base.group_user,1,1,1,1
-studyfees_user,studyfees user,model_napata_studyfees,base.group_user,1,1,1,1
-feepaid_user,feepaid user,model_napata_feepaid,base.group_user,1,1,1,1
-register_user,register user,model_napata_register,base.group_user,1,1,1,1
-managemanentfees_user,managemanentfees user,model_napata_managemanentfees,base.group_user,1,1,1,1
-admission_user,admission user,model_napata_admission,base.group_user,1,1,1,1
-activepresentaion_user,activepresentaion user,model_napata_activepresentaion,base.group_user,1,1,1,1
-health_user,health user,model_napata_health,base.group_user,1,1,1,1
-absence_user,absence user,model_napata_absence,base.group_user,1,1,1,1 
-resignation_user,resignation user,model_napata_resignation,base.group_user,1,1,1,1
-clearance_user,clearance user,model_napata_clearance,base.group_user,1,1,1,1 
-freezing_user,freezing user,model_napata_freezing,base.group_user,1,1,1,1
-dismissal_reasons_user,dismissal reasons user,model_napata_dismissalreasons,base.group_user,1,1,1,1
+ activepresentaion_user,activepresentaion user,model_napata_activepresentaion,base.group_user,1,1,1,1
 
 
 

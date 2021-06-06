@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
- <menuitem id="menu_na_napata_root" name="The Register"
-                  sequence="1"/>
-<!--           groups="groups_register_user"/>-->
-<!--        registration -->
-         <menuitem id="menu_napata_assistant_root" name="Registrar Assistant"
+        <menuitem id="menu_na_napata_root" name="The Register"
+                  sequence="1"
+                  groups="groups_register_assistant"/>
+        <!--        registration -->
+        <menuitem id="menu_napata_assistant_root" name="Registrar Assistant"
                   parent="menu_na_napata_root"
                   sequence="5"/>
 
-           <menuitem id="menu_napata_presentation_root" name="Presentation"
+        <menuitem id="menu_napata_presentation_root" name="Presentation"
                   parent="menu_napata_assistant_root"
-                action="registrar_assistant_list_action"/>
+                  action="registrar_assistant_list_action"/>
 
-<!--        addmation-->
+        <!--        addmation-->
         <menuitem id="menu_napata_addmissions_root" name="Addmissions"
                   parent="menu_napata_assistant_root"
                   sequence="20" action="admissions_list_action"/>
-<!--          health insurance-->
+        <!--          health insurance-->
 
-         <menuitem id="menu_napata_health_insurance_root" name="Health Insurance"
+        <menuitem id="menu_napata_health_insurance_root" name="Health Insurance"
                   parent="menu_napata_assistant_root"
                   sequence="30" action="health_insurance_list_action"/>
         <!--        absence request-->
@@ -27,28 +27,19 @@
         <menuitem id="menu_napata_absence_request_root" name="absence request"
                   parent="menu_napata_assistant_root"
                   sequence="40" action="absence_request_list_action"/>
-                  <!-- freezing -->
+        <!-- freezing -->
         <menuitem id="menu_napata_freezing_request_root" name="freezing request"
                   parent="menu_napata_assistant_root"
                   sequence="40" action="freezing_request_list_action"/>
-                  <!-- resignation -->
+        <!-- resignation -->
 
         <menuitem id="menu_napata_resignation_request_root" name="resignation request"
                   parent="menu_napata_assistant_root"
                   sequence="50" action="resignation_request_list_action"/>
-                  <!-- clearance -->
+        <!-- clearance -->
         <menuitem id="menu_napata_clearance_request_root" name="clearance request"
                   parent="menu_napata_assistant_root"
                   sequence="50" action="clearance_request_list_action"/>
-
-
-
-
-
-
-
-
-
 
 
     </data>

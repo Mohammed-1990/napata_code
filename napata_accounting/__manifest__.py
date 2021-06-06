@@ -31,7 +31,7 @@
 
     # always loaded
     'data': [
-        # 'security/account_security.xml',
+         'security/account_security.xml',
         'security/ir.model.access.csv',
         'data/sequence.xml',
         'wizard/payment_method_views.xml',

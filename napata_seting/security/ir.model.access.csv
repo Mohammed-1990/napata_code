@@ -1,21 +1,34 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-collage_manager,collage   manager,model_napata_collage,base.group_user,1,1,1,1
+access_collage_user,collage.user,model_napata_collage,group_setting_user,1,0,0,0
+access_collage_system_admin,collage.system.admin,model_napata_collage,group_setting_system_admin,1,1,1,1
 
-program_manager,program   manager,model_napata_program,base.group_user,1,1,1,1
+access_program_user,program.user,model_napata_program,group_setting_user,1,0,0,0
+access_program_system_admin,program.system.admin,model_napata_program,group_setting_system_admin,1,1,1,1
 
-specialization_manager,specialization   manager,model_napata_specialization,base.group_user,1,1,1,1
+access_specialization_user,specialization.user,model_napata_specialization,group_setting_user,1,0,0,0
+access_specialization_system_admin,specialization.system.admin,model_napata_specialization,group_setting_system_admin,1,1,1,1
 
-batch_manager,batch   manager,model_napata_batch,base.group_user,1,1,1,1
+access_batch_user,batch.user,model_napata_batch,group_setting_user,1,0,0,0
+access_batch_system_admin,batch.system.admin,model_napata_batch,group_setting_system_admin,1,1,1,1
 
-presentationtype_manager,presentationtype   manager,model_napata_presentationtype,base.group_user,1,1,1,1
+access_presentationtype_user,presentationtype.user,model_napata_presentationtype,group_setting_user,1,0,0,0
+access_presentationtype_system_admin,presentationtype.system.admin,model_napata_presentationtype,group_setting_system_admin,1,1,1,1
 
-feestype_manager,feestype   manager,model_napata_feestype,base.group_user,1,1,1,1
+access_feestype_user,feestype.user,model_napata_feestype,group_setting_user,1,0,0,0
+access_feestype_system_admin,feestype.system.admin,model_napata_feestype,group_setting_system_admin,1,1,1,1
 
-parent_manager,parent   manager,model_napata_parent,base.group_user,1,1,1,1
+access_parent_user,parent.user,model_napata_parent,group_setting_user,1,0,0,0
+access_parent_system_admin,parent.system.admin,model_napata_parent,group_setting_system_admin,1,1,1,1
 
-level_manager,level super  manager,model_napata_level,base.group_user,1,1,1,1
-semester_manager,semester super  manager,model_napata_semester,base.group_user,1,1,1,1
-result_manager,result super  manager,model_napata_result,base.group_user,1,1,1,1
+access_level_user,level.user,model_napata_level,group_setting_user,1,0,0,0
+access_level_system_admin,level.system.admin,model_napata_level,group_setting_system_admin,1,1,1,1
+
+access_semester_user,semester.user,model_napata_semester,group_setting_user,1,0,0,0
+access_semester_system_admin,semester.system.admin,model_napata_semester,group_setting_system_admin,1,1,1,1
+
+access_result_user,result.user,model_napata_result,group_setting_user,1,0,0,0
+access_result_system_admin,result.system.admin,model_napata_result,group_setting_system_admin,1,1,1,1
+
 
 
 

@@ -2,6 +2,7 @@
 from odoo import models, fields, api
 class result(models.Model):
     _inherit = ['mail.thread']
+    _rec_name = "Subject_id"
     _name = 'napata.degree'
     _description = 'result information '
 
@@ -13,9 +14,11 @@ class result(models.Model):
             if rec.program_id.name == self.program_id.name:
                 if rec.level_id.name == self.level_id.name:
                     if rec.semester_id.name == self.semester_id.name:
-                        get_subject_lsit.append((str(rec.name), str(rec.name)))
-        return get_subject_lsit
-    name = fields.Selection(get_subject,string=" exm_year")
+                        get_subject_lsit.append(rec.id)
+        return {'domain': {'Subject_id': [('id', 'in', get_subject_lsit)]}}
+
+    Subject_id = fields.Many2one('napata.subject', string='the Subject')
+
 
     college_id = fields.Many2one('napata.collage', string='College',comput='get_program')
     program_id = fields.Many2one('napata.program', string='program')
