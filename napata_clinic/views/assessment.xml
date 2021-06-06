@@ -207,6 +207,5 @@
                 </p>
             </field>
         </record>
-    <menuitem id="assessment  menu" name="Assessment Report" parent="clinic_root" sequence="50"
-                          action="assessment_list_action"/>
+
 </odoo>

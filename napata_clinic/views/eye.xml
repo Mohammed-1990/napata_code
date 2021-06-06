@@ -168,7 +168,6 @@
                 </p>
             </field>
         </record>
-    <menuitem id="eye  menu" name="Eye Clinic" parent="clinic_root" sequence="20"
-                          action="eye_list_action"/>
+
 </odoo>
 

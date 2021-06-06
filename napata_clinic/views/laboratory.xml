@@ -203,6 +203,5 @@
                 </p>
             </field>
         </record>
-    <menuitem id="laboratory  menu" name="Laboratory" parent="clinic_root" sequence="40"
-                          action="laboratory_list_action"/>
+
 </odoo>

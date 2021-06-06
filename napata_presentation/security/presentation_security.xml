@@ -4,28 +4,28 @@
 
         <!--Access Group Category-->
         <record id="category_presentation" model="ir.module.category">
-            <field name="name"> Presentaion Management</field>
+            <field name="name"> Presentaion </field>
         </record>
 
         <!--Group of Users-->
-        <record id="presentation_user_group" model="res.groups">
-            <field name="name">User</field>
+        <record id="group_presentation_user" model="res.groups">
+            <field name="name">user</field>
             <field name="category_id" ref="category_presentation"/>
         </record>
 
         <!--Group of Managers-->
-        <record id="presentation_manager_group" model="res.groups">
-            <field name="name">Manager</field>
+        <record id="group_presentation_manager" model="res.groups">
+            <field name="name">Managers</field>
             <field name="category_id" ref="category_presentation"/>
-            <field name="implied_ids" eval="[(4, ref('presentation_user_group'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_presentation_user'))]"/>
         </record>
 
 
         <!--Group of super manager-->
-        <record id="presentation_super_manager" model="res.groups">
-            <field name="name">System Admin</field>
+        <record id="group_presentation_system_admin" model="res.groups">
+            <field name="name">System admin</field>
             <field name="category_id" ref="category_presentation"/>
-            <field name="implied_ids" eval="[(4, ref('presentation_manager_group'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_presentation_manager'))]"/>
         </record>
 
 <!--        Record Rule-->

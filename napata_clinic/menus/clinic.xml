@@ -8,6 +8,22 @@
         <menuitem id="Patient  menu" name="Nursing Office" parent="clinic_root" sequence="20"
                   action="nursing_list_action"/>
 
+         <menuitem id="eye  menu" name="Eye Clinic" parent="clinic_root" sequence="20"
+                          action="eye_list_action"/>
+
+        <menuitem id="mouth  menu" name="Mouth Clinic" parent="clinic_root" sequence="30"
+                          action="mouth_list_action"/>
+
+        <menuitem id="physical  menu" name="Physical Clinic" parent="clinic_root" sequence="30"
+                          action="physical_list_action"/>
+
+         <menuitem id="laboratory  menu" name="Laboratory" parent="clinic_root" sequence="40"
+                          action="laboratory_list_action"/>
+
+         <menuitem id="assessment  menu" name="Assessment Report" parent="clinic_root" sequence="50"
+                          action="assessment_list_action"/>
+
+
 
     </data>
 </odoo>

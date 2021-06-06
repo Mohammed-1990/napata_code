@@ -234,7 +234,6 @@
                 </p>
             </field>
         </record>
-    <menuitem id="physical  menu" name="Physical Clinic" parent="clinic_root" sequence="30"
-                          action="physical_list_action"/>
+
 </odoo>
  

@@ -185,9 +185,7 @@
             </field>
         </record>
 
-        <menuitem id="mouth  menu" name="Mouth Clinic" parent="clinic_root" sequence="30"
-                          action="mouth_list_action"/>
-   
+
         </data>
 
 </odoo>
