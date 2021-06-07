@@ -79,7 +79,6 @@
                             <field name="school_name" required="1"/>
                             <field name="presntaion_type" required="1"
                                    options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True,'no_open': True}"/>
-                            <field name="batch" required="1"/>
                         </group>
                     </sheet>
 
@@ -110,8 +109,7 @@
                 <field name="presntaion_type"/>
                 <field name="school_name"/>
                 <field name="studentNumber"/>
-                <field name="batch"/>
-                <field name="year"/>
+                 <field name="year"/>
             </tree>
         </field>
     </record>

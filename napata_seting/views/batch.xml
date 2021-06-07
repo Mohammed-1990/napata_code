@@ -14,7 +14,7 @@
                           background-color: #187ebf;   color: white;">
                         <div class="col-sm">
                             <img src="napata_register/static/description/logo.jpeg"
-                                                                  alt="Ben &amp; Jerry's"
+                                 alt="Ben &amp; Jerry's"
 
                                  class="img-thumbnail"
                                  style="height:80px;width:120px"/>
@@ -52,14 +52,17 @@
 
 
                     <!--            header-->
-                    <group>
+                    <group col="4" colspan="2">
+                        <field name="college_id"/>
+                        <field name="program_id"/>
                         <field name="name"/>
+                        <field name="year"/>
 
                     </group>
 
 
                 </sheet>
-<div class="oe_chatter">
+                <div class="oe_chatter">
                     <field name="message_follower_ids" widget="mail_followers"/>
                     <field name="message_ids" widget="mail_thread"/>
                 </div>
@@ -77,7 +80,10 @@
         <field name="model">napata.batch</field>
         <field name="arch" type="xml">
             <tree string="Batch tree">
+                <field name="college_id"/>
+                <field name="program_id"/>
                 <field name="name"/>
+                <field name="year"/>
             </tree>
         </field>
     </record>

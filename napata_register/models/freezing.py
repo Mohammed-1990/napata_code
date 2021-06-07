@@ -16,7 +16,7 @@ class clearanceRequest(models.Model):
                             ondelete='cascade', related='student_ids.level')
     semester = fields.Many2one('napata.semester', string='Semester',
                                ondelete='cascade', related='student_ids.semester')
-    sitting_number = fields.Integer(string='Sitting number', related='student_ids.siting_number')
+    sitting_number = fields.Char(string='Sitting number', related='student_ids.siting_number')
     location_exam = fields.Char(string='School', related='student_ids.school_name')
     st_phone = fields.Char(string=" Phone Number", related='student_ids.phone1')
     st_moble = fields.Char(string="WatsApp", related='student_ids.phone2')

@@ -19,7 +19,7 @@ class Resignation(models.Model):
                             ondelete='cascade', related='student_ids.level')
     semester = fields.Many2one('napata.semester', string='Semester',
                                ondelete='cascade',related='student_ids.semester')
-    sitting_number  = fields.Integer(string='Sitting number',related='student_ids.siting_number')
+    sitting_number  = fields.Char(string='Sitting number',related='student_ids.siting_number')
     location_exam = fields.Char(string='School',related='student_ids.school_name')
     date_admission = fields.Char(string='Date of admission',related='student_ids.accept_year')
     academic_position = fields.Many2one('napata.result', string='academic position',

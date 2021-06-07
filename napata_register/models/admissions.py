@@ -19,7 +19,6 @@ class napataAdmissions(models.Model):
                             ondelete='cascade',
                             default=lambda self: self.env['napata.collage'].search([]))
     program=fields.Many2one("napata.program",ondelete="cascade",string="program")
-    batch = fields.Many2one('napata.batch', string='The Batch',ondelete='cascade')
     presntaion_type=fields.Many2one("napata.presentationtype",ondelete="cascade",string="Presntaion Type")
     state = fields.Selection([
         ('draft', 'Draft'),
@@ -41,12 +40,15 @@ class napataAdmissions(models.Model):
             if not re.search(r'^(?:[^\W\d_]| )+$', self.first + " " + self.second + " " + self.third + " " + self.last) != None:
                 raise UserError(_('The value of student name must only letters'))
 
-    # Validate school name
-    # @api.constrains('school_name')
-    # def validate_school_name(self):
-    #     if self.school_name:
-    #         if not re.search(r'^(?:[^\W\d_]| )+$',self.school_name) != None:
-    #             raise UserError(_('The value of student name must only letters'))
+    @api.onchange('college_id')
+    def get_program(self):
+        get_program_lest = []
+        collage = self.env['napata.program'].search([('collage_id', '=', self.college_id.id)])
+        if collage:
+            for rec in collage:
+                get_program_lest.append(rec.id)
+
+            return {'domain': {'program': [('id', 'in', get_program_lest)]}}
     # Validate student Number
     @api.constrains('studentNumber')
     def validate_student_number(self):
