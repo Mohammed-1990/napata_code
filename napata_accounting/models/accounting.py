@@ -128,6 +128,7 @@ class napataAccounting(models.Model):
                 if result.is_first_installment == True:
                     Remaining_amount = self.the_fees - result.register_fees
                     result.Remaining_amount =    result.Remaining_amount-Remaining_amount
+                    result.state='done'
                     result.is_first_installment = False
                 elif  result.is_first_installment == False:
                     result.Remaining_amount = (result.Remaining_amount - self.the_fees )

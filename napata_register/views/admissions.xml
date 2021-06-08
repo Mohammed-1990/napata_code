@@ -6,7 +6,7 @@
         <field name="model">napata.admission</field>
         <field name="priority" eval="16"/>
         <field name="arch" type="xml">
-            <form string="Admission Register" edit="false">
+            <form string="Admission Register" >
 
                 <header groups="base.group_user">
                     <button name="action_confirm_admission" string="Confirm " states="draft" type="object"/>
@@ -102,7 +102,8 @@
         <field name="name">admission.tree</field>
         <field name="model">napata.admission</field>
         <field name="arch" type="xml">
-            <tree string="pationt tree">
+            <tree string="pationt tree" decoration-danger="state == 'draft'"
+                  decoration-success="state == 'done'">
 
                 <field name="name"/>
                 <field name="program"/>
@@ -110,6 +111,7 @@
                 <field name="school_name"/>
                 <field name="studentNumber"/>
                  <field name="year"/>
+                 <field name="state"/>
             </tree>
         </field>
     </record>

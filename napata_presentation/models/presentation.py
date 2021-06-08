@@ -85,7 +85,7 @@ class napataUniversity(models.Model):
     admission_book = fields.Boolean(string="Admission Book")
     # fees
 
-    type_acceptance = fields.Char(straing='Type of acceptance')
+    type_acceptance =fields.Many2one("napata.presentationtype",ondelete="cascade",straing='Type of acceptance')
     application_fees = fields.Char(straing='Application Fees')
 
     def _get_year(self):
@@ -160,7 +160,7 @@ class napataUniversity(models.Model):
 
     def action_confirm(self):
         pass
-        self.state = "done"
+        # self.state = "done"
         val = " "
         for rec in self.other_desire:
             val += str(rec.name) + " \t - \t "
@@ -199,7 +199,7 @@ class napataUniversity(models.Model):
             'program': self.main_desire.id,
             'athoer_desires': val,
             # fees
-            'accept_type': self.type_acceptance,
+            'accept_type': self.type_acceptance.id,
             # 'application_fees': self.application_fees,
             'receipt_code': self.receipt_code,
             'pay_date': self.pay_date,

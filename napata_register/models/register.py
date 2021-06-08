@@ -6,6 +6,7 @@ from odoo import models, fields, api, exceptions
 
 class napataRegister(models.Model):
     _inherit = ['mail.thread']
+    _order = "id desc"
     _name = 'napata.register'
     _description = 'information register'
 
@@ -38,8 +39,7 @@ class napataRegister(models.Model):
     phone3 = fields.Char(string="Phone Number")
     # education info
     year = fields.Char(string='Study Year', default=str(datetime.today().year)+" - "+str(datetime.today().year+1))
-    accept_type=fields.Many2one('napata.presentationtype', string='acceptance Type',
-                             ondelete='cascade')
+    accept_type=fields.Many2one("napata.presentationtype",ondelete="cascade", string='acceptance Type')
     accept_year = fields.Char(straing=' Year of acceptance')
     school_name = fields.Char(string="School Name")
     exam_year = fields.Date(string='Exam year')
@@ -90,17 +90,17 @@ class napataRegister(models.Model):
                                ondelete='cascade')
     academic_position=fields.Many2one('napata.result', string='academic position',
                              ondelete='cascade')
+    state = fields.Selection([
+        ('draft', 'Draft'),
+        ('done', 'done'),
+    ], string='Status', default="draft", readonly=True)
     # medicalreport
-    medical_report=fields.Text(string="medical report")
-    doctor_name=fields.Char(string="Doctor's name")
-    doctor_date=fields.Date(string="Date Of Examination")
-    coordinator_report=fields.Text(string="coordinator report")
-    coordinator_name=fields.Char(string="Program Coordinator's name")
-    coordinator_date=fields.Date(string="coordinator date")
-
+    comment = fields.Text(string="medical report")
+    doctor_name = fields.Char(string="Doctor's name")
+    result = fields.Char(string="result")
+    result_data = fields.Char(string="Result date")
     # The new added
     is_clinic = fields.Boolean(string="Is Clinic")
-    result = fields.Char(string="result")
 
 
 

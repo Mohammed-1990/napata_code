@@ -77,34 +77,34 @@
                         <field name="forth_name" placeholder="Forth " readonly="1"/>
                     </group>
                     <group colspan="2" col="4" string="Study Information">
-                        <field name="accept_year"/>
-                        <field name="college_id"/>
-                        <field name="program"/>
-                        <field name="level"/>
-                        <field name="semester"/>
+                        <field name="accept_year" readonly="1"/>
+                        <field name="college_id" readonly="1"/>
+                        <field name="program" readonly="1"/>
+                        <field name="level" readonly="1"/>
+                        <field name="semester" readonly="1"/>
                         <field name="batch"/>
-                        <field name="academic_position"/>
+                        <field name="academic_position" readonly="1"/>
                     </group>
 
                     <group colspan="2" col="6" string="Financial information">
                         <field name="certificate_type"/>
                         <field name="total_fees"
-                               style="background-color: #13397f  ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                               style="background-color: #13397f  ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;" readonly="1" force_save="1"/>
                         <field name="register_fees"
-                               style="background-color: #13397f ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                               style="background-color: #13397f ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;" readonly="1" force_save="1"/>
 
                     </group>
                     <group colspan="2" col="4">
 
-                        <field name="discount"/>
-                        <field name="discount_fees"/>
+                        <field name="discount" force_save="1"/>
+                        <field name="discount_fees" readonly="1" force_save="1"/>
                     </group>
                     <group colspan="2" col="4">
 
                         <field name="total_received"
-                               style="background-color:#14847e ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                               style="background-color:#14847e ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;" readonly="1" force_save="1"/>
                         <field name="Remaining_amount"
-                               style="background-color:#7c1a1a ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;"/>
+                               style="background-color:#7c1a1a ; color:white ;  font-size: 20px; padding:3px; border-radius:2px ;" readonly="1" force_save="1"/>
                         <field name="is_first_installment" style="background-color:red; " invisible="1"/>
 
                     </group>
@@ -113,7 +113,7 @@
                         <page name="Fees_information" string="Fees Collection Details">
                             <field name="fee_paid_id">
                                 <tree>
-                                    <field name="level"/>
+                                    <field name="level" />
                                     <field name="semester"/>
                                     <field name="type"/>
                                     <field name="amount"/>
@@ -160,10 +160,10 @@
                             <group col="4" colspan="2">
                                 <field name="school_name" readonly="1"/>
                                 <field name="cource" readonly="1"/>
-                                <field name="accept_type"/>
+                                <field name="accept_type" readonly="1"/>
                                 <field name="siting_number" readonly="1"/>
                                 <field name="ratio" readonly="1"/>
-                                <field name="form_number"/>
+                                <field name="form_number" readonly="1"/>
                             </group>
                             <separator string="Scholastic Desires "/>
                             <group>
@@ -174,22 +174,21 @@
                             </group>
                         </page>
                         <page string=" medical report">
-                            <group colspan="2" col="4" string="Doctor's decision">
-                                <field name="is_clinic"/>
-                                <field name="medical_report"/>
-                                <field name="result"/>
+                           <group>
+                               <field name="is_clinic" readonly="1"/>
+                           </group>
+
+                            <group col="4" colspan="2">
+                                <field name="result" readonly="1"/>
+                                <field name="result_data" readonly="1"/>
                             </group>
-                            <group colspan="2" col="4">
-                                <field name="doctor_name"/>
-                                <field name="doctor_date"/>
+                            <group>
+                                <field name="comment" readonly="1"/>
                             </group>
-                            <group string="Program's  Coordinator">
-                                <field name="coordinator_report"/>
+                            <group>
+                                <field name="doctor_name" readonly="1"/>
                             </group>
-                            <group colspan="2" col="4">
-                                <field name="coordinator_name"/>
-                                <field name="coordinator_date"/>
-                            </group>
+
                         </page>
 
 
@@ -212,7 +211,8 @@
         <field name="name">Registrar'sOffice.tree</field>
         <field name="model">napata.register</field>
         <field name="arch" type="xml">
-            <tree string="Registrar's Office tree">
+            <tree string="Registrar's Office tree" decoration-danger="state == 'draft'"
+                  decoration-success="state == 'done'">
                 <field name="name"/>
                 <field name="program"/>
                 <field name="level"/>
@@ -220,6 +220,7 @@
                 <field name="batch"/>
                 <field name="academic_position"/>
                 <field name="year"/>
+                <field name="state"/>
             </tree>
         </field>
     </record>

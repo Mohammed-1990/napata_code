@@ -41,6 +41,7 @@ class CreateRegister(models.TransientModel):
     the_register_amount = fields.Char(string="the  student Amount ")
     the_abut = fields.Char(string="the  Managemanent Amount ")
     is_managemanent = fields.Boolean( default=False )
+
     @api.onchange('managemanent_fees')
     def get_student_management_fees(self):
         curr_year = datetime.datetime.now().year
@@ -87,10 +88,12 @@ class CreateRegister(models.TransientModel):
 
 
 
+
     
 
     @api.onchange('firest_installment_fees')
     def _get_total_fees(self):
+
         if self.firest_installment_fees:
             self.the_abut = " "
             self.student_managemanent_fees = 0.0

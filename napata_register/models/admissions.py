@@ -8,6 +8,7 @@ from odoo.exceptions import UserError
 
 class napataAdmissions(models.Model):
     _inherit = ['mail.thread']
+    _order = "id desc"
     _name = 'napata.admission'
     _description = 'information admission'
     name = fields.Char(string="full name", compute="get_student_name")
@@ -58,26 +59,40 @@ class napataAdmissions(models.Model):
 
 
 
-    @api.model
-    def create(self, vals):
-        result = super(napataAdmissions, self).create(vals)
-        self.env['napata.presentation'].create({
-            'name': result['name'],
-            'first_name': result['first'],
-            'second_name': result['second'],
-            'third_name': result['third'],
-            'forth_name': result['last'],
-            'done': True,
-            'accept_year':result['accept_year'],
-            'form_number': result['studentNumber'],
-            'main_desire': result['program']['id'],
-            'college_id': result['college_id']['id'],
-            'type_acceptance':result['presntaion_type']['name'],
-            'school_name':result['school_name'],
-        })
-        return result
+    # @api.model
+    # def create(self, vals):
+    #     result = super(napataAdmissions, self).create(vals)
+    #     self.env['napata.presentation'].create({
+    #         'name': result['name'],
+    #         'first_name': result['first'],
+    #         'second_name': result['second'],
+    #         'third_name': result['third'],
+    #         'forth_name': result['last'],
+    #         'done': True,
+    #         'accept_year':result['accept_year'],
+    #         'form_number': result['studentNumber'],
+    #         'main_desire': result['program']['id'],
+    #         'college_id': result['college_id']['id'],
+    #         'type_acceptance':result['presntaion_type']['name'],
+    #         'school_name':result['school_name'],
+    #     })
+    #     return result
 
     def action_confirm_admission(self):
         self.state = "done"
+        self.env['napata.presentation'].create({
+                'name': self.name,
+                'first_name': self.first,
+                'second_name':self.second,
+                'third_name': self.third,
+                'forth_name': self.last,
+                'done': True,
+                'accept_year':self.accept_year,
+                'form_number': self.studentNumber,
+                'main_desire': self.program.id,
+                'college_id': self.college_id.id,
+                'type_acceptance':self.presntaion_type.id,
+                'school_name':self.school_name,
+            })
 
 
